@@ -1,0 +1,1 @@
+Raid and poster refresh for October 31, 2026. Adds Mega Chandelure Super Mega Raid Day artwork and schedule, corrects Mega Sableye end date to November 3, inserts dated verified fallback if community feed fails on October 28–November 3, includes weekend Shadow Landorus caveat. Historical and regional assets retained. Publish via GitHub main; not yet deployed.
