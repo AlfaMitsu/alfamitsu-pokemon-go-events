@@ -1,0 +1,1 @@
+V33: Standard shop 3-packs ONLY, no single packs. Total shop coins = ceil(additional raid passes or 800-MP packs / 3) * editable 3-pack price. Both normal and doubled reward results continue. Full Next.js build not performed.

@@ -1,0 +1,3 @@
+# Auto-updating Raid Planner
+
+The `/api/raids` server route reads `https://pokelitee.github.io/leak-duck/raid_bosses.json` with a 30-minute Vercel cache, while the app refreshes every 30 minutes when it is open. The upstream project states it updates hourly, so changes are not instant. Global data is not shown when the feed is unavailable instead of silently falling back to out-of-date rotations. The preserved special-location entries are schedule-based and not auto-discovered. Previously curated counters persist when names match; new bosses use simple primary-type counter examples, not ranked simulations. Please verify details against the in-game raid list. No automatic updates for Team Rocket lineups or Event calendar are included in this update.

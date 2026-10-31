@@ -1,0 +1,1 @@
+Home → Website Updates & Changelog now lists all significant tracker changes through the current release, newest first, without version labels. For each later feature change, manually append a new entry to the top of the changelog data in app/page.tsx; it is not automatically generated from code changes.
