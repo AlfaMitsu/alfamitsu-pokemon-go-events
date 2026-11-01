@@ -3,12 +3,30 @@ import React,{useEffect,useMemo,useState} from 'react';
 import {Button} from '@/components/ui/button';import {Card} from '@/components/ui/card';import {Input} from '@/components/ui/input';
 import {CalendarDays,Swords,Zap,Coins,Dna,Skull,BarChart3,Menu,Search,ChevronLeft,ChevronRight,RefreshCw,ExternalLink} from 'lucide-react';
 import eventsJson from '@/lib/events.json';import postersJson from '@/lib/posters.json';import {sprite,fmt,coinEstimate,rankIV,rocket} from '@/lib/game';
+import {artworkUrl} from '@/lib/pokemon-images';
 type Event={id:string;start:string;end:string;name:string;detail?:string;zone?:string;startTime?:string;endTime?:string};type Raid={name:string;tier:string;id:number;counters:string[];category?:string;region?:string;availability?:string;availableUntil?:string;endDate?:string;image?:string;counterBasis?:string};
 const events=eventsJson as Event[];const posterMap=postersJson as Record<string,string>;
 function poster(e:Event){let t=e.name.toLowerCase();if(t.includes('halloween part 2'))return posterMap.halloween2;if(t.includes('halloween part 1'))return posterMap.halloween1;if(t.includes('giratina origin'))return posterMap['giratina-origin'];if(t.includes('mega sableye'))return posterMap['mega-sableye'];if(t.includes('chandelure'))return posterMap['mega-chandelure'];if(t.includes('gastly'))return posterMap.gastly;if(t.includes('morelull'))return posterMap.morelull;if(t.includes('dynamax trails'))return posterMap['dynamax-trails'];if(t.includes('fc seoul'))return posterMap['fc-seoul'];if(t.includes('pokémon center bangkok'))return posterMap.bangkok;if(t.includes('night out'))return posterMap['night-la'];if(t.includes('day of the dead')||t.includes('muertos'))return posterMap['day-dead'];if(t.includes('mall explorations'))return posterMap.mall;if(t.includes('max battle day'))return posterMap['max-day'];return undefined}
 const tba=(e:Event)=>/tba|unannounced|to be announced/i.test(e.name)||!/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/.test(e.start);const evSort=(a:Event,b:Event)=>Number(tba(a))-Number(tba(b))||a.start.localeCompare(b.start);const nice=(s:string)=>new Date(s+'T12:00:00Z').toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric',timeZone:'UTC'});
-function PokemonPic({name,small=false,shadow=false}:{name:string;small?:boolean;shadow?:boolean}){const [failed,setFailed]=useState(false);const clean=name.replace(/^Shadow\s+/i,'').trim();const shadowed=shadow||/^Shadow\s+/i.test(name);return <div className={`flex flex-col items-center gap-1 rounded-lg border p-2 text-center ${shadowed?'border-violet-500 bg-violet-950/20 shadowtile':'border-sky-900 bg-slate-950/30'}`}>{failed?<div className={`${small?'smallmon':'monpic'} ${shadowed?'shadowmon':''} grid place-items-center text-sky-300 text-xl`} aria-label="No Pokémon sprite available">◉</div>:<img className={`${small?'smallmon':'monpic'} ${shadowed?'shadowmon':''}`} src={'/api/pokemon-image?name='+encodeURIComponent(clean)} loading="lazy" alt={name} onError={()=>setFailed(true)}/>}<span className={`text-xs ${shadowed?'shadowlabel':''}`}>{name}</span></div>}
-function RaidBossPic({name,id,shadow=false}:{name:string;id:number;shadow?:boolean}){const clean=name.replace(/—.*$/,'').replace(/^Shadow\s+/i,'').trim();const fallback=sprite(id);const primary='/api/pokemon-image?name='+encodeURIComponent(clean);const [src,setSrc]=useState(primary);const [failed,setFailed]=useState(false);const shadowed=shadow||/^Shadow\s+/i.test(name);if(failed)return <div className={`h-16 w-16 shrink-0 rounded-lg border ${shadowed?'border-violet-500 bg-violet-950/20':'border-sky-800 bg-slate-950/30'} grid place-items-center text-sky-300 ${shadowed?'shadowmon':''}`}>◉</div>;return <img src={src} alt={name} className={`h-16 w-16 shrink-0 object-contain ${shadowed?'shadowmon':''}`} onError={()=>{if(src!==fallback){setSrc(fallback)}else{setFailed(true)}}}/> }
+function SpriteImage({name,id,className}:{name:string;id?:number;className:string}){
+ const fallback=artworkUrl(name);
+ const base=id&&id>0?sprite(id):null;
+ const urls=Array.from(new Set([fallback,'/api/pokemon-image?name='+encodeURIComponent(name.replace(/^Shadow\s+/i,'')),base].filter(Boolean))) as string[];
+ const [stage,setStage]=useState(0);
+ useEffect(()=>setStage(0),[name,id]);
+ return stage<urls.length?<img className={className} src={urls[stage]} loading="lazy" alt={name} onError={()=>setStage(v=>v+1)}/>:<div className={className+' grid place-items-center text-sky-300'} aria-label={'Artwork unavailable: '+name}>◉</div>;
+}
+function PokemonPic({name,small=false,shadow=false}:{name:string;small?:boolean;shadow?:boolean}){
+ const shadowed=shadow||/^Shadow\s+/i.test(name);
+ return <div className={`flex flex-col items-center gap-1 rounded-lg border p-2 text-center ${shadowed?'border-violet-500 bg-violet-950/20 shadowtile':'border-sky-900 bg-slate-950/30'}`}>
+  <SpriteImage name={name} className={`${small?'smallmon':'monpic'} ${shadowed?'shadowmon':''} object-contain`}/>
+  <span className={`text-xs ${shadowed?'shadowlabel':''}`}>{name}</span>
+ </div>
+}
+function RaidBossPic({name,id,shadow=false}:{name:string;id:number;shadow?:boolean}){
+ const shadowed=shadow||/^Shadow\s+/i.test(name);
+ return <SpriteImage name={name.replace(/—.*$/,'')} id={id} className={`h-16 w-16 shrink-0 object-contain ${shadowed?'shadowmon':''}`}/>;
+}
 function NumberField({label,value,set,min=0,max=999999,step=1}:{label:string;value:number;set:(v:number)=>void;min?:number;max?:number;step?:number}){return <label className="field">{label}<Input type="number" min={min} max={max} step={step} value={Number.isNaN(value)?"":value} onChange={e=>set(e.target.value===""?NaN:Number(e.target.value))}/></label>}
 function Select({label,value,set,options}:{label:string;value:string;set:(v:string)=>void;options:{value:string;label:string}[]}){return <label className="field">{label}<select className="select" value={value} onChange={e=>set(e.target.value)}>{options.map(o=><option key={o.value} value={o.value}>{o.label}</option>)}</select></label>}
 function Metrics({items}:{items:[string,string|number][]}){return <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">{items.map(([k,v])=><div className="stat" key={k}><strong>{v}</strong><span>{k}</span></div>)}</div>}
@@ -17,7 +35,7 @@ function RaidTool(){
  const [data,setData]=useState<{bosses:Raid[];status:string;updatedAt:string|null;notice:string;source:string}>({bosses:[],status:'loading',updatedAt:null,notice:'',source:''});
  const [selected,setSelected]=useState('');
  const load=async()=>{try{const r=await fetch('/api/raids',{cache:'no-store'});if(!r.ok)throw Error('Raid endpoint unavailable');const j=await r.json();setData(j);setSelected(p=>j.bosses.some((x:Raid)=>x.name===p)?p:j.bosses[0]?.name||'')}catch{setData({bosses:[],status:'error',updatedAt:null,notice:'Unable to verify the raid roster. Check the current external listing.',source:''});setSelected('')}};
- useEffect(()=>{load();const id=setInterval(load,30*60*1000);return()=>clearInterval(id)},[]);
+ useEffect(()=>{load();const id=setInterval(load,60*1000);return()=>clearInterval(id)},[]);
  const boss=data.bosses.find(x=>x.name===selected);
  return <Card className="space-y-4">
   <div className="flex justify-between gap-3"><h2 className="text-xl font-bold">⚔️ Raid Planner</h2><Button variant="outline" onClick={load}><RefreshCw size={15} className="mr-2"/> Refresh</Button></div>
@@ -189,6 +207,8 @@ function HomeHub(){
     {([
      {title:'Removed live visitor statistics',detail:'Removed header visitor numbers, anonymous visitor tracking and the visitor analytics API.'},
      {title:'Raid lineup and Halloween artwork refreshed',detail:'Verified October 28–November 3 raid bosses, added the October 31 Mega Chandelure Super Mega Raid Day poster, and clarified availability windows.'},
+     {title:'Worldwide rolling Raid Day availability',detail:'Time-limited Raid Days automatically appear when New Zealand event hours start and disappear when the Hawaii event window ends. The Raid Planner refreshes every minute.'},
+     {title:'Improved Pokémon artwork coverage',detail:'Added direct official-artwork fallbacks for raid counters, regional variants, Mega and Primal Pokémon, with additional lookups for other forms.'},
      {title:'3-pack-only Shop estimates',detail:'Calculators now use standard 3-pack purchases only, automatically rounding up required passes or Max Particle Packs.'},
      {title:'Full raid and battle cost estimates',detail:'Normal and doubled reward scenarios show battles, passes or Max Particles, 3-packs needed, and total estimated PokéCoins.'},
      {title:'Eternatus raid reward comparison',detail:'Added editable Stardust, Candy and Candy XL rewards and normal-versus-doubled raid estimates.'},

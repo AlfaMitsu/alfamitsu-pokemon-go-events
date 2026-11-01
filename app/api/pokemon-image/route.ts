@@ -3,6 +3,13 @@ export async function GET(req:NextRequest){
  const raw=(req.nextUrl.searchParams.get('name')||'').trim().toLowerCase();
  const aliases:Record<string,string>={
  'alolan grimer':'grimer-alola',
+ 'primal kyogre':'kyogre-primal',
+ 'primal groudon':'groudon-primal',
+ 'mega gengar':'gengar-mega',
+ 'mega sableye':'sableye-mega',
+ 'mega lucario':'lucario-mega',
+ 'mega garchomp':'garchomp-mega',
+ 'origin forme giratina':'giratina-origin',
  'alolan geodude':'geodude-alola',
  'alolan ninetales':'ninetales-alola',
  'alolan exeggutor':'exeggutor-alola',

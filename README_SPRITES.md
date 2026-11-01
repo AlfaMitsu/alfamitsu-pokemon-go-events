@@ -1,0 +1,1 @@
+Sprite fix: local Pokémon name-to-ID artwork mapping for common raid counters and special forms, direct official-artwork URL first, PokeAPI name lookup second, numeric raid-ID fallback third. Broader unspecified Pokémon still rely on PokeAPI; not a complete offline GO sprite collection. No production deployment in ZIP.
