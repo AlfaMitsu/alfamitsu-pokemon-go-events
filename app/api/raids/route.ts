@@ -8,9 +8,9 @@ const raidSnapshot:Boss[] = [
  {name:'Cofagrigus',tier:'3-Star',id:563,counters:['Darkrai','Hydreigon','Tyranitar','Gengar'],availableUntil:'November 3, 2026 · 8:00 PM local time',endDate:'2026-11-03'},
  {name:'Trevenant',tier:'3-Star',id:709,counters:['Reshiram','Darkrai','Mega Charizard Y','Hydreigon'],availableUntil:'November 3, 2026 · 8:00 PM local time',endDate:'2026-11-03'},
  {name:'Dhelmise',tier:'3-Star',id:781,counters:['Reshiram','Darkrai','Mega Charizard Y','Hydreigon'],availableUntil:'November 3, 2026 · 8:00 PM local time',endDate:'2026-11-03'},
- {name:'Giratina (Origin)',tier:'5-Star',id:487,counters:['Mega Rayquaza','Mega Tyranitar','Hydreigon','Mamoswine'],availableUntil:'November 3, 2026 · 8:00 PM local time',endDate:'2026-11-03'},
+ {name:'Giratina (Origin)',tier:'5-Star',id:487,counters:['Mega Rayquaza','Shadow Salamence','Shadow Tyranitar','Shadow Mamoswine'],availableUntil:'November 3, 2026 · 8:00 PM local time',endDate:'2026-11-03'},
  {name:'Mega Chandelure (Super Mega Raid Day)',tier:'Super Mega',category:'Mega',id:609,counters:['Primal Kyogre','Primal Groudon','Mega Gengar','Mega Tyranitar'],availability:'October 31, 2026 · 2:00–5:00 PM local time; rolling worldwide from New Zealand to Hawaii',availableUntil:'November 1, 2026 · 03:00 UTC (5:00 PM Hawaii); event ended',endDate:'2026-11-01'},
- {name:'Mega Sableye',tier:'Mega',id:302,counters:['Mega Gardevoir','Xerneas','Togekiss','Primarina'],availableUntil:'November 3, 2026 · 8:00 PM local time',endDate:'2026-11-03'},
+ {name:'Mega Sableye',tier:'Mega',id:302,counters:['Mega Gardevoir','Shadow Gardevoir','Xerneas','Primarina'],availableUntil:'November 8, 2026 · local time',endDate:'2026-11-08'},
  {name:'Shadow Gastly',tier:'Shadow 1-Star',id:92,counters:['Mewtwo','Darkrai','Groudon','Hydreigon'],availableUntil:'Not separately confirmed for this Shadow tier'},
  {name:'Shadow Totodile',tier:'Shadow 1-Star',id:158,counters:['Kartana','Zekrom','Roserade','Xurkitree'],availableUntil:'Not separately confirmed for this Shadow tier'},
  {name:'Shadow Shieldon',tier:'Shadow 1-Star',id:410,counters:['Lucario','Groudon','Kyogre','Lucario'],availableUntil:'Not separately confirmed for this Shadow tier'},
@@ -74,6 +74,24 @@ export async function GET(){
    if(special)bosses.push({...special,counterBasis:'Previously curated'});
   }
  }
- const result=[...bosses,...regional].sort((a,b)=>order.indexOf(a.category||'')-order.indexOf(b.category||'')||a.name.localeCompare(b.name));
+ // A partial community feed must not hide verified featured 5-star/Mega raids.
+ // Keep known featured bosses through their scheduled worldwide end date.
+ const worldwideDate=localDate('Pacific/Honolulu');
+ const featured=['Giratina (Origin)','Mega Sableye'];
+ for(const name of featured){
+  const curated=raidSnapshot.find(b=>b.name===name);
+  if(!curated||worldwideDate<'2026-10-28'||(curated.endDate&&worldwideDate>curated.endDate))continue;
+  const existing=bosses.findIndex(b=>b.name.toLowerCase().replace(/forme?/g,'').replace(/[^a-z]/g,'')===name.toLowerCase().replace(/forme?/g,'').replace(/[^a-z]/g,''));
+  if(existing>=0){bosses[existing]={...bosses[existing],...curated,category:category(curated.tier,false),counterBasis:'Verified featured rotation'};}
+  else bosses.push({...curated,category:category(curated.tier,false),counterBasis:'Verified featured rotation'});
+ }
+ // Correct categories and rank shadow bosses by difficulty, 5-star first.
+ const shadowTier=(b:Boss)=>Number(b.tier.match(/[135](?=\D|$)/)?.[0]||0);
+ const result=[...bosses,...regional].sort((a,b)=>{
+  const ai=order.indexOf(a.category||''),bi=order.indexOf(b.category||'');
+  if(ai!==bi)return ai-bi;
+  if(a.category==='Shadows'&&b.category==='Shadows')return shadowTier(b)-shadowTier(a)||a.name.localeCompare(b.name);
+  return a.name.localeCompare(b.name);
+ });
  return NextResponse.json({bosses:result,status,source:'Community Leek Duck mirror + verified time-limited event windows',updatedAt:new Date(now).toISOString(),notice,sourceUrl:feed},{headers:{'Cache-Control':'public, s-maxage=60, stale-while-revalidate=30'}});
 }

@@ -1,0 +1,1 @@
+Preserves featured Giratina (Origin) and Mega Sableye when a community source is incomplete, through their schedule dates; uses event posters on raid cards; recommends selected Shadow attackers with Shadow styling only on explicitly marked entries; orders shadow raids 5-star, 3-star, 1-star. Actual availability remains local. Future rotations require calendar updates.
