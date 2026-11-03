@@ -218,7 +218,9 @@
     "startTime": "00:00",
     "poster": "/posters/custom-ev016.jpg",
     "source": null,
-    "posterType": "custom"
+    "posterType": "custom",
+    "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
   },
   {
     "id": "ev017",
@@ -231,7 +233,9 @@
     "startTime": "00:00",
     "poster": "/posters/custom-ev017.jpg",
     "source": null,
-    "posterType": "custom"
+    "posterType": "custom",
+    "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
   },
   {
     "id": "ev018",
@@ -244,7 +248,9 @@
     "startTime": "00:00",
     "poster": "/posters/custom-ev018.jpg",
     "source": null,
-    "posterType": "custom"
+    "posterType": "custom",
+    "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
   },
   {
     "id": "ev019",
@@ -257,7 +263,9 @@
     "startTime": "00:00",
     "poster": "/posters/custom-ev019.jpg",
     "source": null,
-    "posterType": "custom"
+    "posterType": "custom",
+    "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
   },
   {
     "id": "ev020",
@@ -270,7 +278,9 @@
     "startTime": "00:00",
     "poster": "/posters/custom-ev020.jpg",
     "source": null,
-    "posterType": "custom"
+    "posterType": "custom",
+    "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
   },
   {
     "id": "ev-wild-area-mexico",
@@ -283,8 +293,10 @@
     "endTime": "18:00",
     "source": "https://pokemongo.com/gowildarea",
     "poster": "/posters/custom-ev-wild-area-mexico.jpg",
-    "posterType": "custom",
-    "onlineImage": "https://tvazteca.brightspotcdn.com/dims4/default/b45487f/2147483647/strip/true/crop/900x507%2B0%2B3/resize/1200x676%21/format/webp/quality/100/?url=https%3A%2F%2Ftv-azteca-production-tv-azteca.s3.us-west-2.amazonaws.com%2Fbrightspot%2F3c%2Fdc%2Fc4e9fa1a4653bf273ae5f29b9ff2%2Fpokemon-go-wild-area-2026-ya-puedes-comprar-boletos-en-cdmx.png"
+    "posterType": "web",
+    "onlineImage": "https://tvazteca.brightspotcdn.com/dims4/default/b45487f/2147483647/strip/true/crop/900x507%2B0%2B3/resize/1200x676%21/format/webp/quality/100/?url=https%3A%2F%2Ftv-azteca-production-tv-azteca.s3.us-west-2.amazonaws.com%2Fbrightspot%2F3c%2Fdc%2Fc4e9fa1a4653bf273ae5f29b9ff2%2Fpokemon-go-wild-area-2026-ya-puedes-comprar-boletos-en-cdmx.png",
+    "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
   },
   {
     "id": "ev-wild-area-sendai",
@@ -297,8 +309,10 @@
     "endTime": "18:00",
     "source": "https://pokemongo.com/en/gowildarea/sendai",
     "poster": "/posters/custom-ev-wild-area-sendai.jpg",
-    "posterType": "custom",
-    "onlineImage": "https://news.mynavi.jp/article/20260911-4951510/images/001.jpg"
+    "posterType": "web",
+    "onlineImage": "https://news.mynavi.jp/article/20260911-4951510/images/001.jpg",
+    "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
   },
   {
     "id": "ev021",
@@ -311,8 +325,10 @@
     "startTime": "10:00",
     "poster": "/posters/custom-ev021.jpg",
     "source": "https://pokemongohub.net/post/event/pokemon-go-festival-of-lights-2026-india-exclusive-event/",
-    "posterType": "custom",
-    "onlineImage": "https://media.pocketgamer.com/artwork/na-26466-1790464164/pokemon-go-diwali-26-header.jpg"
+    "posterType": "web",
+    "onlineImage": "https://media.pocketgamer.com/artwork/na-26466-1790464164/pokemon-go-diwali-26-header.jpg",
+    "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
   },
   {
     "id": "ev022",
@@ -325,7 +341,9 @@
     "startTime": "10:00",
     "poster": "/posters/custom-ev022.jpg",
     "source": "https://pokemongo.com/en/news/event-singapore-30th-anniversary-2026",
-    "posterType": "custom"
+    "posterType": "custom",
+    "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
   },
   {
     "id": "ev023",
@@ -338,7 +356,9 @@
     "startTime": "00:00",
     "poster": "/posters/custom-ev023.jpg",
     "source": "https://pokemongo.com/en/news/event-singapore-30th-anniversary-2026",
-    "posterType": "custom"
+    "posterType": "custom",
+    "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
   },
   {
     "id": "ev024",
@@ -351,7 +371,9 @@
     "startTime": "00:00",
     "poster": "/posters/custom-ev024.jpg",
     "source": "https://pokemongo.com/en/news/event-singapore-30th-anniversary-2026",
-    "posterType": "custom"
+    "posterType": "custom",
+    "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
   },
   {
     "id": "ev025",
@@ -364,7 +386,9 @@
     "startTime": "10:00",
     "poster": "/posters/custom-ev025.jpg",
     "source": "https://leekduck.com/events/into-the-wild-2026/",
-    "posterType": "custom"
+    "posterType": "custom",
+    "infographicSource": "https://leekduck.com/events/into-the-wild-2026/",
+    "infographicCredit": "Leek Duck — Into the Wild event guide"
   },
   {
     "id": "ev026",
@@ -377,7 +401,9 @@
     "startTime": "00:00",
     "poster": "/posters/custom-ev026.jpg",
     "source": null,
-    "posterType": "custom"
+    "posterType": "custom",
+    "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
   },
   {
     "id": "ev027",
@@ -390,7 +416,9 @@
     "startTime": "10:00",
     "poster": "/posters/custom-ev027.jpg",
     "source": "https://pokemongo.com/gowildarea/global",
-    "posterType": "custom"
+    "posterType": "custom",
+    "infographicSource": "https://leekduck.com/events/pokemon-go-wild-area-2026-global/",
+    "infographicCredit": "Leek Duck — GO Wild Area 2026 event guide"
   },
   {
     "id": "ev028",
@@ -403,7 +431,9 @@
     "startTime": "00:00",
     "poster": "/posters/custom-ev028.jpg",
     "source": null,
-    "posterType": "custom"
+    "posterType": "custom",
+    "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
   },
   {
     "id": "ev029",
@@ -416,7 +446,9 @@
     "startTime": "00:00",
     "poster": "/posters/custom-ev029.jpg",
     "source": null,
-    "posterType": "custom"
+    "posterType": "custom",
+    "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
   },
   {
     "id": "ev030",
@@ -429,7 +461,9 @@
     "startTime": "00:00",
     "poster": "/posters/custom-ev030.jpg",
     "source": null,
-    "posterType": "custom"
+    "posterType": "custom",
+    "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
   },
   {
     "id": "ev031",
@@ -442,7 +476,9 @@
     "startTime": "00:00",
     "poster": "/posters/custom-ev031.jpg",
     "source": null,
-    "posterType": "custom"
+    "posterType": "custom",
+    "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
   },
   {
     "id": "ev032",
@@ -468,7 +504,9 @@
     "startTime": "00:00",
     "poster": "/posters/custom-ev033.jpg",
     "source": null,
-    "posterType": "custom"
+    "posterType": "custom",
+    "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
   },
   {
     "id": "ev034",
@@ -481,7 +519,9 @@
     "startTime": "00:00",
     "poster": "/posters/custom-ev034.jpg",
     "source": null,
-    "posterType": "custom"
+    "posterType": "custom",
+    "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
   },
   {
     "id": "ev035",
@@ -494,7 +534,9 @@
     "startTime": "00:00",
     "poster": "/posters/custom-ev035.jpg",
     "source": null,
-    "posterType": "custom"
+    "posterType": "custom",
+    "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
   },
   {
     "id": "ev036",
@@ -507,7 +549,9 @@
     "startTime": "00:00",
     "poster": "/posters/custom-ev036.jpg",
     "source": null,
-    "posterType": "custom"
+    "posterType": "custom",
+    "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
   },
   {
     "id": "ev037",
@@ -520,7 +564,9 @@
     "startTime": "00:00",
     "poster": "/posters/custom-ev037.jpg",
     "source": null,
-    "posterType": "custom"
+    "posterType": "custom",
+    "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
   },
   {
     "id": "ev038",
@@ -533,7 +579,9 @@
     "startTime": "00:00",
     "poster": "/posters/custom-ev038.jpg",
     "source": null,
-    "posterType": "custom"
+    "posterType": "custom",
+    "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
   },
   {
     "id": "ev039",
@@ -546,7 +594,9 @@
     "startTime": "00:00",
     "poster": "/posters/custom-ev039.jpg",
     "source": null,
-    "posterType": "custom"
+    "posterType": "custom",
+    "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
   },
   {
     "id": "ev040",
@@ -559,7 +609,9 @@
     "startTime": "00:00",
     "poster": "/posters/custom-ev040.jpg",
     "source": null,
-    "posterType": "custom"
+    "posterType": "custom",
+    "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
   },
   {
     "id": "ev041",
@@ -572,7 +624,9 @@
     "startTime": "00:00",
     "poster": "/posters/custom-ev041.jpg",
     "source": null,
-    "posterType": "custom"
+    "posterType": "custom",
+    "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
   },
   {
     "id": "ev042",
@@ -585,7 +639,9 @@
     "startTime": "00:00",
     "poster": "/posters/custom-ev042.jpg",
     "source": null,
-    "posterType": "custom"
+    "posterType": "custom",
+    "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
   },
   {
     "id": "ev043",
@@ -598,7 +654,9 @@
     "startTime": "00:00",
     "poster": "/posters/custom-ev043.jpg",
     "source": null,
-    "posterType": "custom"
+    "posterType": "custom",
+    "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
   },
   {
     "id": "ev044",
@@ -611,7 +669,9 @@
     "startTime": "00:00",
     "poster": "/posters/custom-ev044.jpg",
     "source": null,
-    "posterType": "custom"
+    "posterType": "custom",
+    "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
   },
   {
     "id": "ev045",
@@ -624,7 +684,9 @@
     "startTime": "00:00",
     "poster": "/posters/custom-ev045.jpg",
     "source": null,
-    "posterType": "custom"
+    "posterType": "custom",
+    "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
   },
   {
     "id": "ev046",
@@ -637,7 +699,9 @@
     "startTime": "00:00",
     "poster": "/posters/custom-ev046.jpg",
     "source": null,
-    "posterType": "custom"
+    "posterType": "custom",
+    "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
   },
   {
     "id": "ev047",
@@ -650,7 +714,9 @@
     "startTime": "00:00",
     "poster": "/posters/custom-ev047.jpg",
     "source": null,
-    "posterType": "custom"
+    "posterType": "custom",
+    "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
   },
   {
     "id": "ev-pokemon-center-bangkok",
