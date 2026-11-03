@@ -101,7 +101,9 @@
     "startTime": "00:00",
     "poster": "/posters/day-dead.jpg",
     "source": null,
-    "posterType": "supplied"
+    "posterType": "supplied",
+    "infographicSource": "https://www.instagram.com/p/De8KSIvDkJr/",
+    "infographicCredit": "G47IX — Día de Muertos 2026 guide"
   },
   {
     "id": "ev008",
@@ -192,7 +194,9 @@
     "startTime": "00:00",
     "poster": "/posters/day-dead.jpg",
     "source": null,
-    "posterType": "supplied"
+    "posterType": "supplied",
+    "infographicSource": "https://www.instagram.com/p/De8KSIvDkJr/",
+    "infographicCredit": "G47IX — Día de Muertos 2026 guide"
   },
   {
     "id": "ev015",
@@ -294,9 +298,9 @@
     "source": "https://pokemongo.com/gowildarea",
     "poster": "/posters/custom-ev-wild-area-mexico.jpg",
     "posterType": "web",
-    "onlineImage": "https://tvazteca.brightspotcdn.com/dims4/default/b45487f/2147483647/strip/true/crop/900x507%2B0%2B3/resize/1200x676%21/format/webp/quality/100/?url=https%3A%2F%2Ftv-azteca-production-tv-azteca.s3.us-west-2.amazonaws.com%2Fbrightspot%2F3c%2Fdc%2Fc4e9fa1a4653bf273ae5f29b9ff2%2Fpokemon-go-wild-area-2026-ya-puedes-comprar-boletos-en-cdmx.png",
-    "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
-    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
+    "onlineImage": "https://pbs.twimg.com/media/HNTdVC_XMAATOUs.jpg",
+    "infographicSource": "https://x.com/PokemonGOHubNet/status/2077528684823507023",
+    "infographicCredit": "FlareBlaze × Pokémon GO Hub — GO Wild Area 2026 graphic"
   },
   {
     "id": "ev-wild-area-sendai",
@@ -310,9 +314,9 @@
     "source": "https://pokemongo.com/en/gowildarea/sendai",
     "poster": "/posters/custom-ev-wild-area-sendai.jpg",
     "posterType": "web",
-    "onlineImage": "https://news.mynavi.jp/article/20260911-4951510/images/001.jpg",
-    "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
-    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
+    "onlineImage": "https://pbs.twimg.com/media/HNTdVC_XMAATOUs.jpg",
+    "infographicSource": "https://x.com/PokemonGOHubNet/status/2077528684823507023",
+    "infographicCredit": "FlareBlaze × Pokémon GO Hub — GO Wild Area 2026 graphic"
   },
   {
     "id": "ev021",
@@ -416,9 +420,10 @@
     "startTime": "10:00",
     "poster": "/posters/custom-ev027.jpg",
     "source": "https://pokemongo.com/gowildarea/global",
-    "posterType": "custom",
-    "infographicSource": "https://leekduck.com/events/pokemon-go-wild-area-2026-global/",
-    "infographicCredit": "Leek Duck — GO Wild Area 2026 event guide"
+    "posterType": "web",
+    "infographicSource": "https://x.com/PokemonGOHubNet/status/2077528684823507023",
+    "infographicCredit": "FlareBlaze × Pokémon GO Hub — GO Wild Area 2026 graphic",
+    "onlineImage": "https://pbs.twimg.com/media/HNTdVC_XMAATOUs.jpg"
   },
   {
     "id": "ev028",
@@ -491,7 +496,9 @@
     "startTime": "00:00",
     "poster": "/posters/dynamax-trails.jpg",
     "source": null,
-    "posterType": "supplied"
+    "posterType": "supplied",
+    "infographicSource": "https://www.instagram.com/p/DfC77UMCqhC/",
+    "infographicCredit": "G47IX — Dynamax Trails infographic (Oct 28, 2026)"
   },
   {
     "id": "ev033",
