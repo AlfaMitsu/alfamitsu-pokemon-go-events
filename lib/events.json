@@ -45,10 +45,10 @@
     "name": "Lake Trio Max Battle Day",
     "detail": "",
     "zone": "",
-    "endTime": "20:00",
-    "startTime": "00:00",
+    "endTime": "17:00",
+    "startTime": "14:00",
     "poster": "/posters/max-day.jpg",
-    "source": null,
+    "source": "https://pokemongo.com/news/dynamax-uxie-mesprit-azelf-max-battle-day-2026",
     "posterType": "supplied"
   },
   {
@@ -507,7 +507,12 @@
     "source": "https://pokemongo.com/en/news/dynamax-trails-eternamax-eternatus-2026",
     "posterType": "supplied",
     "infographicSource": "https://pokemongo.com/en/news/dynamax-trails-eternamax-eternatus-2026",
-    "infographicCredit": "Official Pokémon GO — Dynamax Trails details"
+    "infographicCredit": "Official Pokémon GO — Dynamax Trails details",
+    "category": "max-battle-rotation",
+    "linkedEventId": "ev032",
+    "featuredPokemon": [
+      "Eternamax Eternatus"
+    ]
   },
   {
     "id": "ev032",
@@ -1313,5 +1318,163 @@
     "linkedEventId": "ev027",
     "poster": "/posters/battle-event-battles-wild-sun-max.jpg",
     "posterNote": "Event-specific schedule tile based on existing artwork. Raid and Max Battle details verified against official Pokémon GO event announcements."
+  },
+  {
+    "id": "event-wild-inperson-sendai-raid-5",
+    "start": "2026-11-06",
+    "end": "2026-11-08",
+    "name": "GO Wild Area Sendai • Tohoku • 5★ Raids — Crowned Sword Zacian & Crowned Shield Zamazenta",
+    "category": "raid",
+    "zone": "Asia/Tokyo",
+    "startTime": "10:00",
+    "endTime": "18:00",
+    "detail": "Crowned Sword Zacian and Crowned Shield Zamazenta appear in five-star raids. Defeating them awards Sword or Shield Energy. Eligible ticket holders catching locally may receive their city Location Background; not guaranteed, and not available from remote catches.",
+    "source": "https://pokemongo.com/gowildarea/sendai/gameplay",
+    "featuredPokemon": [
+      "Crowned Sword Zacian",
+      "Crowned Shield Zamazenta"
+    ],
+    "linkedEventId": "ev-wild-area-sendai",
+    "poster": "/posters/wild-area-inperson-raids.png",
+    "posterType": "supplied",
+    "posterNote": "AlfaMitsu in-person guide; event hours are 10 AM–6 PM local. Your raid guide notes earlier/later raid spawns."
+  },
+  {
+    "id": "event-wild-inperson-sendai-raid-3",
+    "start": "2026-11-06",
+    "end": "2026-11-08",
+    "name": "GO Wild Area Sendai • Tohoku • 3★ Raids — Modern Jacket Machamp",
+    "category": "raid",
+    "zone": "Asia/Tokyo",
+    "startTime": "10:00",
+    "endTime": "18:00",
+    "detail": "Machamp wearing a modern jacket appears in three-star raids. Eligible ticket holders catching locally may receive their city Location Background; not guaranteed, and not available from remote catches.",
+    "source": "https://pokemongo.com/gowildarea/sendai/gameplay",
+    "featuredPokemon": [
+      "Machamp (modern jacket)"
+    ],
+    "linkedEventId": "ev-wild-area-sendai",
+    "poster": "/posters/wild-area-inperson-raids.png",
+    "posterType": "supplied",
+    "posterNote": "AlfaMitsu in-person guide; event hours are 10 AM–6 PM local. Your raid guide notes earlier/later raid spawns."
+  },
+  {
+    "id": "event-wild-inperson-sendai-max-battles",
+    "start": "2026-11-06",
+    "end": "2026-11-08",
+    "name": "GO Wild Area Sendai • Tohoku • Max Battles — Dialga, Palkia & Gigantamax Duraludon",
+    "category": "max-battle-rotation",
+    "zone": "Asia/Tokyo",
+    "startTime": "10:00",
+    "endTime": "18:00",
+    "detail": "Dynamax Dialga, Dynamax Palkia, and Gigantamax Duraludon feature in the in-person Max Battle lineup. These are Max Battles, not regular raids.",
+    "source": "https://pokemongo.com/gowildarea/sendai/gameplay",
+    "featuredPokemon": [
+      "Dynamax Dialga",
+      "Dynamax Palkia",
+      "Gigantamax Duraludon"
+    ],
+    "linkedEventId": "ev-wild-area-sendai",
+    "poster": "/posters/wild-area-inperson-max-battles.png",
+    "posterType": "supplied",
+    "posterNote": "AlfaMitsu in-person guide; event hours are 10 AM–6 PM local. Your raid guide notes earlier/later raid spawns."
+  },
+  {
+    "id": "event-wild-inperson-mexico-raid-5",
+    "start": "2026-11-06",
+    "end": "2026-11-08",
+    "name": "GO Wild Area Mexico City • 5★ Raids — Crowned Sword Zacian & Crowned Shield Zamazenta",
+    "category": "raid",
+    "zone": "America/Mexico_City",
+    "startTime": "10:00",
+    "endTime": "18:00",
+    "detail": "Crowned Sword Zacian and Crowned Shield Zamazenta appear in five-star raids. Defeating them awards Sword or Shield Energy. Eligible ticket holders catching locally may receive their city Location Background; not guaranteed, and not available from remote catches.",
+    "source": "https://pokemongo.com/gowildarea/mexico-city/gameplay",
+    "featuredPokemon": [
+      "Crowned Sword Zacian",
+      "Crowned Shield Zamazenta"
+    ],
+    "linkedEventId": "ev-wild-area-mexico",
+    "poster": "/posters/wild-area-inperson-raids.png",
+    "posterType": "supplied",
+    "posterNote": "AlfaMitsu in-person guide; event hours are 10 AM–6 PM local. Your raid guide notes earlier/later raid spawns."
+  },
+  {
+    "id": "event-wild-inperson-mexico-raid-3",
+    "start": "2026-11-06",
+    "end": "2026-11-08",
+    "name": "GO Wild Area Mexico City • 3★ Raids — Modern Jacket Machamp",
+    "category": "raid",
+    "zone": "America/Mexico_City",
+    "startTime": "10:00",
+    "endTime": "18:00",
+    "detail": "Machamp wearing a modern jacket appears in three-star raids. Eligible ticket holders catching locally may receive their city Location Background; not guaranteed, and not available from remote catches.",
+    "source": "https://pokemongo.com/gowildarea/mexico-city/gameplay",
+    "featuredPokemon": [
+      "Machamp (modern jacket)"
+    ],
+    "linkedEventId": "ev-wild-area-mexico",
+    "poster": "/posters/wild-area-inperson-raids.png",
+    "posterType": "supplied",
+    "posterNote": "AlfaMitsu in-person guide; event hours are 10 AM–6 PM local. Your raid guide notes earlier/later raid spawns."
+  },
+  {
+    "id": "event-wild-inperson-mexico-max-battles",
+    "start": "2026-11-06",
+    "end": "2026-11-08",
+    "name": "GO Wild Area Mexico City • Max Battles — Dialga, Palkia & Gigantamax Duraludon",
+    "category": "max-battle-rotation",
+    "zone": "America/Mexico_City",
+    "startTime": "10:00",
+    "endTime": "18:00",
+    "detail": "Dynamax Dialga, Dynamax Palkia, and Gigantamax Duraludon feature in the in-person Max Battle lineup. These are Max Battles, not regular raids.",
+    "source": "https://pokemongo.com/gowildarea/mexico-city/gameplay",
+    "featuredPokemon": [
+      "Dynamax Dialga",
+      "Dynamax Palkia",
+      "Gigantamax Duraludon"
+    ],
+    "linkedEventId": "ev-wild-area-mexico",
+    "poster": "/posters/wild-area-inperson-max-battles.png",
+    "posterType": "supplied",
+    "posterNote": "AlfaMitsu in-person guide; event hours are 10 AM–6 PM local. Your raid guide notes earlier/later raid spawns."
+  },
+  {
+    "id": "event-battles-lake-trio-max",
+    "start": "2026-10-24",
+    "end": "2026-10-24",
+    "name": "Lake Trio • Five-Star Dynamax Max Battles",
+    "detail": "October 24, 2–5 PM local: Dynamax Uxie in Asia-Pacific; Dynamax Mesprit in Europe, Middle East, Africa and India; Dynamax Azelf in the Americas and Greenland. Each is a region-exclusive five-star Max Battle.",
+    "category": "max-battle-rotation",
+    "zone": "",
+    "startTime": "14:00",
+    "endTime": "17:00",
+    "poster": "/posters/max-day.jpg",
+    "posterType": "supplied",
+    "source": "https://pokemongo.com/news/dynamax-uxie-mesprit-azelf-max-battle-day-2026",
+    "featuredPokemon": [
+      "Dynamax Uxie",
+      "Dynamax Mesprit",
+      "Dynamax Azelf"
+    ],
+    "linkedEventId": "ev003",
+    "posterNote": "The featured Lake Trio Pokémon vary by region; see the event details for regional availability."
+  },
+  {
+    "id": "event-battles-dynamax-trails-all",
+    "start": "2026-11-16",
+    "end": "2026-11-23",
+    "name": "Dynamax Trails • Returning Dynamax Max Battles",
+    "detail": "Dynamax Trails (November 16, 10 AM through November 23, 8 PM local) brings back every previously released Dynamax Pokémon in Max Battles. This is a general returning rotation, not a list of every Pokémon at every Power Spot. Eternamax Eternatus has its own separate November 21 battle entry.",
+    "category": "max-battle-rotation",
+    "zone": "",
+    "startTime": "10:00",
+    "endTime": "20:00",
+    "poster": "/posters/dynamax-trails.jpg",
+    "posterType": "supplied",
+    "source": "https://pokemongo.com/en/news/dynamax-trails-eternamax-eternatus-2026",
+    "featuredPokemon": [],
+    "linkedEventId": "ev032",
+    "posterNote": "Uses the original supplied Dynamax Trails event artwork."
   }
 ]
