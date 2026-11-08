@@ -78,3 +78,11 @@ V26: Visitor counts (Online, 1 Day, 7 Days, 30 Days) display directly in the hea
 - Poster priority remains AlfaMitsu originals, G47IX, FlareBlaze, verified internet posters, then event-specific custom graphics. Archive graphics are custom illustrations rather than official event posters.
 - The in-person Wild Area guide posters and existing published event records were preserved.
 - Historical archive is a best-effort backfill; further region-exclusive or earlier-year events may still need verification.
+
+
+## November 8, 2026 — Raids, Max Battles and featured posters
+- Removed 8 monthly GO Pass items from the Event Tracker because GO Passes are reward tracks, not independent events.
+- Added 91 historical five-star, Mega and weekend Shadow raid rotations and 43 historical weekly Dynamax Max Battle rotations covering 2026.
+- Raids and Max Battles have separate tracker rows with source-backed featured Pokémon and event details.
+- All generated historical SVG poster artwork is refreshed with actual Pokémon sprite graphics or event-themed highlight graphics; AlfaMitsu original posters still take priority.
+- Historical schedules are based on monthly published calendars; recurring rotation end dates may change at 10 a.m. local rather than midnight.

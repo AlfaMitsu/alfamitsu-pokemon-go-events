@@ -13,6 +13,36 @@
     "posterType": "custom"
   },
   {
+    "id": "historic-raid-01-01-5-raids-blacephalon",
+    "start": "2026-01-01",
+    "end": "2026-01-05",
+    "name": "5★ Raids • Blacephalon",
+    "category": "raid",
+    "featuredPokemon": [
+      "Blacephalon"
+    ],
+    "detail": "Historical 5★ raids rotation featuring Blacephalon. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-JANUARY-2026-events/",
+    "poster": "/posters/historic-raid-01-01-5-raids-blacephalon.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
+    "id": "historic-raid-01-02-weekend-shadow-raids-shadow-cresselia",
+    "start": "2026-01-02",
+    "end": "2026-02-01",
+    "name": "Weekend Shadow Raids • Shadow Cresselia",
+    "category": "raid",
+    "featuredPokemon": [
+      "Shadow Cresselia"
+    ],
+    "detail": "Historical weekend shadow raids rotation featuring Shadow Cresselia. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates. Five-star Shadow raids are primarily on weekends.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-JANUARY-2026-events/",
+    "poster": "/posters/historic-raid-01-02-weekend-shadow-raids-shadow-cresselia.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
     "id": "hist-january-2026-community-day-classic-piplup",
     "start": "2026-01-04",
     "end": "2026-01-04",
@@ -23,7 +53,55 @@
     "poster": "/posters/hist-january-2026-community-day-classic-piplup.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/event/pokemon-go-JANUARY-2026-events/"
+    "source": "https://pokemongohub.net/post/event/pokemon-go-JANUARY-2026-events/",
+    "featuredPokemon": [
+      "Piplup"
+    ]
+  },
+  {
+    "id": "historic-raid-01-05-5-raids-genesect",
+    "start": "2026-01-05",
+    "end": "2026-01-16",
+    "name": "5★ Raids • Genesect",
+    "category": "raid",
+    "featuredPokemon": [
+      "Genesect"
+    ],
+    "detail": "Historical 5★ raids rotation featuring Genesect. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-JANUARY-2026-events/",
+    "poster": "/posters/historic-raid-01-05-5-raids-genesect.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
+    "id": "historic-max-01-05-drampa",
+    "start": "2026-01-05",
+    "end": "2026-01-11",
+    "name": "Dynamax Drampa • Weekly Max Battles",
+    "category": "max-battle-rotation",
+    "featuredPokemon": [
+      "Dynamax Drampa"
+    ],
+    "detail": "Historical weekly Power Spot Max Battle rotation: Dynamax Drampa. Max Monday features the same weekly boss; Power Spot availability and timings are subject to event rules.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-JANUARY-2026-events/",
+    "poster": "/posters/historic-max-01-05-drampa.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the weekly Max Battle Pokémon."
+  },
+  {
+    "id": "historic-raid-01-05-mega-raids-mega-blaziken",
+    "start": "2026-01-05",
+    "end": "2026-01-16",
+    "name": "Mega Raids • Mega Blaziken",
+    "category": "raid",
+    "featuredPokemon": [
+      "Mega Blaziken"
+    ],
+    "detail": "Historical mega raids rotation featuring Mega Blaziken. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-JANUARY-2026-events/",
+    "poster": "/posters/historic-raid-01-05-mega-raids-mega-blaziken.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
   },
   {
     "id": "hist-pinch-perfect",
@@ -36,7 +114,10 @@
     "poster": "/posters/hist-pinch-perfect.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/event/pokemon-go-JANUARY-2026-events/"
+    "source": "https://pokemongohub.net/post/event/pokemon-go-JANUARY-2026-events/",
+    "featuredPokemon": [
+      "Klawf"
+    ]
   },
   {
     "id": "hist-kyurem-fusion-raid-day",
@@ -49,7 +130,10 @@
     "poster": "/posters/hist-kyurem-fusion-raid-day.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/event/pokemon-go-JANUARY-2026-events/"
+    "source": "https://pokemongohub.net/post/event/pokemon-go-JANUARY-2026-events/",
+    "featuredPokemon": [
+      "Mewtwo"
+    ]
   },
   {
     "id": "hist-australian-open-2026",
@@ -65,6 +149,21 @@
     "source": "https://pokemongohub.net/post/event/pokemon-go-JANUARY-2026-events/"
   },
   {
+    "id": "historic-max-01-12-caterpie",
+    "start": "2026-01-12",
+    "end": "2026-01-18",
+    "name": "Dynamax Caterpie • Weekly Max Battles",
+    "category": "max-battle-rotation",
+    "featuredPokemon": [
+      "Dynamax Caterpie"
+    ],
+    "detail": "Historical weekly Power Spot Max Battle rotation: Dynamax Caterpie. Max Monday features the same weekly boss; Power Spot availability and timings are subject to event rules.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-JANUARY-2026-events/",
+    "poster": "/posters/historic-max-01-12-caterpie.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the weekly Max Battle Pokémon."
+  },
+  {
     "id": "hist-high-zaptitude",
     "start": "2026-01-13",
     "end": "2026-01-18",
@@ -75,7 +174,40 @@
     "poster": "/posters/hist-high-zaptitude.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/event/pokemon-go-JANUARY-2026-events/"
+    "source": "https://pokemongohub.net/post/event/pokemon-go-JANUARY-2026-events/",
+    "featuredPokemon": [
+      "Fidough"
+    ]
+  },
+  {
+    "id": "historic-raid-01-16-5-raids-thundurus",
+    "start": "2026-01-16",
+    "end": "2026-01-25",
+    "name": "5★ Raids • Thundurus",
+    "category": "raid",
+    "featuredPokemon": [
+      "Thundurus"
+    ],
+    "detail": "Historical 5★ raids rotation featuring Thundurus. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-JANUARY-2026-events/",
+    "poster": "/posters/historic-raid-01-16-5-raids-thundurus.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
+    "id": "historic-raid-01-16-mega-raids-mega-sceptile",
+    "start": "2026-01-16",
+    "end": "2026-01-25",
+    "name": "Mega Raids • Mega Sceptile",
+    "category": "raid",
+    "featuredPokemon": [
+      "Mega Sceptile"
+    ],
+    "detail": "Historical mega raids rotation featuring Mega Sceptile. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-JANUARY-2026-events/",
+    "poster": "/posters/historic-raid-01-16-mega-raids-mega-sceptile.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
   },
   {
     "id": "hist-january-2026-community-day-grookey",
@@ -88,7 +220,25 @@
     "poster": "/posters/hist-january-2026-community-day-grookey.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/event/pokemon-go-JANUARY-2026-events/"
+    "source": "https://pokemongohub.net/post/event/pokemon-go-JANUARY-2026-events/",
+    "featuredPokemon": [
+      "Grookey"
+    ]
+  },
+  {
+    "id": "historic-max-01-19-beldum",
+    "start": "2026-01-19",
+    "end": "2026-01-25",
+    "name": "Dynamax Beldum • Weekly Max Battles",
+    "category": "max-battle-rotation",
+    "featuredPokemon": [
+      "Dynamax Beldum"
+    ],
+    "detail": "Historical weekly Power Spot Max Battle rotation: Dynamax Beldum. Max Monday features the same weekly boss; Power Spot availability and timings are subject to event rules.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-JANUARY-2026-events/",
+    "poster": "/posters/historic-max-01-19-beldum.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the weekly Max Battle Pokémon."
   },
   {
     "id": "hist-precious-pals",
@@ -101,7 +251,10 @@
     "poster": "/posters/hist-precious-pals.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/event/pokemon-go-JANUARY-2026-events/"
+    "source": "https://pokemongohub.net/post/event/pokemon-go-JANUARY-2026-events/",
+    "featuredPokemon": [
+      "Eevee"
+    ]
   },
   {
     "id": "hist-precious-pals-taken-over",
@@ -114,7 +267,10 @@
     "poster": "/posters/hist-precious-pals-taken-over.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/event/pokemon-go-JANUARY-2026-events/"
+    "source": "https://pokemongohub.net/post/event/pokemon-go-JANUARY-2026-events/",
+    "featuredPokemon": [
+      "Eevee"
+    ]
   },
   {
     "id": "hist-raikou-shadow-raid-day",
@@ -127,7 +283,55 @@
     "poster": "/posters/hist-raikou-shadow-raid-day.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/event/pokemon-go-JANUARY-2026-events/"
+    "source": "https://pokemongohub.net/post/event/pokemon-go-JANUARY-2026-events/",
+    "featuredPokemon": [
+      "Mewtwo"
+    ]
+  },
+  {
+    "id": "historic-raid-01-25-5-raids-tornadus",
+    "start": "2026-01-25",
+    "end": "2026-02-04",
+    "name": "5★ Raids • Tornadus",
+    "category": "raid",
+    "featuredPokemon": [
+      "Tornadus"
+    ],
+    "detail": "Historical 5★ raids rotation featuring Tornadus. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-JANUARY-2026-events/",
+    "poster": "/posters/historic-raid-01-25-5-raids-tornadus.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
+    "id": "historic-raid-01-25-mega-raids-mega-ampharos",
+    "start": "2026-01-25",
+    "end": "2026-02-04",
+    "name": "Mega Raids • Mega Ampharos",
+    "category": "raid",
+    "featuredPokemon": [
+      "Mega Ampharos"
+    ],
+    "detail": "Historical mega raids rotation featuring Mega Ampharos. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-JANUARY-2026-events/",
+    "poster": "/posters/historic-raid-01-25-mega-raids-mega-ampharos.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
+    "id": "historic-max-01-26-roggenrola",
+    "start": "2026-01-26",
+    "end": "2026-02-01",
+    "name": "Dynamax Roggenrola • Weekly Max Battles",
+    "category": "max-battle-rotation",
+    "featuredPokemon": [
+      "Dynamax Roggenrola"
+    ],
+    "detail": "Historical weekly Power Spot Max Battle rotation: Dynamax Roggenrola. Max Monday features the same weekly boss; Power Spot availability and timings are subject to event rules.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-JANUARY-2026-events/",
+    "poster": "/posters/historic-max-01-26-roggenrola.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the weekly Max Battle Pokémon."
   },
   {
     "id": "hist-into-the-depths",
@@ -140,7 +344,10 @@
     "poster": "/posters/hist-into-the-depths.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/event/pokemon-go-JANUARY-2026-events/"
+    "source": "https://pokemongohub.net/post/event/pokemon-go-JANUARY-2026-events/",
+    "featuredPokemon": [
+      "Glimmet"
+    ]
   },
   {
     "id": "hist-dynamax-ho-oh-max-battle-weekend",
@@ -153,7 +360,25 @@
     "poster": "/posters/hist-dynamax-ho-oh-max-battle-weekend.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/event/pokemon-go-JANUARY-2026-events/"
+    "source": "https://pokemongohub.net/post/event/pokemon-go-JANUARY-2026-events/",
+    "featuredPokemon": [
+      "Pikachu"
+    ]
+  },
+  {
+    "id": "historic-max-02-02-wailmer",
+    "start": "2026-02-02",
+    "end": "2026-02-08",
+    "name": "Dynamax Wailmer • Weekly Max Battles",
+    "category": "max-battle-rotation",
+    "featuredPokemon": [
+      "Dynamax Wailmer"
+    ],
+    "detail": "Historical weekly Power Spot Max Battle rotation: Dynamax Wailmer. Max Monday features the same weekly boss; Power Spot availability and timings are subject to event rules.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-FEBRuary-2026-events/",
+    "poster": "/posters/historic-max-02-02-wailmer.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the weekly Max Battle Pokémon."
   },
   {
     "id": "hist-carnival-of-flamigo",
@@ -166,20 +391,41 @@
     "poster": "/posters/hist-carnival-of-flamigo.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/event/pokemon-go-FEBRuary-2026-events/"
+    "source": "https://pokemongohub.net/post/event/pokemon-go-FEBRuary-2026-events/",
+    "featuredPokemon": [
+      "Flamigo"
+    ]
   },
   {
-    "id": "hist-go-pass-february",
-    "start": "2026-02-03",
-    "end": "2026-03-02",
-    "name": "GO Pass: February",
-    "category": "event",
-    "zone": "",
-    "detail": "Historical GO Pass: February event. Dates are listed in the referenced 2026 event calendar; consult the source for detailed encounters, bonuses, and local schedules.",
-    "poster": "/posters/hist-go-pass-february.svg",
+    "id": "historic-raid-02-04-5-raids-dialga-palkia",
+    "start": "2026-02-04",
+    "end": "2026-02-16",
+    "name": "5★ Raids • Dialga & Palkia",
+    "category": "raid",
+    "featuredPokemon": [
+      "Dialga",
+      "Palkia"
+    ],
+    "detail": "Historical 5★ raids rotation featuring Dialga, Palkia. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-FEBRuary-2026-events/",
+    "poster": "/posters/historic-raid-02-04-5-raids-dialga-palkia.svg",
     "posterType": "custom",
-    "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/event/pokemon-go-FEBRuary-2026-events/"
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
+    "id": "historic-raid-02-04-mega-raids-mega-pidgeot",
+    "start": "2026-02-04",
+    "end": "2026-02-16",
+    "name": "Mega Raids • Mega Pidgeot",
+    "category": "raid",
+    "featuredPokemon": [
+      "Mega Pidgeot"
+    ],
+    "detail": "Historical mega raids rotation featuring Mega Pidgeot. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-FEBRuary-2026-events/",
+    "poster": "/posters/historic-raid-02-04-mega-raids-mega-pidgeot.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
   },
   {
     "id": "hist-oricorio-catch-mastery",
@@ -192,7 +438,25 @@
     "poster": "/posters/hist-oricorio-catch-mastery.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/event/pokemon-go-FEBRuary-2026-events/"
+    "source": "https://pokemongohub.net/post/event/pokemon-go-FEBRuary-2026-events/",
+    "featuredPokemon": [
+      "Oricorio"
+    ]
+  },
+  {
+    "id": "historic-max-02-09-growlithe",
+    "start": "2026-02-09",
+    "end": "2026-02-15",
+    "name": "Dynamax Growlithe • Weekly Max Battles",
+    "category": "max-battle-rotation",
+    "featuredPokemon": [
+      "Dynamax Growlithe"
+    ],
+    "detail": "Historical weekly Power Spot Max Battle rotation: Dynamax Growlithe. Max Monday features the same weekly boss; Power Spot availability and timings are subject to event rules.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-FEBRuary-2026-events/",
+    "poster": "/posters/historic-max-02-09-growlithe.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the weekly Max Battle Pokémon."
   },
   {
     "id": "hist-car-free-day-in-jakarta",
@@ -218,7 +482,10 @@
     "poster": "/posters/hist-therian-forme-enamorus-raid-day.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/event/pokemon-go-FEBRuary-2026-events/"
+    "source": "https://pokemongohub.net/post/event/pokemon-go-FEBRuary-2026-events/",
+    "featuredPokemon": [
+      "Mewtwo"
+    ]
   },
   {
     "id": "hist-gigantamax-meowth-max-battle-day",
@@ -231,7 +498,100 @@
     "poster": "/posters/hist-gigantamax-meowth-max-battle-day.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/event/pokemon-go-FEBRuary-2026-events/"
+    "source": "https://pokemongohub.net/post/event/pokemon-go-FEBRuary-2026-events/",
+    "featuredPokemon": [
+      "Pikachu"
+    ]
+  },
+  {
+    "id": "historic-raid-02-16-5-raids-solgaleo",
+    "start": "2026-02-16",
+    "end": "2026-02-21",
+    "name": "5★ Raids • Solgaleo",
+    "category": "raid",
+    "featuredPokemon": [
+      "Solgaleo"
+    ],
+    "detail": "Historical 5★ raids rotation featuring Solgaleo. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-FEBRuary-2026-events/",
+    "poster": "/posters/historic-raid-02-16-5-raids-solgaleo.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
+    "id": "historic-max-02-16-machop",
+    "start": "2026-02-16",
+    "end": "2026-02-22",
+    "name": "Dynamax Machop • Weekly Max Battles",
+    "category": "max-battle-rotation",
+    "featuredPokemon": [
+      "Dynamax Machop"
+    ],
+    "detail": "Historical weekly Power Spot Max Battle rotation: Dynamax Machop. Max Monday features the same weekly boss; Power Spot availability and timings are subject to event rules.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-FEBRuary-2026-events/",
+    "poster": "/posters/historic-max-02-16-machop.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the weekly Max Battle Pokémon."
+  },
+  {
+    "id": "historic-raid-02-16-mega-raids-mega-sableye",
+    "start": "2026-02-16",
+    "end": "2026-02-21",
+    "name": "Mega Raids • Mega Sableye",
+    "category": "raid",
+    "featuredPokemon": [
+      "Mega Sableye"
+    ],
+    "detail": "Historical mega raids rotation featuring Mega Sableye. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-FEBRuary-2026-events/",
+    "poster": "/posters/historic-raid-02-16-mega-raids-mega-sableye.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
+    "id": "historic-raid-02-21-5-raids-lunala",
+    "start": "2026-02-21",
+    "end": "2026-03-04",
+    "name": "5★ Raids • Lunala",
+    "category": "raid",
+    "featuredPokemon": [
+      "Lunala"
+    ],
+    "detail": "Historical 5★ raids rotation featuring Lunala. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-FEBRuary-2026-events/",
+    "poster": "/posters/historic-raid-02-21-5-raids-lunala.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
+    "id": "historic-raid-02-21-mega-raids-mega-absol",
+    "start": "2026-02-21",
+    "end": "2026-03-04",
+    "name": "Mega Raids • Mega Absol",
+    "category": "raid",
+    "featuredPokemon": [
+      "Mega Absol"
+    ],
+    "detail": "Historical mega raids rotation featuring Mega Absol. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-FEBRuary-2026-events/",
+    "poster": "/posters/historic-raid-02-21-mega-raids-mega-absol.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
+    "id": "historic-max-02-23-chansey",
+    "start": "2026-02-23",
+    "end": "2026-03-01",
+    "name": "Dynamax Chansey • Weekly Max Battles",
+    "category": "max-battle-rotation",
+    "featuredPokemon": [
+      "Dynamax Chansey"
+    ],
+    "detail": "Historical weekly Power Spot Max Battle rotation: Dynamax Chansey. Max Monday features the same weekly boss; Power Spot availability and timings are subject to event rules.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-FEBRuary-2026-events/",
+    "poster": "/posters/historic-max-02-23-chansey.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the weekly Max Battle Pokémon."
   },
   {
     "id": "hist-road-to-kalos",
@@ -260,17 +620,19 @@
     "source": "https://pokemongohub.net/post/event/pokemon-go-FEBRuary-2026-events/"
   },
   {
-    "id": "hist-go-pass-march",
-    "start": "2026-03-03",
-    "end": "2026-03-30",
-    "name": "GO Pass: March",
-    "category": "event",
-    "zone": "",
-    "detail": "Historical GO Pass: March event. Dates are listed in the referenced 2026 event calendar; consult the source for detailed encounters, bonuses, and local schedules.",
-    "poster": "/posters/hist-go-pass-march.svg",
+    "id": "historic-max-03-02-rookidee",
+    "start": "2026-03-02",
+    "end": "2026-03-08",
+    "name": "Dynamax Rookidee • Weekly Max Battles",
+    "category": "max-battle-rotation",
+    "featuredPokemon": [
+      "Dynamax Rookidee"
+    ],
+    "detail": "Historical weekly Power Spot Max Battle rotation: Dynamax Rookidee. Max Monday features the same weekly boss; Power Spot availability and timings are subject to event rules.",
+    "source": "https://pokemongohub.net/post/news/pokemon-go-march-2026-events/",
+    "poster": "/posters/historic-max-03-02-rookidee.svg",
     "posterType": "custom",
-    "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemon.gameinfo.io/en/events"
+    "posterNote": "AlfaMitsu visual archive guide featuring the weekly Max Battle Pokémon."
   },
   {
     "id": "hist-pokemon-30th-anniversary",
@@ -283,7 +645,10 @@
     "poster": "/posters/hist-pokemon-30th-anniversary.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemon.gameinfo.io/en/events"
+    "source": "https://pokemon.gameinfo.io/en/events",
+    "featuredPokemon": [
+      "Pikachu"
+    ]
   },
   {
     "id": "hist-festival-of-colors-regional",
@@ -299,6 +664,53 @@
     "source": "https://pokemon.gameinfo.io/en/events"
   },
   {
+    "id": "historic-raid-03-04-weekend-shadow-raids-shadow-latias",
+    "start": "2026-03-04",
+    "end": "2026-03-31",
+    "name": "Weekend Shadow Raids • Shadow Latias",
+    "category": "raid",
+    "featuredPokemon": [
+      "Shadow Latias"
+    ],
+    "detail": "Historical weekend shadow raids rotation featuring Shadow Latias. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates. Five-star Shadow raids are primarily on weekends.",
+    "source": "https://pokemongohub.net/post/news/pokemon-go-march-2026-events/",
+    "poster": "/posters/historic-raid-03-04-weekend-shadow-raids-shadow-latias.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
+    "id": "historic-raid-03-05-5-raids-articuno-zapdos-moltres",
+    "start": "2026-03-05",
+    "end": "2026-03-10",
+    "name": "5★ Raids • Articuno & Zapdos & Moltres",
+    "category": "raid",
+    "featuredPokemon": [
+      "Articuno",
+      "Zapdos",
+      "Moltres"
+    ],
+    "detail": "Historical 5★ raids rotation featuring Articuno, Zapdos, Moltres. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/news/pokemon-go-march-2026-events/",
+    "poster": "/posters/historic-raid-03-05-5-raids-articuno-zapdos-moltres.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
+    "id": "historic-raid-03-05-mega-raids-mega-pinsir",
+    "start": "2026-03-05",
+    "end": "2026-03-10",
+    "name": "Mega Raids • Mega Pinsir",
+    "category": "raid",
+    "featuredPokemon": [
+      "Mega Pinsir"
+    ],
+    "detail": "Historical mega raids rotation featuring Mega Pinsir. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/news/pokemon-go-march-2026-events/",
+    "poster": "/posters/historic-raid-03-05-mega-raids-mega-pinsir.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
     "id": "hist-pokemon-30th-anniversary-all-out",
     "start": "2026-03-07",
     "end": "2026-03-08",
@@ -309,7 +721,25 @@
     "poster": "/posters/hist-pokemon-30th-anniversary-all-out.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemon.gameinfo.io/en/events"
+    "source": "https://pokemon.gameinfo.io/en/events",
+    "featuredPokemon": [
+      "Pikachu"
+    ]
+  },
+  {
+    "id": "historic-max-03-09-pikachu",
+    "start": "2026-03-09",
+    "end": "2026-03-15",
+    "name": "Dynamax Pikachu • Weekly Max Battles",
+    "category": "max-battle-rotation",
+    "featuredPokemon": [
+      "Dynamax Pikachu"
+    ],
+    "detail": "Historical weekly Power Spot Max Battle rotation: Dynamax Pikachu. Max Monday features the same weekly boss; Power Spot availability and timings are subject to event rules.",
+    "source": "https://pokemongohub.net/post/news/pokemon-go-march-2026-events/",
+    "poster": "/posters/historic-max-03-09-pikachu.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the weekly Max Battle Pokémon."
   },
   {
     "id": "hist-pokemon-pokopia-celebration-event",
@@ -322,7 +752,40 @@
     "poster": "/posters/hist-pokemon-pokopia-celebration-event.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemon.gameinfo.io/en/events"
+    "source": "https://pokemon.gameinfo.io/en/events",
+    "featuredPokemon": [
+      "Ditto"
+    ]
+  },
+  {
+    "id": "historic-raid-03-11-5-raids-zacian",
+    "start": "2026-03-11",
+    "end": "2026-03-17",
+    "name": "5★ Raids • Zacian",
+    "category": "raid",
+    "featuredPokemon": [
+      "Zacian"
+    ],
+    "detail": "Historical 5★ raids rotation featuring Zacian. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/news/pokemon-go-march-2026-events/",
+    "poster": "/posters/historic-raid-03-11-5-raids-zacian.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
+    "id": "historic-raid-03-11-mega-raids-mega-steelix",
+    "start": "2026-03-11",
+    "end": "2026-03-17",
+    "name": "Mega Raids • Mega Steelix",
+    "category": "raid",
+    "featuredPokemon": [
+      "Mega Steelix"
+    ],
+    "detail": "Historical mega raids rotation featuring Mega Steelix. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/news/pokemon-go-march-2026-events/",
+    "poster": "/posters/historic-raid-03-11-mega-raids-mega-steelix.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
   },
   {
     "id": "hist-march-2026-community-day-scorbunny",
@@ -335,7 +798,25 @@
     "poster": "/posters/hist-march-2026-community-day-scorbunny.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemon.gameinfo.io/en/events"
+    "source": "https://pokemon.gameinfo.io/en/events",
+    "featuredPokemon": [
+      "Scorbunny"
+    ]
+  },
+  {
+    "id": "historic-max-03-16-falinks",
+    "start": "2026-03-16",
+    "end": "2026-03-22",
+    "name": "Dynamax Falinks • Weekly Max Battles",
+    "category": "max-battle-rotation",
+    "featuredPokemon": [
+      "Dynamax Falinks"
+    ],
+    "detail": "Historical weekly Power Spot Max Battle rotation: Dynamax Falinks. Max Monday features the same weekly boss; Power Spot availability and timings are subject to event rules.",
+    "source": "https://pokemongohub.net/post/news/pokemon-go-march-2026-events/",
+    "poster": "/posters/historic-max-03-16-falinks.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the weekly Max Battle Pokémon."
   },
   {
     "id": "hist-night-treats-regional",
@@ -361,7 +842,40 @@
     "poster": "/posters/hist-bug-out-2026.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemon.gameinfo.io/en/events"
+    "source": "https://pokemon.gameinfo.io/en/events",
+    "featuredPokemon": [
+      "Blipbug"
+    ]
+  },
+  {
+    "id": "historic-raid-03-18-5-raids-zamazenta",
+    "start": "2026-03-18",
+    "end": "2026-03-24",
+    "name": "5★ Raids • Zamazenta",
+    "category": "raid",
+    "featuredPokemon": [
+      "Zamazenta"
+    ],
+    "detail": "Historical 5★ raids rotation featuring Zamazenta. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/news/pokemon-go-march-2026-events/",
+    "poster": "/posters/historic-raid-03-18-5-raids-zamazenta.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
+    "id": "historic-raid-03-18-mega-raids-mega-slowbro",
+    "start": "2026-03-18",
+    "end": "2026-03-24",
+    "name": "Mega Raids • Mega Slowbro",
+    "category": "raid",
+    "featuredPokemon": [
+      "Mega Slowbro"
+    ],
+    "detail": "Historical mega raids rotation featuring Mega Slowbro. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/news/pokemon-go-march-2026-events/",
+    "poster": "/posters/historic-raid-03-18-mega-raids-mega-slowbro.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
   },
   {
     "id": "hist-replay-water-research-day",
@@ -377,6 +891,51 @@
     "source": "https://pokemon.gameinfo.io/en/events"
   },
   {
+    "id": "historic-max-03-23-regice",
+    "start": "2026-03-23",
+    "end": "2026-03-29",
+    "name": "Dynamax Regice • Weekly Max Battles",
+    "category": "max-battle-rotation",
+    "featuredPokemon": [
+      "Dynamax Regice"
+    ],
+    "detail": "Historical weekly Power Spot Max Battle rotation: Dynamax Regice. Max Monday features the same weekly boss; Power Spot availability and timings are subject to event rules.",
+    "source": "https://pokemongohub.net/post/news/pokemon-go-march-2026-events/",
+    "poster": "/posters/historic-max-03-23-regice.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the weekly Max Battle Pokémon."
+  },
+  {
+    "id": "historic-raid-03-25-5-raids-regieleki",
+    "start": "2026-03-25",
+    "end": "2026-03-31",
+    "name": "5★ Raids • Regieleki",
+    "category": "raid",
+    "featuredPokemon": [
+      "Regieleki"
+    ],
+    "detail": "Historical 5★ raids rotation featuring Regieleki. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/news/pokemon-go-march-2026-events/",
+    "poster": "/posters/historic-raid-03-25-5-raids-regieleki.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
+    "id": "historic-raid-03-25-mega-raids-mega-houndoom",
+    "start": "2026-03-25",
+    "end": "2026-03-31",
+    "name": "Mega Raids • Mega Houndoom",
+    "category": "raid",
+    "featuredPokemon": [
+      "Mega Houndoom"
+    ],
+    "detail": "Historical mega raids rotation featuring Mega Houndoom. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/news/pokemon-go-march-2026-events/",
+    "poster": "/posters/historic-raid-03-25-mega-raids-mega-houndoom.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
     "id": "hist-gigantamax-pikachu-max-battle-day",
     "start": "2026-03-28",
     "end": "2026-03-28",
@@ -387,7 +946,25 @@
     "poster": "/posters/hist-gigantamax-pikachu-max-battle-day.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemon.gameinfo.io/en/events"
+    "source": "https://pokemon.gameinfo.io/en/events",
+    "featuredPokemon": [
+      "Pikachu"
+    ]
+  },
+  {
+    "id": "historic-max-03-30-woobat",
+    "start": "2026-03-30",
+    "end": "2026-04-05",
+    "name": "Dynamax Woobat • Weekly Max Battles",
+    "category": "max-battle-rotation",
+    "featuredPokemon": [
+      "Dynamax Woobat"
+    ],
+    "detail": "Historical weekly Power Spot Max Battle rotation: Dynamax Woobat. Max Monday features the same weekly boss; Power Spot availability and timings are subject to event rules.",
+    "source": "https://pokemongohub.net/post/news/pokemon-go-march-2026-events/",
+    "poster": "/posters/historic-max-03-30-woobat.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the weekly Max Battle Pokémon."
   },
   {
     "id": "hist-a-shockingly-good-time",
@@ -403,6 +980,51 @@
     "source": "https://pokemon.gameinfo.io/en/events"
   },
   {
+    "id": "historic-raid-04-01-5-raids-regidrago",
+    "start": "2026-04-01",
+    "end": "2026-04-07",
+    "name": "5★ Raids • Regidrago",
+    "category": "raid",
+    "featuredPokemon": [
+      "Regidrago"
+    ],
+    "detail": "Historical 5★ raids rotation featuring Regidrago. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-april-2026-events/",
+    "poster": "/posters/historic-raid-04-01-5-raids-regidrago.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
+    "id": "historic-raid-04-01-mega-raids-mega-manectric",
+    "start": "2026-04-01",
+    "end": "2026-04-07",
+    "name": "Mega Raids • Mega Manectric",
+    "category": "raid",
+    "featuredPokemon": [
+      "Mega Manectric"
+    ],
+    "detail": "Historical mega raids rotation featuring Mega Manectric. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-april-2026-events/",
+    "poster": "/posters/historic-raid-04-01-mega-raids-mega-manectric.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
+    "id": "historic-raid-04-01-weekend-shadow-raids-shadow-latios",
+    "start": "2026-04-01",
+    "end": "2026-05-05",
+    "name": "Weekend Shadow Raids • Shadow Latios",
+    "category": "raid",
+    "featuredPokemon": [
+      "Shadow Latios"
+    ],
+    "detail": "Historical weekend shadow raids rotation featuring Shadow Latios. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates. Five-star Shadow raids are primarily on weekends.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-april-2026-events/",
+    "poster": "/posters/historic-raid-04-01-weekend-shadow-raids-shadow-latios.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
     "id": "hist-an-egg-cellent-adventure-regional",
     "start": "2026-04-02",
     "end": "2026-04-02",
@@ -413,7 +1035,10 @@
     "poster": "/posters/hist-an-egg-cellent-adventure-regional.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemon.gameinfo.io/en/events"
+    "source": "https://pokemon.gameinfo.io/en/events",
+    "featuredPokemon": [
+      "Riolu"
+    ]
   },
   {
     "id": "hist-fashion-raid-day",
@@ -426,20 +1051,56 @@
     "poster": "/posters/hist-fashion-raid-day.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemon.gameinfo.io/en/events"
+    "source": "https://pokemon.gameinfo.io/en/events",
+    "featuredPokemon": [
+      "Dragonite",
+      "Butterfree"
+    ]
   },
   {
-    "id": "hist-go-pass-april",
-    "start": "2026-04-07",
-    "end": "2026-05-04",
-    "name": "GO Pass: April",
-    "category": "event",
-    "zone": "",
-    "detail": "Historical GO Pass: April event. Dates are listed in the referenced 2026 event calendar; consult the source for detailed encounters, bonuses, and local schedules.",
-    "poster": "/posters/hist-go-pass-april.svg",
+    "id": "historic-max-04-06-trapinch",
+    "start": "2026-04-06",
+    "end": "2026-04-12",
+    "name": "Dynamax Trapinch • Weekly Max Battles",
+    "category": "max-battle-rotation",
+    "featuredPokemon": [
+      "Dynamax Trapinch"
+    ],
+    "detail": "Historical weekly Power Spot Max Battle rotation: Dynamax Trapinch. Max Monday features the same weekly boss; Power Spot availability and timings are subject to event rules.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-april-2026-events/",
+    "poster": "/posters/historic-max-04-06-trapinch.svg",
     "posterType": "custom",
-    "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemon.gameinfo.io/en/events"
+    "posterNote": "AlfaMitsu visual archive guide featuring the weekly Max Battle Pokémon."
+  },
+  {
+    "id": "historic-raid-04-08-5-raids-kyogre",
+    "start": "2026-04-08",
+    "end": "2026-04-14",
+    "name": "5★ Raids • Kyogre",
+    "category": "raid",
+    "featuredPokemon": [
+      "Kyogre"
+    ],
+    "detail": "Historical 5★ raids rotation featuring Kyogre. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-april-2026-events/",
+    "poster": "/posters/historic-raid-04-08-5-raids-kyogre.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
+    "id": "historic-raid-04-08-mega-raids-mega-aerodactyl",
+    "start": "2026-04-08",
+    "end": "2026-04-14",
+    "name": "Mega Raids • Mega Aerodactyl",
+    "category": "raid",
+    "featuredPokemon": [
+      "Mega Aerodactyl"
+    ],
+    "detail": "Historical mega raids rotation featuring Mega Aerodactyl. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-april-2026-events/",
+    "poster": "/posters/historic-raid-04-08-mega-raids-mega-aerodactyl.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
   },
   {
     "id": "hist-april-2026-community-day-tinkatink",
@@ -452,7 +1113,25 @@
     "poster": "/posters/hist-april-2026-community-day-tinkatink.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemon.gameinfo.io/en/events"
+    "source": "https://pokemon.gameinfo.io/en/events",
+    "featuredPokemon": [
+      "Tinkatink"
+    ]
+  },
+  {
+    "id": "historic-max-04-13-drilbur",
+    "start": "2026-04-13",
+    "end": "2026-04-19",
+    "name": "Dynamax Drilbur • Weekly Max Battles",
+    "category": "max-battle-rotation",
+    "featuredPokemon": [
+      "Dynamax Drilbur"
+    ],
+    "detail": "Historical weekly Power Spot Max Battle rotation: Dynamax Drilbur. Max Monday features the same weekly boss; Power Spot availability and timings are subject to event rules.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-april-2026-events/",
+    "poster": "/posters/historic-max-04-13-drilbur.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the weekly Max Battle Pokémon."
   },
   {
     "id": "hist-sustainability-week-2026",
@@ -465,7 +1144,40 @@
     "poster": "/posters/hist-sustainability-week-2026.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemon.gameinfo.io/en/events"
+    "source": "https://pokemon.gameinfo.io/en/events",
+    "featuredPokemon": [
+      "Silicobra"
+    ]
+  },
+  {
+    "id": "historic-raid-04-15-5-raids-groudon",
+    "start": "2026-04-15",
+    "end": "2026-04-21",
+    "name": "5★ Raids • Groudon",
+    "category": "raid",
+    "featuredPokemon": [
+      "Groudon"
+    ],
+    "detail": "Historical 5★ raids rotation featuring Groudon. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-april-2026-events/",
+    "poster": "/posters/historic-raid-04-15-5-raids-groudon.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
+    "id": "historic-raid-04-15-mega-raids-mega-alakazam",
+    "start": "2026-04-15",
+    "end": "2026-04-21",
+    "name": "Mega Raids • Mega Alakazam",
+    "category": "raid",
+    "featuredPokemon": [
+      "Mega Alakazam"
+    ],
+    "detail": "Historical mega raids rotation featuring Mega Alakazam. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-april-2026-events/",
+    "poster": "/posters/historic-raid-04-15-mega-raids-mega-alakazam.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
   },
   {
     "id": "hist-replay-riolu-hatch-day",
@@ -478,7 +1190,55 @@
     "poster": "/posters/hist-replay-riolu-hatch-day.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemon.gameinfo.io/en/events"
+    "source": "https://pokemon.gameinfo.io/en/events",
+    "featuredPokemon": [
+      "Riolu"
+    ]
+  },
+  {
+    "id": "historic-max-04-20-regirock",
+    "start": "2026-04-20",
+    "end": "2026-04-26",
+    "name": "Dynamax Regirock • Weekly Max Battles",
+    "category": "max-battle-rotation",
+    "featuredPokemon": [
+      "Dynamax Regirock"
+    ],
+    "detail": "Historical weekly Power Spot Max Battle rotation: Dynamax Regirock. Max Monday features the same weekly boss; Power Spot availability and timings are subject to event rules.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-april-2026-events/",
+    "poster": "/posters/historic-max-04-20-regirock.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the weekly Max Battle Pokémon."
+  },
+  {
+    "id": "historic-raid-04-22-5-raids-tapu-koko",
+    "start": "2026-04-22",
+    "end": "2026-04-28",
+    "name": "5★ Raids • Tapu Koko",
+    "category": "raid",
+    "featuredPokemon": [
+      "Tapu Koko"
+    ],
+    "detail": "Historical 5★ raids rotation featuring Tapu Koko. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-april-2026-events/",
+    "poster": "/posters/historic-raid-04-22-5-raids-tapu-koko.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
+    "id": "historic-raid-04-22-mega-raids-mega-sharpedo",
+    "start": "2026-04-22",
+    "end": "2026-04-28",
+    "name": "Mega Raids • Mega Sharpedo",
+    "category": "raid",
+    "featuredPokemon": [
+      "Mega Sharpedo"
+    ],
+    "detail": "Historical mega raids rotation featuring Mega Sharpedo. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-april-2026-events/",
+    "poster": "/posters/historic-raid-04-22-mega-raids-mega-sharpedo.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
   },
   {
     "id": "hist-replay-go-bigger",
@@ -491,7 +1251,26 @@
     "poster": "/posters/hist-replay-go-bigger.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemon.gameinfo.io/en/events"
+    "source": "https://pokemon.gameinfo.io/en/events",
+    "featuredPokemon": [
+      "Gigantamax Charizard",
+      "Gigantamax Venusaur"
+    ]
+  },
+  {
+    "id": "historic-max-04-27-shuckle",
+    "start": "2026-04-27",
+    "end": "2026-05-03",
+    "name": "Dynamax Shuckle • Weekly Max Battles",
+    "category": "max-battle-rotation",
+    "featuredPokemon": [
+      "Dynamax Shuckle"
+    ],
+    "detail": "Historical weekly Power Spot Max Battle rotation: Dynamax Shuckle. Max Monday features the same weekly boss; Power Spot availability and timings are subject to event rules.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-april-2026-events/",
+    "poster": "/posters/historic-max-04-27-shuckle.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the weekly Max Battle Pokémon."
   },
   {
     "id": "hist-steeled-resolve",
@@ -504,7 +1283,40 @@
     "poster": "/posters/hist-steeled-resolve.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemon.gameinfo.io/en/events"
+    "source": "https://pokemon.gameinfo.io/en/events",
+    "featuredPokemon": [
+      "Orthworm"
+    ]
+  },
+  {
+    "id": "historic-raid-04-29-5-raids-tapu-lele",
+    "start": "2026-04-29",
+    "end": "2026-05-05",
+    "name": "5★ Raids • Tapu Lele",
+    "category": "raid",
+    "featuredPokemon": [
+      "Tapu Lele"
+    ],
+    "detail": "Historical 5★ raids rotation featuring Tapu Lele. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-april-2026-events/",
+    "poster": "/posters/historic-raid-04-29-5-raids-tapu-lele.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
+    "id": "historic-raid-04-29-mega-raids-mega-banette",
+    "start": "2026-04-29",
+    "end": "2026-05-05",
+    "name": "Mega Raids • Mega Banette",
+    "category": "raid",
+    "featuredPokemon": [
+      "Mega Banette"
+    ],
+    "detail": "Historical mega raids rotation featuring Mega Banette. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-april-2026-events/",
+    "poster": "/posters/historic-raid-04-29-mega-raids-mega-banette.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
   },
   {
     "id": "hist-steeled-resolve-taken-over",
@@ -517,7 +1329,10 @@
     "poster": "/posters/hist-steeled-resolve-taken-over.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemon.gameinfo.io/en/events"
+    "source": "https://pokemon.gameinfo.io/en/events",
+    "featuredPokemon": [
+      "Orthworm"
+    ]
   },
   {
     "id": "hist-entei-shadow-raid-day",
@@ -530,20 +1345,70 @@
     "poster": "/posters/hist-entei-shadow-raid-day.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemon.gameinfo.io/en/events"
+    "source": "https://pokemon.gameinfo.io/en/events",
+    "featuredPokemon": [
+      "Mewtwo"
+    ]
   },
   {
-    "id": "hist-go-pass-may",
-    "start": "2026-05-05",
-    "end": "2026-06-01",
-    "name": "GO Pass: May",
-    "category": "event",
-    "zone": "",
-    "detail": "Historical GO Pass: May event. Dates are listed in the referenced 2026 event calendar; consult the source for detailed encounters, bonuses, and local schedules.",
-    "poster": "/posters/hist-go-pass-may.svg",
+    "id": "historic-max-05-04-cottonee",
+    "start": "2026-05-04",
+    "end": "2026-05-10",
+    "name": "Dynamax Cottonee • Weekly Max Battles",
+    "category": "max-battle-rotation",
+    "featuredPokemon": [
+      "Dynamax Cottonee"
+    ],
+    "detail": "Historical weekly Power Spot Max Battle rotation: Dynamax Cottonee. Max Monday features the same weekly boss; Power Spot availability and timings are subject to event rules.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-may-2026-events/",
+    "poster": "/posters/historic-max-05-04-cottonee.svg",
     "posterType": "custom",
-    "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemon.gameinfo.io/en/events"
+    "posterNote": "AlfaMitsu visual archive guide featuring the weekly Max Battle Pokémon."
+  },
+  {
+    "id": "historic-raid-05-06-5-raids-nihilego",
+    "start": "2026-05-06",
+    "end": "2026-05-12",
+    "name": "5★ Raids • Nihilego",
+    "category": "raid",
+    "featuredPokemon": [
+      "Nihilego"
+    ],
+    "detail": "Historical 5★ raids rotation featuring Nihilego. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-may-2026-events/",
+    "poster": "/posters/historic-raid-05-06-5-raids-nihilego.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
+    "id": "historic-raid-05-06-mega-raids-mega-camerupt",
+    "start": "2026-05-06",
+    "end": "2026-05-12",
+    "name": "Mega Raids • Mega Camerupt",
+    "category": "raid",
+    "featuredPokemon": [
+      "Mega Camerupt"
+    ],
+    "detail": "Historical mega raids rotation featuring Mega Camerupt. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-may-2026-events/",
+    "poster": "/posters/historic-raid-05-06-mega-raids-mega-camerupt.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
+    "id": "historic-raid-05-06-weekend-shadow-raids-shadow-cresselia",
+    "start": "2026-05-06",
+    "end": "2026-06-02",
+    "name": "Weekend Shadow Raids • Shadow Cresselia",
+    "category": "raid",
+    "featuredPokemon": [
+      "Shadow Cresselia"
+    ],
+    "detail": "Historical weekend shadow raids rotation featuring Shadow Cresselia. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates. Five-star Shadow raids are primarily on weekends.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-may-2026-events/",
+    "poster": "/posters/historic-raid-05-06-weekend-shadow-raids-shadow-cresselia.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
   },
   {
     "id": "hist-may-2026-community-day-lechonk",
@@ -556,7 +1421,25 @@
     "poster": "/posters/hist-may-2026-community-day-lechonk.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemon.gameinfo.io/en/events"
+    "source": "https://pokemon.gameinfo.io/en/events",
+    "featuredPokemon": [
+      "Lechonk"
+    ]
+  },
+  {
+    "id": "historic-max-05-11-growlithe",
+    "start": "2026-05-11",
+    "end": "2026-05-17",
+    "name": "Dynamax Growlithe • Weekly Max Battles",
+    "category": "max-battle-rotation",
+    "featuredPokemon": [
+      "Dynamax Growlithe"
+    ],
+    "detail": "Historical weekly Power Spot Max Battle rotation: Dynamax Growlithe. Max Monday features the same weekly boss; Power Spot availability and timings are subject to event rules.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-may-2026-events/",
+    "poster": "/posters/historic-max-05-11-growlithe.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the weekly Max Battle Pokémon."
   },
   {
     "id": "hist-spring-marathon",
@@ -569,7 +1452,42 @@
     "poster": "/posters/hist-spring-marathon.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemon.gameinfo.io/en/events"
+    "source": "https://pokemon.gameinfo.io/en/events",
+    "featuredPokemon": [
+      "Flittle"
+    ]
+  },
+  {
+    "id": "historic-raid-05-13-mega-raids-mega-glalie",
+    "start": "2026-05-13",
+    "end": "2026-05-19",
+    "name": "Mega Raids • Mega Glalie",
+    "category": "raid",
+    "featuredPokemon": [
+      "Mega Glalie"
+    ],
+    "detail": "Historical mega raids rotation featuring Mega Glalie. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-may-2026-events/",
+    "poster": "/posters/historic-raid-05-13-mega-raids-mega-glalie.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
+    "id": "historic-raid-05-13-regional-5-raids-pheromosa-buzzwole-xurkitree",
+    "start": "2026-05-13",
+    "end": "2026-05-19",
+    "name": "Regional 5★ Raids • Pheromosa & Buzzwole & Xurkitree",
+    "category": "raid",
+    "featuredPokemon": [
+      "Pheromosa",
+      "Buzzwole",
+      "Xurkitree"
+    ],
+    "detail": "Historical regional 5★ raids rotation featuring Pheromosa, Buzzwole, Xurkitree. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates. Regional distribution differs by geographic area.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-may-2026-events/",
+    "poster": "/posters/historic-raid-05-13-regional-5-raids-pheromosa-buzzwole-xurkitree.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
   },
   {
     "id": "hist-may-2026-community-day-classic-deino",
@@ -582,7 +1500,55 @@
     "poster": "/posters/hist-may-2026-community-day-classic-deino.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemon.gameinfo.io/en/events"
+    "source": "https://pokemon.gameinfo.io/en/events",
+    "featuredPokemon": [
+      "Deino"
+    ]
+  },
+  {
+    "id": "historic-max-05-18-registeel",
+    "start": "2026-05-18",
+    "end": "2026-05-24",
+    "name": "Dynamax Registeel • Weekly Max Battles",
+    "category": "max-battle-rotation",
+    "featuredPokemon": [
+      "Dynamax Registeel"
+    ],
+    "detail": "Historical weekly Power Spot Max Battle rotation: Dynamax Registeel. Max Monday features the same weekly boss; Power Spot availability and timings are subject to event rules.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-may-2026-events/",
+    "poster": "/posters/historic-max-05-18-registeel.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the weekly Max Battle Pokémon."
+  },
+  {
+    "id": "historic-raid-05-20-5-raids-tapu-bulu",
+    "start": "2026-05-20",
+    "end": "2026-05-26",
+    "name": "5★ Raids • Tapu Bulu",
+    "category": "raid",
+    "featuredPokemon": [
+      "Tapu Bulu"
+    ],
+    "detail": "Historical 5★ raids rotation featuring Tapu Bulu. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-may-2026-events/",
+    "poster": "/posters/historic-raid-05-20-5-raids-tapu-bulu.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
+    "id": "historic-raid-05-20-mega-raids-mega-altaria",
+    "start": "2026-05-20",
+    "end": "2026-05-26",
+    "name": "Mega Raids • Mega Altaria",
+    "category": "raid",
+    "featuredPokemon": [
+      "Mega Altaria"
+    ],
+    "detail": "Historical mega raids rotation featuring Mega Altaria. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-may-2026-events/",
+    "poster": "/posters/historic-raid-05-20-mega-raids-mega-altaria.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
   },
   {
     "id": "hist-pokemon-fossil-museum-chicago",
@@ -608,7 +1574,25 @@
     "poster": "/posters/hist-falinks-super-mega-raid-day.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemon.gameinfo.io/en/events"
+    "source": "https://pokemon.gameinfo.io/en/events",
+    "featuredPokemon": [
+      "Mewtwo"
+    ]
+  },
+  {
+    "id": "historic-max-05-25-combee",
+    "start": "2026-05-25",
+    "end": "2026-05-31",
+    "name": "Dynamax Combee • Weekly Max Battles",
+    "category": "max-battle-rotation",
+    "featuredPokemon": [
+      "Dynamax Combee"
+    ],
+    "detail": "Historical weekly Power Spot Max Battle rotation: Dynamax Combee. Max Monday features the same weekly boss; Power Spot availability and timings are subject to event rules.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-may-2026-events/",
+    "poster": "/posters/historic-max-05-25-combee.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the weekly Max Battle Pokémon."
   },
   {
     "id": "hist-blanche-s-quest-for-knowledge",
@@ -621,20 +1605,55 @@
     "poster": "/posters/hist-blanche-s-quest-for-knowledge.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemon.gameinfo.io/en/events"
+    "source": "https://pokemon.gameinfo.io/en/events",
+    "featuredPokemon": [
+      "Lapras"
+    ]
   },
   {
-    "id": "hist-go-pass-june",
-    "start": "2026-06-02",
-    "end": "2026-06-29",
-    "name": "GO Pass: June",
-    "category": "event",
-    "zone": "",
-    "detail": "Historical GO Pass: June event. Dates are listed in the referenced 2026 event calendar; consult the source for detailed encounters, bonuses, and local schedules.",
-    "poster": "/posters/hist-go-pass-june.svg",
+    "id": "historic-raid-05-27-5-raids-tapu-fini",
+    "start": "2026-05-27",
+    "end": "2026-06-02",
+    "name": "5★ Raids • Tapu Fini",
+    "category": "raid",
+    "featuredPokemon": [
+      "Tapu Fini"
+    ],
+    "detail": "Historical 5★ raids rotation featuring Tapu Fini. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-may-2026-events/",
+    "poster": "/posters/historic-raid-05-27-5-raids-tapu-fini.svg",
     "posterType": "custom",
-    "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/event/june-2026-pokemon-go-events/"
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
+    "id": "historic-raid-05-27-mega-raids-mega-medicham",
+    "start": "2026-05-27",
+    "end": "2026-06-02",
+    "name": "Mega Raids • Mega Medicham",
+    "category": "raid",
+    "featuredPokemon": [
+      "Mega Medicham"
+    ],
+    "detail": "Historical mega raids rotation featuring Mega Medicham. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-may-2026-events/",
+    "poster": "/posters/historic-raid-05-27-mega-raids-mega-medicham.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
+    "id": "historic-max-06-01-inkay",
+    "start": "2026-06-01",
+    "end": "2026-06-07",
+    "name": "Dynamax Inkay • Weekly Max Battles",
+    "category": "max-battle-rotation",
+    "featuredPokemon": [
+      "Dynamax Inkay"
+    ],
+    "detail": "Historical weekly Power Spot Max Battle rotation: Dynamax Inkay. Max Monday features the same weekly boss; Power Spot availability and timings are subject to event rules.",
+    "source": "https://pokemongohub.net/post/event/june-2026-pokemon-go-events/",
+    "poster": "/posters/historic-max-06-01-inkay.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the weekly Max Battle Pokémon."
   },
   {
     "id": "hist-spark-s-caretaking-quest",
@@ -647,7 +1666,55 @@
     "poster": "/posters/hist-spark-s-caretaking-quest.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/event/june-2026-pokemon-go-events/"
+    "source": "https://pokemongohub.net/post/event/june-2026-pokemon-go-events/",
+    "featuredPokemon": [
+      "Eevee"
+    ]
+  },
+  {
+    "id": "historic-raid-06-02-weekend-shadow-raids-shadow-dialga",
+    "start": "2026-06-02",
+    "end": "2026-06-30",
+    "name": "Weekend Shadow Raids • Shadow Dialga",
+    "category": "raid",
+    "featuredPokemon": [
+      "Shadow Dialga"
+    ],
+    "detail": "Historical weekend shadow raids rotation featuring Shadow Dialga. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates. Five-star Shadow raids are primarily on weekends.",
+    "source": "https://pokemongohub.net/post/event/june-2026-pokemon-go-events/",
+    "poster": "/posters/historic-raid-06-02-weekend-shadow-raids-shadow-dialga.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
+    "id": "historic-raid-06-03-5-raids-reshiram",
+    "start": "2026-06-03",
+    "end": "2026-06-09",
+    "name": "5★ Raids • Reshiram",
+    "category": "raid",
+    "featuredPokemon": [
+      "Reshiram"
+    ],
+    "detail": "Historical 5★ raids rotation featuring Reshiram. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/june-2026-pokemon-go-events/",
+    "poster": "/posters/historic-raid-06-03-5-raids-reshiram.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
+    "id": "historic-raid-06-03-mega-raids-mega-audino",
+    "start": "2026-06-03",
+    "end": "2026-06-09",
+    "name": "Mega Raids • Mega Audino",
+    "category": "raid",
+    "featuredPokemon": [
+      "Mega Audino"
+    ],
+    "detail": "Historical mega raids rotation featuring Mega Audino. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/june-2026-pokemon-go-events/",
+    "poster": "/posters/historic-raid-06-03-mega-raids-mega-audino.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
   },
   {
     "id": "hist-pokemon-go-fest-chicago",
@@ -660,7 +1727,25 @@
     "poster": "/posters/hist-pokemon-go-fest-chicago.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/event/june-2026-pokemon-go-events/"
+    "source": "https://pokemongohub.net/post/event/june-2026-pokemon-go-events/",
+    "featuredPokemon": [
+      "Mewtwo"
+    ]
+  },
+  {
+    "id": "historic-max-06-08-electabuzz",
+    "start": "2026-06-08",
+    "end": "2026-06-14",
+    "name": "Dynamax Electabuzz • Weekly Max Battles",
+    "category": "max-battle-rotation",
+    "featuredPokemon": [
+      "Dynamax Electabuzz"
+    ],
+    "detail": "Historical weekly Power Spot Max Battle rotation: Dynamax Electabuzz. Max Monday features the same weekly boss; Power Spot availability and timings are subject to event rules.",
+    "source": "https://pokemongohub.net/post/event/june-2026-pokemon-go-events/",
+    "poster": "/posters/historic-max-06-08-electabuzz.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the weekly Max Battle Pokémon."
   },
   {
     "id": "hist-candela-s-quest-for-victory",
@@ -673,7 +1758,40 @@
     "poster": "/posters/hist-candela-s-quest-for-victory.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/event/june-2026-pokemon-go-events/"
+    "source": "https://pokemongohub.net/post/event/june-2026-pokemon-go-events/",
+    "featuredPokemon": [
+      "Blaziken"
+    ]
+  },
+  {
+    "id": "historic-raid-06-10-5-raids-zekrom",
+    "start": "2026-06-10",
+    "end": "2026-06-16",
+    "name": "5★ Raids • Zekrom",
+    "category": "raid",
+    "featuredPokemon": [
+      "Zekrom"
+    ],
+    "detail": "Historical 5★ raids rotation featuring Zekrom. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/june-2026-pokemon-go-events/",
+    "poster": "/posters/historic-raid-06-10-5-raids-zekrom.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
+    "id": "historic-raid-06-10-mega-raids-mega-lopunny",
+    "start": "2026-06-10",
+    "end": "2026-06-16",
+    "name": "Mega Raids • Mega Lopunny",
+    "category": "raid",
+    "featuredPokemon": [
+      "Mega Lopunny"
+    ],
+    "detail": "Historical mega raids rotation featuring Mega Lopunny. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/june-2026-pokemon-go-events/",
+    "poster": "/posters/historic-raid-06-10-mega-raids-mega-lopunny.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
   },
   {
     "id": "hist-pokemon-go-fest-copenhagen",
@@ -686,7 +1804,55 @@
     "poster": "/posters/hist-pokemon-go-fest-copenhagen.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/event/june-2026-pokemon-go-events/"
+    "source": "https://pokemongohub.net/post/event/june-2026-pokemon-go-events/",
+    "featuredPokemon": [
+      "Mewtwo"
+    ]
+  },
+  {
+    "id": "historic-max-06-15-roggenrola",
+    "start": "2026-06-15",
+    "end": "2026-06-21",
+    "name": "Dynamax Roggenrola • Weekly Max Battles",
+    "category": "max-battle-rotation",
+    "featuredPokemon": [
+      "Dynamax Roggenrola"
+    ],
+    "detail": "Historical weekly Power Spot Max Battle rotation: Dynamax Roggenrola. Max Monday features the same weekly boss; Power Spot availability and timings are subject to event rules.",
+    "source": "https://pokemongohub.net/post/event/june-2026-pokemon-go-events/",
+    "poster": "/posters/historic-max-06-15-roggenrola.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the weekly Max Battle Pokémon."
+  },
+  {
+    "id": "historic-raid-06-17-5-raids-necrozma",
+    "start": "2026-06-17",
+    "end": "2026-06-23",
+    "name": "5★ Raids • Necrozma",
+    "category": "raid",
+    "featuredPokemon": [
+      "Necrozma"
+    ],
+    "detail": "Historical 5★ raids rotation featuring Necrozma. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/june-2026-pokemon-go-events/",
+    "poster": "/posters/historic-raid-06-17-5-raids-necrozma.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
+    "id": "historic-raid-06-17-mega-raids-mega-scizor",
+    "start": "2026-06-17",
+    "end": "2026-06-23",
+    "name": "Mega Raids • Mega Scizor",
+    "category": "raid",
+    "featuredPokemon": [
+      "Mega Scizor"
+    ],
+    "detail": "Historical mega raids rotation featuring Mega Scizor. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/june-2026-pokemon-go-events/",
+    "poster": "/posters/historic-raid-06-17-mega-raids-mega-scizor.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
   },
   {
     "id": "hist-june-2026-community-day-frigibax",
@@ -699,7 +1865,25 @@
     "poster": "/posters/hist-june-2026-community-day-frigibax.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/event/june-2026-pokemon-go-events/"
+    "source": "https://pokemongohub.net/post/event/june-2026-pokemon-go-events/",
+    "featuredPokemon": [
+      "Frigibax"
+    ]
+  },
+  {
+    "id": "historic-max-06-22-hoothoot",
+    "start": "2026-06-22",
+    "end": "2026-06-28",
+    "name": "Dynamax Hoothoot • Weekly Max Battles",
+    "category": "max-battle-rotation",
+    "featuredPokemon": [
+      "Dynamax Hoothoot"
+    ],
+    "detail": "Historical weekly Power Spot Max Battle rotation: Dynamax Hoothoot. Max Monday features the same weekly boss; Power Spot availability and timings are subject to event rules.",
+    "source": "https://pokemongohub.net/post/event/june-2026-pokemon-go-events/",
+    "poster": "/posters/historic-max-06-22-hoothoot.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the weekly Max Battle Pokémon."
   },
   {
     "id": "hist-flying-taxi",
@@ -712,7 +1896,41 @@
     "poster": "/posters/hist-flying-taxi.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/event/june-2026-pokemon-go-events/"
+    "source": "https://pokemongohub.net/post/event/june-2026-pokemon-go-events/",
+    "featuredPokemon": [
+      "Corviknight"
+    ]
+  },
+  {
+    "id": "historic-raid-06-24-mega-raids-mega-pidgeot",
+    "start": "2026-06-24",
+    "end": "2026-06-30",
+    "name": "Mega Raids • Mega Pidgeot",
+    "category": "raid",
+    "featuredPokemon": [
+      "Mega Pidgeot"
+    ],
+    "detail": "Historical mega raids rotation featuring Mega Pidgeot. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/june-2026-pokemon-go-events/",
+    "poster": "/posters/historic-raid-06-24-mega-raids-mega-pidgeot.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
+    "id": "historic-raid-06-24-regional-5-raids-kartana-celesteela",
+    "start": "2026-06-24",
+    "end": "2026-06-30",
+    "name": "Regional 5★ Raids • Kartana & Celesteela",
+    "category": "raid",
+    "featuredPokemon": [
+      "Kartana",
+      "Celesteela"
+    ],
+    "detail": "Historical regional 5★ raids rotation featuring Kartana, Celesteela. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates. Regional distribution differs by geographic area.",
+    "source": "https://pokemongohub.net/post/event/june-2026-pokemon-go-events/",
+    "poster": "/posters/historic-raid-06-24-regional-5-raids-kartana-celesteela.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
   },
   {
     "id": "hist-flying-taxi-taken-over",
@@ -725,7 +1943,10 @@
     "poster": "/posters/hist-flying-taxi-taken-over.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/event/june-2026-pokemon-go-events/"
+    "source": "https://pokemongohub.net/post/event/june-2026-pokemon-go-events/",
+    "featuredPokemon": [
+      "Corviknight"
+    ]
   },
   {
     "id": "hist-super-mega-skarmory-raid-day",
@@ -738,7 +1959,25 @@
     "poster": "/posters/hist-super-mega-skarmory-raid-day.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/event/june-2026-pokemon-go-events/"
+    "source": "https://pokemongohub.net/post/event/june-2026-pokemon-go-events/",
+    "featuredPokemon": [
+      "Mewtwo"
+    ]
+  },
+  {
+    "id": "historic-max-06-29-pidove",
+    "start": "2026-06-29",
+    "end": "2026-07-05",
+    "name": "Dynamax Pidove • Weekly Max Battles",
+    "category": "max-battle-rotation",
+    "featuredPokemon": [
+      "Dynamax Pidove"
+    ],
+    "detail": "Historical weekly Power Spot Max Battle rotation: Dynamax Pidove. Max Monday features the same weekly boss; Power Spot availability and timings are subject to event rules.",
+    "source": "https://pokemongohub.net/post/event/june-2026-pokemon-go-events/",
+    "poster": "/posters/historic-max-06-29-pidove.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the weekly Max Battle Pokémon."
   },
   {
     "id": "hist-choose-your-path-charged-embers",
@@ -752,6 +1991,53 @@
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
     "source": "https://pokemongohub.net/post/event/june-2026-pokemon-go-events/"
+  },
+  {
+    "id": "historic-raid-07-01-5-raids-articuno-zapdos-moltres",
+    "start": "2026-07-01",
+    "end": "2026-07-05",
+    "name": "5★ Raids • Articuno & Zapdos & Moltres",
+    "category": "raid",
+    "featuredPokemon": [
+      "Articuno",
+      "Zapdos",
+      "Moltres"
+    ],
+    "detail": "Historical 5★ raids rotation featuring Articuno, Zapdos, Moltres. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/juLY-2026-pokemon-go-events/",
+    "poster": "/posters/historic-raid-07-01-5-raids-articuno-zapdos-moltres.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
+    "id": "historic-raid-07-01-mega-raids-mega-lucario",
+    "start": "2026-07-01",
+    "end": "2026-07-05",
+    "name": "Mega Raids • Mega Lucario",
+    "category": "raid",
+    "featuredPokemon": [
+      "Mega Lucario"
+    ],
+    "detail": "Historical mega raids rotation featuring Mega Lucario. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/juLY-2026-pokemon-go-events/",
+    "poster": "/posters/historic-raid-07-01-mega-raids-mega-lucario.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
+    "id": "historic-raid-07-01-weekend-shadow-raids-shadow-palkia",
+    "start": "2026-07-01",
+    "end": "2026-08-04",
+    "name": "Weekend Shadow Raids • Shadow Palkia",
+    "category": "raid",
+    "featuredPokemon": [
+      "Shadow Palkia"
+    ],
+    "detail": "Historical weekend shadow raids rotation featuring Shadow Palkia. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates. Five-star Shadow raids are primarily on weekends.",
+    "source": "https://pokemongohub.net/post/event/juLY-2026-pokemon-go-events/",
+    "poster": "/posters/historic-raid-07-01-weekend-shadow-raids-shadow-palkia.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
   },
   {
     "id": "hist-10th-anniversary-party",
@@ -777,7 +2063,25 @@
     "poster": "/posters/hist-july-2026-community-day-sobble.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/news/july-2026-pokemon-go-events/"
+    "source": "https://pokemongohub.net/post/news/july-2026-pokemon-go-events/",
+    "featuredPokemon": [
+      "Sobble"
+    ]
+  },
+  {
+    "id": "historic-max-07-06-chansey",
+    "start": "2026-07-06",
+    "end": "2026-07-12",
+    "name": "Dynamax Chansey • Weekly Max Battles",
+    "category": "max-battle-rotation",
+    "featuredPokemon": [
+      "Dynamax Chansey"
+    ],
+    "detail": "Historical weekly Power Spot Max Battle rotation: Dynamax Chansey. Max Monday features the same weekly boss; Power Spot availability and timings are subject to event rules.",
+    "source": "https://pokemongohub.net/post/event/juLY-2026-pokemon-go-events/",
+    "poster": "/posters/historic-max-07-06-chansey.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the weekly Max Battle Pokémon."
   },
   {
     "id": "hist-road-of-legends",
@@ -790,20 +2094,10 @@
     "poster": "/posters/hist-road-of-legends.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/news/july-2026-pokemon-go-events/"
-  },
-  {
-    "id": "hist-go-pass-july",
-    "start": "2026-07-07",
-    "end": "2026-08-03",
-    "name": "GO Pass: July",
-    "category": "event",
-    "zone": "",
-    "detail": "Historical GO Pass: July event. Dates are listed in the referenced 2026 event calendar; consult the source for detailed encounters, bonuses, and local schedules.",
-    "poster": "/posters/hist-go-pass-july.svg",
-    "posterType": "custom",
-    "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/news/july-2026-pokemon-go-events/"
+    "source": "https://pokemongohub.net/post/news/july-2026-pokemon-go-events/",
+    "featuredPokemon": [
+      "Mewtwo"
+    ]
   },
   {
     "id": "hist-pokemon-go-fest-2026-global",
@@ -816,7 +2110,57 @@
     "poster": "/posters/hist-pokemon-go-fest-2026-global.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/news/july-2026-pokemon-go-events/"
+    "source": "https://pokemongohub.net/post/news/july-2026-pokemon-go-events/",
+    "featuredPokemon": [
+      "Mewtwo"
+    ]
+  },
+  {
+    "id": "historic-raid-07-13-5-raids-articuno-zapdos-moltres",
+    "start": "2026-07-13",
+    "end": "2026-07-14",
+    "name": "5★ Raids • Articuno & Zapdos & Moltres",
+    "category": "raid",
+    "featuredPokemon": [
+      "Articuno",
+      "Zapdos",
+      "Moltres"
+    ],
+    "detail": "Historical 5★ raids rotation featuring Articuno, Zapdos, Moltres. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/juLY-2026-pokemon-go-events/",
+    "poster": "/posters/historic-raid-07-13-5-raids-articuno-zapdos-moltres.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
+    "id": "historic-max-07-13-deino",
+    "start": "2026-07-13",
+    "end": "2026-07-19",
+    "name": "Dynamax Deino • Weekly Max Battles",
+    "category": "max-battle-rotation",
+    "featuredPokemon": [
+      "Dynamax Deino"
+    ],
+    "detail": "Historical weekly Power Spot Max Battle rotation: Dynamax Deino. Max Monday features the same weekly boss; Power Spot availability and timings are subject to event rules.",
+    "source": "https://pokemongohub.net/post/event/juLY-2026-pokemon-go-events/",
+    "poster": "/posters/historic-max-07-13-deino.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the weekly Max Battle Pokémon."
+  },
+  {
+    "id": "historic-raid-07-13-mega-raids-mega-lucario",
+    "start": "2026-07-13",
+    "end": "2026-07-14",
+    "name": "Mega Raids • Mega Lucario",
+    "category": "raid",
+    "featuredPokemon": [
+      "Mega Lucario"
+    ],
+    "detail": "Historical mega raids rotation featuring Mega Lucario. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/juLY-2026-pokemon-go-events/",
+    "poster": "/posters/historic-raid-07-13-mega-raids-mega-lucario.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
   },
   {
     "id": "hist-special-anniversary-pikachu-celebration",
@@ -829,7 +2173,40 @@
     "poster": "/posters/hist-special-anniversary-pikachu-celebration.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/news/july-2026-pokemon-go-events/"
+    "source": "https://pokemongohub.net/post/news/july-2026-pokemon-go-events/",
+    "featuredPokemon": [
+      "Pikachu"
+    ]
+  },
+  {
+    "id": "historic-raid-07-15-5-raids-kyogre",
+    "start": "2026-07-15",
+    "end": "2026-07-21",
+    "name": "5★ Raids • Kyogre",
+    "category": "raid",
+    "featuredPokemon": [
+      "Kyogre"
+    ],
+    "detail": "Historical 5★ raids rotation featuring Kyogre. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/juLY-2026-pokemon-go-events/",
+    "poster": "/posters/historic-raid-07-15-5-raids-kyogre.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
+    "id": "historic-raid-07-15-mega-raids-mega-sceptile",
+    "start": "2026-07-15",
+    "end": "2026-07-21",
+    "name": "Mega Raids • Mega Sceptile",
+    "category": "raid",
+    "featuredPokemon": [
+      "Mega Sceptile"
+    ],
+    "detail": "Historical mega raids rotation featuring Mega Sceptile. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/juLY-2026-pokemon-go-events/",
+    "poster": "/posters/historic-raid-07-15-mega-raids-mega-sceptile.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
   },
   {
     "id": "hist-super-mega-raichu-raid-day",
@@ -842,7 +2219,25 @@
     "poster": "/posters/hist-super-mega-raichu-raid-day.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/news/july-2026-pokemon-go-events/"
+    "source": "https://pokemongohub.net/post/news/july-2026-pokemon-go-events/",
+    "featuredPokemon": [
+      "Mewtwo"
+    ]
+  },
+  {
+    "id": "historic-max-07-20-trubbish",
+    "start": "2026-07-20",
+    "end": "2026-07-26",
+    "name": "Dynamax Trubbish • Weekly Max Battles",
+    "category": "max-battle-rotation",
+    "featuredPokemon": [
+      "Dynamax Trubbish"
+    ],
+    "detail": "Historical weekly Power Spot Max Battle rotation: Dynamax Trubbish. Max Monday features the same weekly boss; Power Spot availability and timings are subject to event rules.",
+    "source": "https://pokemongohub.net/post/event/juLY-2026-pokemon-go-events/",
+    "poster": "/posters/historic-max-07-20-trubbish.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the weekly Max Battle Pokémon."
   },
   {
     "id": "hist-10th-anniversary-ultra-unlock",
@@ -868,7 +2263,40 @@
     "poster": "/posters/hist-professor-willow-s-birthday-research.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/news/july-2026-pokemon-go-events/"
+    "source": "https://pokemongohub.net/post/news/july-2026-pokemon-go-events/",
+    "featuredPokemon": [
+      "Pikachu"
+    ]
+  },
+  {
+    "id": "historic-raid-07-22-5-raids-solgaleo",
+    "start": "2026-07-22",
+    "end": "2026-07-28",
+    "name": "5★ Raids • Solgaleo",
+    "category": "raid",
+    "featuredPokemon": [
+      "Solgaleo"
+    ],
+    "detail": "Historical 5★ raids rotation featuring Solgaleo. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/juLY-2026-pokemon-go-events/",
+    "poster": "/posters/historic-raid-07-22-5-raids-solgaleo.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
+    "id": "historic-raid-07-22-mega-raids-mega-salamence",
+    "start": "2026-07-22",
+    "end": "2026-07-28",
+    "name": "Mega Raids • Mega Salamence",
+    "category": "raid",
+    "featuredPokemon": [
+      "Mega Salamence"
+    ],
+    "detail": "Historical mega raids rotation featuring Mega Salamence. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/juLY-2026-pokemon-go-events/",
+    "poster": "/posters/historic-raid-07-22-mega-raids-mega-salamence.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
   },
   {
     "id": "hist-ozone-ascent",
@@ -881,7 +2309,55 @@
     "poster": "/posters/hist-ozone-ascent.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/news/july-2026-pokemon-go-events/"
+    "source": "https://pokemongohub.net/post/news/july-2026-pokemon-go-events/",
+    "featuredPokemon": [
+      "Rayquaza"
+    ]
+  },
+  {
+    "id": "historic-max-07-27-feebas",
+    "start": "2026-07-27",
+    "end": "2026-08-02",
+    "name": "Dynamax Feebas • Weekly Max Battles",
+    "category": "max-battle-rotation",
+    "featuredPokemon": [
+      "Dynamax Feebas"
+    ],
+    "detail": "Historical weekly Power Spot Max Battle rotation: Dynamax Feebas. Max Monday features the same weekly boss; Power Spot availability and timings are subject to event rules.",
+    "source": "https://pokemongohub.net/post/event/juLY-2026-pokemon-go-events/",
+    "poster": "/posters/historic-max-07-27-feebas.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the weekly Max Battle Pokémon."
+  },
+  {
+    "id": "historic-raid-07-29-5-raids-kyurem",
+    "start": "2026-07-29",
+    "end": "2026-08-04",
+    "name": "5★ Raids • Kyurem",
+    "category": "raid",
+    "featuredPokemon": [
+      "Kyurem"
+    ],
+    "detail": "Historical 5★ raids rotation featuring Kyurem. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/juLY-2026-pokemon-go-events/",
+    "poster": "/posters/historic-raid-07-29-5-raids-kyurem.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
+    "id": "historic-raid-07-29-mega-raids-mega-aggron",
+    "start": "2026-07-29",
+    "end": "2026-08-04",
+    "name": "Mega Raids • Mega Aggron",
+    "category": "raid",
+    "featuredPokemon": [
+      "Mega Aggron"
+    ],
+    "detail": "Historical mega raids rotation featuring Mega Aggron. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/juLY-2026-pokemon-go-events/",
+    "poster": "/posters/historic-raid-07-29-mega-raids-mega-aggron.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
   },
   {
     "id": "hist-gigantamax-rillaboom-max-battle-day",
@@ -894,7 +2370,10 @@
     "poster": "/posters/hist-gigantamax-rillaboom-max-battle-day.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/event/pokemon-go-AUGUST-2026-events/"
+    "source": "https://pokemongohub.net/post/event/pokemon-go-AUGUST-2026-events/",
+    "featuredPokemon": [
+      "Pikachu"
+    ]
   },
   {
     "id": "hist-pokemon-go-summer-quest-london",
@@ -923,17 +2402,19 @@
     "source": "https://pokemongohub.net/post/event/pokemon-go-AUGUST-2026-events/"
   },
   {
-    "id": "hist-go-pass-august",
-    "start": "2026-08-04",
-    "end": "2026-08-31",
-    "name": "GO Pass: August",
-    "category": "event",
-    "zone": "",
-    "detail": "Historical GO Pass: August event. Dates are listed in the referenced 2026 event calendar; consult the source for detailed encounters, bonuses, and local schedules.",
-    "poster": "/posters/hist-go-pass-august.svg",
+    "id": "historic-max-08-03-magmar",
+    "start": "2026-08-03",
+    "end": "2026-08-09",
+    "name": "Dynamax Magmar • Weekly Max Battles",
+    "category": "max-battle-rotation",
+    "featuredPokemon": [
+      "Dynamax Magmar"
+    ],
+    "detail": "Historical weekly Power Spot Max Battle rotation: Dynamax Magmar. Max Monday features the same weekly boss; Power Spot availability and timings are subject to event rules.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-august-2026-events/",
+    "poster": "/posters/historic-max-08-03-magmar.svg",
     "posterType": "custom",
-    "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/event/pokemon-go-AUGUST-2026-events/"
+    "posterNote": "AlfaMitsu visual archive guide featuring the weekly Max Battle Pokémon."
   },
   {
     "id": "hist-summer-marathon-arctic-embers",
@@ -946,7 +2427,57 @@
     "poster": "/posters/hist-summer-marathon-arctic-embers.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/event/pokemon-go-AUGUST-2026-events/"
+    "source": "https://pokemongohub.net/post/event/pokemon-go-AUGUST-2026-events/",
+    "featuredPokemon": [
+      "Snom"
+    ]
+  },
+  {
+    "id": "historic-raid-08-05-mega-raids-mega-blaziken",
+    "start": "2026-08-05",
+    "end": "2026-08-11",
+    "name": "Mega Raids • Mega Blaziken",
+    "category": "raid",
+    "featuredPokemon": [
+      "Mega Blaziken"
+    ],
+    "detail": "Historical mega raids rotation featuring Mega Blaziken. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-august-2026-events/",
+    "poster": "/posters/historic-raid-08-05-mega-raids-mega-blaziken.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
+    "id": "historic-raid-08-05-regional-5-raids-uxie-mesprit-azelf",
+    "start": "2026-08-05",
+    "end": "2026-08-11",
+    "name": "Regional 5★ Raids • Uxie & Mesprit & Azelf",
+    "category": "raid",
+    "featuredPokemon": [
+      "Uxie",
+      "Mesprit",
+      "Azelf"
+    ],
+    "detail": "Historical regional 5★ raids rotation featuring Uxie, Mesprit, Azelf. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates. Regional distribution differs by geographic area.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-august-2026-events/",
+    "poster": "/posters/historic-raid-08-05-regional-5-raids-uxie-mesprit-azelf.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
+    "id": "historic-raid-08-05-weekend-shadow-raids-shadow-giratina",
+    "start": "2026-08-05",
+    "end": "2026-09-08",
+    "name": "Weekend Shadow Raids • Shadow Giratina",
+    "category": "raid",
+    "featuredPokemon": [
+      "Shadow Giratina"
+    ],
+    "detail": "Historical weekend shadow raids rotation featuring Shadow Giratina. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates. Five-star Shadow raids are primarily on weekends.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-august-2026-events/",
+    "poster": "/posters/historic-raid-08-05-weekend-shadow-raids-shadow-giratina.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
   },
   {
     "id": "hist-fire-and-ice-hatch-day",
@@ -959,7 +2490,26 @@
     "poster": "/posters/hist-fire-and-ice-hatch-day.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/event/pokemon-go-AUGUST-2026-events/"
+    "source": "https://pokemongohub.net/post/event/pokemon-go-AUGUST-2026-events/",
+    "featuredPokemon": [
+      "Magby",
+      "Smoochum"
+    ]
+  },
+  {
+    "id": "historic-max-08-10-beldum",
+    "start": "2026-08-10",
+    "end": "2026-08-16",
+    "name": "Dynamax Beldum • Weekly Max Battles",
+    "category": "max-battle-rotation",
+    "featuredPokemon": [
+      "Dynamax Beldum"
+    ],
+    "detail": "Historical weekly Power Spot Max Battle rotation: Dynamax Beldum. Max Monday features the same weekly boss; Power Spot availability and timings are subject to event rules.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-august-2026-events/",
+    "poster": "/posters/historic-max-08-10-beldum.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the weekly Max Battle Pokémon."
   },
   {
     "id": "hist-choose-your-path-venom-and-vines",
@@ -975,6 +2525,36 @@
     "source": "https://pokemongohub.net/post/event/pokemon-go-AUGUST-2026-events/"
   },
   {
+    "id": "historic-raid-08-12-5-raids-groudon",
+    "start": "2026-08-12",
+    "end": "2026-08-18",
+    "name": "5★ Raids • Groudon",
+    "category": "raid",
+    "featuredPokemon": [
+      "Groudon"
+    ],
+    "detail": "Historical 5★ raids rotation featuring Groudon. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-august-2026-events/",
+    "poster": "/posters/historic-raid-08-12-5-raids-groudon.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
+    "id": "historic-raid-08-12-mega-raids-mega-garchomp",
+    "start": "2026-08-12",
+    "end": "2026-08-18",
+    "name": "Mega Raids • Mega Garchomp",
+    "category": "raid",
+    "featuredPokemon": [
+      "Mega Garchomp"
+    ],
+    "detail": "Historical mega raids rotation featuring Mega Garchomp. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-august-2026-events/",
+    "poster": "/posters/historic-raid-08-12-mega-raids-mega-garchomp.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
     "id": "hist-august-2026-community-day-nickit",
     "start": "2026-08-16",
     "end": "2026-08-16",
@@ -985,7 +2565,25 @@
     "poster": "/posters/hist-august-2026-community-day-nickit.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/event/pokemon-go-AUGUST-2026-events/"
+    "source": "https://pokemongohub.net/post/event/pokemon-go-AUGUST-2026-events/",
+    "featuredPokemon": [
+      "Nickit"
+    ]
+  },
+  {
+    "id": "historic-max-08-17-magikarp",
+    "start": "2026-08-17",
+    "end": "2026-08-23",
+    "name": "Dynamax Magikarp • Weekly Max Battles",
+    "category": "max-battle-rotation",
+    "featuredPokemon": [
+      "Dynamax Magikarp"
+    ],
+    "detail": "Historical weekly Power Spot Max Battle rotation: Dynamax Magikarp. Max Monday features the same weekly boss; Power Spot availability and timings are subject to event rules.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-august-2026-events/",
+    "poster": "/posters/historic-max-08-17-magikarp.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the weekly Max Battle Pokémon."
   },
   {
     "id": "hist-ultra-unlock-water-festival",
@@ -998,7 +2596,40 @@
     "poster": "/posters/hist-ultra-unlock-water-festival.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/event/pokemon-go-AUGUST-2026-events/"
+    "source": "https://pokemongohub.net/post/event/pokemon-go-AUGUST-2026-events/",
+    "featuredPokemon": [
+      "Starmie"
+    ]
+  },
+  {
+    "id": "historic-raid-08-19-5-raids-lunala",
+    "start": "2026-08-19",
+    "end": "2026-08-25",
+    "name": "5★ Raids • Lunala",
+    "category": "raid",
+    "featuredPokemon": [
+      "Lunala"
+    ],
+    "detail": "Historical 5★ raids rotation featuring Lunala. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-august-2026-events/",
+    "poster": "/posters/historic-raid-08-19-5-raids-lunala.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
+    "id": "historic-raid-08-19-mega-raids-mega-swampert",
+    "start": "2026-08-19",
+    "end": "2026-08-25",
+    "name": "Mega Raids • Mega Swampert",
+    "category": "raid",
+    "featuredPokemon": [
+      "Mega Swampert"
+    ],
+    "detail": "Historical mega raids rotation featuring Mega Swampert. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-august-2026-events/",
+    "poster": "/posters/historic-raid-08-19-mega-raids-mega-swampert.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
   },
   {
     "id": "hist-super-mega-starmie-raid-day",
@@ -1011,7 +2642,25 @@
     "poster": "/posters/hist-super-mega-starmie-raid-day.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/event/pokemon-go-AUGUST-2026-events/"
+    "source": "https://pokemongohub.net/post/event/pokemon-go-AUGUST-2026-events/",
+    "featuredPokemon": [
+      "Mewtwo"
+    ]
+  },
+  {
+    "id": "historic-max-08-24-hitmontop",
+    "start": "2026-08-24",
+    "end": "2026-08-30",
+    "name": "Dynamax Hitmontop • Weekly Max Battles",
+    "category": "max-battle-rotation",
+    "featuredPokemon": [
+      "Dynamax Hitmontop"
+    ],
+    "detail": "Historical weekly Power Spot Max Battle rotation: Dynamax Hitmontop. Max Monday features the same weekly boss; Power Spot availability and timings are subject to event rules.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-august-2026-events/",
+    "poster": "/posters/historic-max-08-24-hitmontop.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the weekly Max Battle Pokémon."
   },
   {
     "id": "hist-pokemonxp-and-worlds",
@@ -1024,7 +2673,57 @@
     "poster": "/posters/hist-pokemonxp-and-worlds.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/event/pokemon-go-AUGUST-2026-events/"
+    "source": "https://pokemongohub.net/post/event/pokemon-go-AUGUST-2026-events/",
+    "featuredPokemon": [
+      "Pikachu"
+    ]
+  },
+  {
+    "id": "historic-raid-08-26-5-raids-regirock-regice-registeel",
+    "start": "2026-08-26",
+    "end": "2026-09-08",
+    "name": "5★ Raids • Regirock & Regice & Registeel",
+    "category": "raid",
+    "featuredPokemon": [
+      "Regirock",
+      "Regice",
+      "Registeel"
+    ],
+    "detail": "Historical 5★ raids rotation featuring Regirock, Regice, Registeel. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-august-2026-events/",
+    "poster": "/posters/historic-raid-08-26-5-raids-regirock-regice-registeel.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
+    "id": "historic-raid-08-26-mega-raids-mega-gyarados",
+    "start": "2026-08-26",
+    "end": "2026-09-08",
+    "name": "Mega Raids • Mega Gyarados",
+    "category": "raid",
+    "featuredPokemon": [
+      "Mega Gyarados"
+    ],
+    "detail": "Historical mega raids rotation featuring Mega Gyarados. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-august-2026-events/",
+    "poster": "/posters/historic-raid-08-26-mega-raids-mega-gyarados.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
+    "id": "historic-max-08-31-eevee",
+    "start": "2026-08-31",
+    "end": "2026-09-06",
+    "name": "Dynamax Eevee • Weekly Max Battles",
+    "category": "max-battle-rotation",
+    "featuredPokemon": [
+      "Dynamax Eevee"
+    ],
+    "detail": "Historical weekly Power Spot Max Battle rotation: Dynamax Eevee. Max Monday features the same weekly boss; Power Spot availability and timings are subject to event rules.",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-august-2026-events/",
+    "poster": "/posters/historic-max-08-31-eevee.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the weekly Max Battle Pokémon."
   },
   {
     "id": "hist-mega-ascension",
@@ -1037,7 +2736,10 @@
     "poster": "/posters/hist-mega-ascension.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/event/pokemon-go-AUGUST-2026-events/"
+    "source": "https://pokemongohub.net/post/event/pokemon-go-AUGUST-2026-events/",
+    "featuredPokemon": [
+      "Mewtwo"
+    ]
   },
   {
     "id": "hist-patterns-of-the-wild",
@@ -1050,7 +2752,10 @@
     "poster": "/posters/hist-patterns-of-the-wild.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/guide/September-2026-events/"
+    "source": "https://pokemongohub.net/post/guide/September-2026-events/",
+    "featuredPokemon": [
+      "Pikachu"
+    ]
   },
   {
     "id": "hist-pokemon-go-fest-2026-mega-finale",
@@ -1063,20 +2768,41 @@
     "poster": "/posters/hist-pokemon-go-fest-2026-mega-finale.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/guide/September-2026-events/"
+    "source": "https://pokemongohub.net/post/guide/September-2026-events/",
+    "featuredPokemon": [
+      "Mega Mewtwo X",
+      "Mega Mewtwo Y"
+    ]
   },
   {
-    "id": "hist-go-pass-september",
-    "start": "2026-09-08",
-    "end": "2026-10-05",
-    "name": "GO Pass: September",
-    "category": "event",
-    "zone": "",
-    "detail": "Historical GO Pass: September event. Dates are listed in the referenced 2026 event calendar; consult the source for detailed encounters, bonuses, and local schedules.",
-    "poster": "/posters/hist-go-pass-september.svg",
+    "id": "historic-max-09-07-ralts",
+    "start": "2026-09-07",
+    "end": "2026-09-13",
+    "name": "Dynamax Ralts • Weekly Max Battles",
+    "category": "max-battle-rotation",
+    "featuredPokemon": [
+      "Dynamax Ralts"
+    ],
+    "detail": "Historical weekly Power Spot Max Battle rotation: Dynamax Ralts. Max Monday features the same weekly boss; Power Spot availability and timings are subject to event rules.",
+    "source": "https://pokemongohub.net/post/guide/september-2026-events/",
+    "poster": "/posters/historic-max-09-07-ralts.svg",
     "posterType": "custom",
-    "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/guide/September-2026-events/"
+    "posterNote": "AlfaMitsu visual archive guide featuring the weekly Max Battle Pokémon."
+  },
+  {
+    "id": "historic-raid-09-08-mega-raids-mega-beedrill",
+    "start": "2026-09-08",
+    "end": "2026-09-15",
+    "name": "Mega Raids • Mega Beedrill",
+    "category": "raid",
+    "featuredPokemon": [
+      "Mega Beedrill"
+    ],
+    "detail": "Historical mega raids rotation featuring Mega Beedrill. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/guide/september-2026-events/",
+    "poster": "/posters/historic-raid-09-08-mega-raids-mega-beedrill.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
   },
   {
     "id": "hist-mega-squads",
@@ -1089,7 +2815,55 @@
     "poster": "/posters/hist-mega-squads.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/guide/September-2026-events/"
+    "source": "https://pokemongohub.net/post/guide/September-2026-events/",
+    "featuredPokemon": [
+      "Maschiff"
+    ]
+  },
+  {
+    "id": "historic-raid-09-09-5-raids-zacian",
+    "start": "2026-09-09",
+    "end": "2026-09-15",
+    "name": "5★ Raids • Zacian",
+    "category": "raid",
+    "featuredPokemon": [
+      "Zacian"
+    ],
+    "detail": "Historical 5★ raids rotation featuring Zacian. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/guide/september-2026-events/",
+    "poster": "/posters/historic-raid-09-09-5-raids-zacian.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
+    "id": "historic-raid-09-09-weekend-shadow-raids-shadow-thundurus",
+    "start": "2026-09-09",
+    "end": "2026-10-06",
+    "name": "Weekend Shadow Raids • Shadow Thundurus",
+    "category": "raid",
+    "featuredPokemon": [
+      "Shadow Thundurus"
+    ],
+    "detail": "Historical weekend shadow raids rotation featuring Shadow Thundurus. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates. Five-star Shadow raids are primarily on weekends.",
+    "source": "https://pokemongohub.net/post/guide/september-2026-events/",
+    "poster": "/posters/historic-raid-09-09-weekend-shadow-raids-shadow-thundurus.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
+    "id": "historic-raid-09-11-mega-raids-mega-houndoom",
+    "start": "2026-09-11",
+    "end": "2026-09-16",
+    "name": "Mega Raids • Mega Houndoom",
+    "category": "raid",
+    "featuredPokemon": [
+      "Mega Houndoom"
+    ],
+    "detail": "Historical mega raids rotation featuring Mega Houndoom. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/guide/september-2026-events/",
+    "poster": "/posters/historic-raid-09-11-mega-raids-mega-houndoom.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
   },
   {
     "id": "hist-pokexciting-kuala-lumpur",
@@ -1115,7 +2889,55 @@
     "poster": "/posters/hist-september-2026-community-day-classic-gible.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/guide/September-2026-events/"
+    "source": "https://pokemongohub.net/post/guide/September-2026-events/",
+    "featuredPokemon": [
+      "Gible"
+    ]
+  },
+  {
+    "id": "historic-max-09-14-rhyhorn",
+    "start": "2026-09-14",
+    "end": "2026-09-20",
+    "name": "Dynamax Rhyhorn • Weekly Max Battles",
+    "category": "max-battle-rotation",
+    "featuredPokemon": [
+      "Dynamax Rhyhorn"
+    ],
+    "detail": "Historical weekly Power Spot Max Battle rotation: Dynamax Rhyhorn. Max Monday features the same weekly boss; Power Spot availability and timings are subject to event rules.",
+    "source": "https://pokemongohub.net/post/guide/september-2026-events/",
+    "poster": "/posters/historic-max-09-14-rhyhorn.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the weekly Max Battle Pokémon."
+  },
+  {
+    "id": "historic-raid-09-16-5-raids-zamazenta",
+    "start": "2026-09-16",
+    "end": "2026-09-22",
+    "name": "5★ Raids • Zamazenta",
+    "category": "raid",
+    "featuredPokemon": [
+      "Zamazenta"
+    ],
+    "detail": "Historical 5★ raids rotation featuring Zamazenta. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/guide/september-2026-events/",
+    "poster": "/posters/historic-raid-09-16-5-raids-zamazenta.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
+    "id": "historic-raid-09-16-mega-raids-mega-venusaur",
+    "start": "2026-09-16",
+    "end": "2026-09-22",
+    "name": "Mega Raids • Mega Venusaur",
+    "category": "raid",
+    "featuredPokemon": [
+      "Mega Venusaur"
+    ],
+    "detail": "Historical mega raids rotation featuring Mega Venusaur. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/guide/september-2026-events/",
+    "poster": "/posters/historic-raid-09-16-mega-raids-mega-venusaur.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
   },
   {
     "id": "hist-pokemon-horizons-the-series-celebration",
@@ -1128,7 +2950,11 @@
     "poster": "/posters/hist-pokemon-horizons-the-series-celebration.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/guide/September-2026-events/"
+    "source": "https://pokemongohub.net/post/guide/September-2026-events/",
+    "featuredPokemon": [
+      "Pikachu",
+      "Charizard"
+    ]
   },
   {
     "id": "hist-super-mega-staraptor-raid-day",
@@ -1141,7 +2967,27 @@
     "poster": "/posters/hist-super-mega-staraptor-raid-day.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/guide/September-2026-events/"
+    "source": "https://pokemongohub.net/post/guide/September-2026-events/",
+    "featuredPokemon": [
+      "Mewtwo"
+    ]
+  },
+  {
+    "id": "historic-max-09-21-articuno-zapdos-moltres",
+    "start": "2026-09-21",
+    "end": "2026-09-27",
+    "name": "Dynamax Articuno & Zapdos & Moltres • Weekly Max Battles",
+    "category": "max-battle-rotation",
+    "featuredPokemon": [
+      "Dynamax Articuno",
+      "Dynamax Zapdos",
+      "Dynamax Moltres"
+    ],
+    "detail": "Historical weekly Power Spot Max Battle rotation: Dynamax Articuno, Dynamax Zapdos, Dynamax Moltres. Max Monday features the same weekly boss; Power Spot availability and timings are subject to event rules.",
+    "source": "https://pokemongohub.net/post/guide/september-2026-events/",
+    "poster": "/posters/historic-max-09-21-articuno-zapdos-moltres.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the weekly Max Battle Pokémon."
   },
   {
     "id": "hist-choose-your-path-twilight-trails",
@@ -1167,7 +3013,42 @@
     "poster": "/posters/hist-dancing-in-the-moonlight.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/guide/September-2026-events/"
+    "source": "https://pokemongohub.net/post/guide/September-2026-events/",
+    "featuredPokemon": [
+      "Clefairy"
+    ]
+  },
+  {
+    "id": "historic-raid-09-23-mega-raids-mega-malamar",
+    "start": "2026-09-23",
+    "end": "2026-09-29",
+    "name": "Mega Raids • Mega Malamar",
+    "category": "raid",
+    "featuredPokemon": [
+      "Mega Malamar"
+    ],
+    "detail": "Historical mega raids rotation featuring Mega Malamar. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/guide/september-2026-events/",
+    "poster": "/posters/historic-raid-09-23-mega-raids-mega-malamar.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
+    "id": "historic-raid-09-23-regional-5-raids-xurkitree-buzzwole-pheromosa",
+    "start": "2026-09-23",
+    "end": "2026-09-29",
+    "name": "Regional 5★ Raids • Xurkitree & Buzzwole & Pheromosa",
+    "category": "raid",
+    "featuredPokemon": [
+      "Xurkitree",
+      "Buzzwole",
+      "Pheromosa"
+    ],
+    "detail": "Historical regional 5★ raids rotation featuring Xurkitree, Buzzwole, Pheromosa. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates. Regional distribution differs by geographic area.",
+    "source": "https://pokemongohub.net/post/guide/september-2026-events/",
+    "poster": "/posters/historic-raid-09-23-regional-5-raids-xurkitree-buzzwole-pheromosa.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
   },
   {
     "id": "hist-phantump-catch-mastery",
@@ -1180,7 +3061,25 @@
     "poster": "/posters/hist-phantump-catch-mastery.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/guide/September-2026-events/"
+    "source": "https://pokemongohub.net/post/guide/September-2026-events/",
+    "featuredPokemon": [
+      "Phantump"
+    ]
+  },
+  {
+    "id": "historic-max-09-28-sobble",
+    "start": "2026-09-28",
+    "end": "2026-10-04",
+    "name": "Dynamax Sobble • Weekly Max Battles",
+    "category": "max-battle-rotation",
+    "featuredPokemon": [
+      "Dynamax Sobble"
+    ],
+    "detail": "Historical weekly Power Spot Max Battle rotation: Dynamax Sobble. Max Monday features the same weekly boss; Power Spot availability and timings are subject to event rules.",
+    "source": "https://pokemongohub.net/post/guide/september-2026-events/",
+    "poster": "/posters/historic-max-09-28-sobble.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the weekly Max Battle Pokémon."
   },
   {
     "id": "hist-harvest-festival",
@@ -1193,7 +3092,40 @@
     "poster": "/posters/hist-harvest-festival.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/guide/September-2026-events/"
+    "source": "https://pokemongohub.net/post/guide/September-2026-events/",
+    "featuredPokemon": [
+      "Applin"
+    ]
+  },
+  {
+    "id": "historic-raid-09-30-5-raids-xerneas",
+    "start": "2026-09-30",
+    "end": "2026-10-06",
+    "name": "5★ Raids • Xerneas",
+    "category": "raid",
+    "featuredPokemon": [
+      "Xerneas"
+    ],
+    "detail": "Historical 5★ raids rotation featuring Xerneas. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/guide/september-2026-events/",
+    "poster": "/posters/historic-raid-09-30-5-raids-xerneas.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
+    "id": "historic-raid-09-30-mega-raids-mega-victreebel",
+    "start": "2026-09-30",
+    "end": "2026-10-06",
+    "name": "Mega Raids • Mega Victreebel",
+    "category": "raid",
+    "featuredPokemon": [
+      "Mega Victreebel"
+    ],
+    "detail": "Historical mega raids rotation featuring Mega Victreebel. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/guide/september-2026-events/",
+    "poster": "/posters/historic-raid-09-30-mega-raids-mega-victreebel.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
   },
   {
     "id": "hist-harvest-festival-taken-over",
@@ -1206,7 +3138,10 @@
     "poster": "/posters/hist-harvest-festival-taken-over.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/event/october-2026-events/"
+    "source": "https://pokemongohub.net/post/event/october-2026-events/",
+    "featuredPokemon": [
+      "Applin"
+    ]
   },
   {
     "id": "hist-gigantamax-cinderace-max-battle-day",
@@ -1219,7 +3154,10 @@
     "poster": "/posters/hist-gigantamax-cinderace-max-battle-day.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/event/october-2026-events/"
+    "source": "https://pokemongohub.net/post/event/october-2026-events/",
+    "featuredPokemon": [
+      "Pikachu"
+    ]
   },
   {
     "id": "hist-world-space-week-2026",
@@ -1232,7 +3170,70 @@
     "poster": "/posters/hist-world-space-week-2026.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/event/october-2026-events/"
+    "source": "https://pokemongohub.net/post/event/october-2026-events/",
+    "featuredPokemon": [
+      "Pikachu"
+    ]
+  },
+  {
+    "id": "historic-max-10-05-sizzlipede",
+    "start": "2026-10-05",
+    "end": "2026-10-11",
+    "name": "Dynamax Sizzlipede • Weekly Max Battles",
+    "category": "max-battle-rotation",
+    "featuredPokemon": [
+      "Dynamax Sizzlipede"
+    ],
+    "detail": "Historical weekly Power Spot Max Battle rotation: Dynamax Sizzlipede. Max Monday features the same weekly boss; Power Spot availability and timings are subject to event rules.",
+    "source": "https://pokemongohub.net/post/event/october-2026-events/",
+    "poster": "/posters/historic-max-10-05-sizzlipede.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the weekly Max Battle Pokémon."
+  },
+  {
+    "id": "historic-raid-10-07-5-raids-yveltal",
+    "start": "2026-10-07",
+    "end": "2026-10-13",
+    "name": "5★ Raids • Yveltal",
+    "category": "raid",
+    "featuredPokemon": [
+      "Yveltal"
+    ],
+    "detail": "Historical 5★ raids rotation featuring Yveltal. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/october-2026-events/",
+    "poster": "/posters/historic-raid-10-07-5-raids-yveltal.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
+    "id": "historic-raid-10-07-mega-raids-mega-blastoise",
+    "start": "2026-10-07",
+    "end": "2026-10-13",
+    "name": "Mega Raids • Mega Blastoise",
+    "category": "raid",
+    "featuredPokemon": [
+      "Mega Blastoise"
+    ],
+    "detail": "Historical mega raids rotation featuring Mega Blastoise. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/october-2026-events/",
+    "poster": "/posters/historic-raid-10-07-mega-raids-mega-blastoise.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
+    "id": "historic-raid-10-07-weekend-shadow-raids-shadow-landorus",
+    "start": "2026-10-07",
+    "end": "2026-11-03",
+    "name": "Weekend Shadow Raids • Shadow Landorus",
+    "category": "raid",
+    "featuredPokemon": [
+      "Shadow Landorus"
+    ],
+    "detail": "Historical weekend shadow raids rotation featuring Shadow Landorus. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates. Five-star Shadow raids are primarily on weekends.",
+    "source": "https://pokemongohub.net/post/event/october-2026-events/",
+    "poster": "/posters/historic-raid-10-07-weekend-shadow-raids-shadow-landorus.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
   },
   {
     "id": "hist-october-2026-community-day-zorua",
@@ -1245,7 +3246,10 @@
     "poster": "/posters/hist-october-2026-community-day-zorua.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/event/october-2026-events/"
+    "source": "https://pokemongohub.net/post/event/october-2026-events/",
+    "featuredPokemon": [
+      "Zorua"
+    ]
   },
   {
     "id": "hist-pokexciting-taipei",
@@ -1261,6 +3265,21 @@
     "source": "https://pokemongohub.net/post/event/october-2026-events/"
   },
   {
+    "id": "historic-max-10-12-rookidee",
+    "start": "2026-10-12",
+    "end": "2026-10-18",
+    "name": "Dynamax Rookidee • Weekly Max Battles",
+    "category": "max-battle-rotation",
+    "featuredPokemon": [
+      "Dynamax Rookidee"
+    ],
+    "detail": "Historical weekly Power Spot Max Battle rotation: Dynamax Rookidee. Max Monday features the same weekly boss; Power Spot availability and timings are subject to event rules.",
+    "source": "https://pokemongohub.net/post/event/october-2026-events/",
+    "poster": "/posters/historic-max-10-12-rookidee.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the weekly Max Battle Pokémon."
+  },
+  {
     "id": "hist-fall-marathon-buddy-trek",
     "start": "2026-10-13",
     "end": "2026-10-19",
@@ -1271,7 +3290,40 @@
     "poster": "/posters/hist-fall-marathon-buddy-trek.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/event/october-2026-events/"
+    "source": "https://pokemongohub.net/post/event/october-2026-events/",
+    "featuredPokemon": [
+      "Bramblin"
+    ]
+  },
+  {
+    "id": "historic-raid-10-14-5-raids-dialga",
+    "start": "2026-10-14",
+    "end": "2026-10-20",
+    "name": "5★ Raids • Dialga",
+    "category": "raid",
+    "featuredPokemon": [
+      "Dialga"
+    ],
+    "detail": "Historical 5★ raids rotation featuring Dialga. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/october-2026-events/",
+    "poster": "/posters/historic-raid-10-14-5-raids-dialga.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
+    "id": "historic-raid-10-14-mega-raids-mega-dragonite",
+    "start": "2026-10-14",
+    "end": "2026-10-20",
+    "name": "Mega Raids • Mega Dragonite",
+    "category": "raid",
+    "featuredPokemon": [
+      "Mega Dragonite"
+    ],
+    "detail": "Historical mega raids rotation featuring Mega Dragonite. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/october-2026-events/",
+    "poster": "/posters/historic-raid-10-14-mega-raids-mega-dragonite.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
   },
   {
     "id": "hist-sandile-hatch-day",
@@ -1284,7 +3336,25 @@
     "poster": "/posters/hist-sandile-hatch-day.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/event/october-2026-events/"
+    "source": "https://pokemongohub.net/post/event/october-2026-events/",
+    "featuredPokemon": [
+      "Sandile"
+    ]
+  },
+  {
+    "id": "historic-max-10-19-sneasel",
+    "start": "2026-10-19",
+    "end": "2026-10-25",
+    "name": "Dynamax Sneasel • Weekly Max Battles",
+    "category": "max-battle-rotation",
+    "featuredPokemon": [
+      "Dynamax Sneasel"
+    ],
+    "detail": "Historical weekly Power Spot Max Battle rotation: Dynamax Sneasel. Max Monday features the same weekly boss; Power Spot availability and timings are subject to event rules.",
+    "source": "https://pokemongohub.net/post/event/october-2026-events/",
+    "poster": "/posters/historic-max-10-19-sneasel.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the weekly Max Battle Pokémon."
   },
   {
     "id": "hist-minior-showers-orionids",
@@ -1297,7 +3367,41 @@
     "poster": "/posters/hist-minior-showers-orionids.svg",
     "posterType": "custom",
     "posterNote": "Event-specific AlfaMitsu archive graphic, not an official Pokémon GO poster.",
-    "source": "https://pokemongohub.net/post/event/october-2026-events/"
+    "source": "https://pokemongohub.net/post/event/october-2026-events/",
+    "featuredPokemon": [
+      "Minior"
+    ]
+  },
+  {
+    "id": "historic-raid-10-21-5-raids-palkia",
+    "start": "2026-10-21",
+    "end": "2026-10-27",
+    "name": "5★ Raids • Palkia",
+    "category": "raid",
+    "featuredPokemon": [
+      "Palkia"
+    ],
+    "detail": "Historical 5★ raids rotation featuring Palkia. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/october-2026-events/",
+    "poster": "/posters/historic-raid-10-21-5-raids-palkia.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
+    "id": "historic-raid-10-21-mega-raids-mega-charizard-x-mega-charizard-y",
+    "start": "2026-10-21",
+    "end": "2026-10-27",
+    "name": "Mega Raids • Mega Charizard X & Mega Charizard Y",
+    "category": "raid",
+    "featuredPokemon": [
+      "Mega Charizard X",
+      "Mega Charizard Y"
+    ],
+    "detail": "Historical mega raids rotation featuring Mega Charizard X, Mega Charizard Y. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/october-2026-events/",
+    "poster": "/posters/historic-raid-10-21-mega-raids-mega-charizard-x-mega-charizard-y.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
   },
   {
     "id": "ev000",
@@ -1400,6 +3504,21 @@
     "category": "max-battle-rotation"
   },
   {
+    "id": "historic-max-10-26-sableye",
+    "start": "2026-10-26",
+    "end": "2026-11-01",
+    "name": "Dynamax Sableye • Weekly Max Battles",
+    "category": "max-battle-rotation",
+    "featuredPokemon": [
+      "Dynamax Sableye"
+    ],
+    "detail": "Historical weekly Power Spot Max Battle rotation: Dynamax Sableye. Max Monday features the same weekly boss; Power Spot availability and timings are subject to event rules.",
+    "source": "https://pokemongohub.net/post/event/october-2026-events/",
+    "poster": "/posters/historic-max-10-26-sableye.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the weekly Max Battle Pokémon."
+  },
+  {
     "id": "max-monday-2026-10-26",
     "start": "2026-10-26",
     "end": "2026-10-26",
@@ -1442,6 +3561,21 @@
     "posterType": "supplied"
   },
   {
+    "id": "historic-raid-10-28-5-raids-giratina",
+    "start": "2026-10-28",
+    "end": "2026-11-03",
+    "name": "5★ Raids • Giratina",
+    "category": "raid",
+    "featuredPokemon": [
+      "Giratina"
+    ],
+    "detail": "Historical 5★ raids rotation featuring Giratina. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/october-2026-events/",
+    "poster": "/posters/historic-raid-10-28-5-raids-giratina.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
+  },
+  {
     "id": "ev009",
     "start": "2026-10-28",
     "end": "2026-11-03",
@@ -1466,6 +3600,21 @@
     "poster": "/posters/giratina-origin.jpg",
     "source": null,
     "posterType": "supplied"
+  },
+  {
+    "id": "historic-raid-10-28-mega-raids-mega-sableye",
+    "start": "2026-10-28",
+    "end": "2026-11-03",
+    "name": "Mega Raids • Mega Sableye",
+    "category": "raid",
+    "featuredPokemon": [
+      "Mega Sableye"
+    ],
+    "detail": "Historical mega raids rotation featuring Mega Sableye. Bosses rotate at approximately 10:00 a.m. local time on scheduled change dates.",
+    "source": "https://pokemongohub.net/post/event/october-2026-events/",
+    "poster": "/posters/historic-raid-10-28-mega-raids-mega-sableye.svg",
+    "posterType": "custom",
+    "posterNote": "AlfaMitsu visual archive guide featuring the listed raid bosses. Schedule sourced from a published 2026 monthly raid calendar."
   },
   {
     "id": "ev010",
