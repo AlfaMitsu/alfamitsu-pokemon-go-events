@@ -120,3 +120,11 @@ V26: Visitor counts (Online, 1 Day, 7 Days, 30 Days) display directly in the hea
 - Preserved existing events, README and website changelog synchronization.
 
 - Supplemented exact-form artwork with real published imagery for witch-hat Teddiursa (Pokémon.com), saree Pikachu, and the 2026 hat-and-capelet Pikachu. Online images are checked before selection; source URLs live in `app/api/pokemon-image/route.ts`.
+
+
+## November 8, 2026 — Generated poster image resolver fix
+- Fixed the **separate** generated poster renderer: it previously used a small hardcoded dex and could show blank symbols for named costumes such as Singapore Blue PokéXciting! Pikachu.
+- The renderer now uses the shared 1,025-species Pokédex index and authentic PokeAPI artwork fallbacks.
+- For Singapore Blue PokéXciting! Pikachu, the renderer attempts to locate the actual blue costume image on its dedicated Dittobase Pokédex entry first, then shows Pikachu's real official artwork if the third-party image cannot be reached.
+- Crowned Zacian/Zamazenta and available Gigantamax forms use actual Pokémon GO assets.
+- Kept the website changelog synchronized with GitHub README.

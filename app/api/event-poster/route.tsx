@@ -1,3 +1,5 @@
+import {lookupSpecies} from '@/lib/pokemon-images';
+import speciesIds from '@/lib/pokemon-species-ids.json';
 import { ImageResponse } from 'next/og';
 import events from '../../../lib/events.json';
 
@@ -41,31 +43,90 @@ const highlightRules: Array<[string,string[]]> = [
   ['30th anniversary',['Pikachu']],['anniversary',['Pikachu']]
 ];
 
+
 function pokemonName(value: string) {
-  return value.replace(/^(dynamax|gigantamax|shadow|mega)\s+/i,'')
-    .replace(/\s+(x|y|z)$/i,'').replace(/\s+\(.*\)$/,'').trim().toLowerCase();
+ const clean=value.replace(/^(dynamax|gigantamax|shadow|mega)\s+/i,'')
+  .replace(/\s+(x|y|z)$/i,'').replace(/\s+\(.*\)$/,'').trim().toLowerCase();
+ const match=lookupSpecies(value);
+ if(match)return clean in dex?clean:Object.keys(speciesIds).find(n=>speciesIds[n]===match)||clean;
+ if(/pikachu/i.test(value))return 'pikachu';
+ return clean;
 }
 
 function highlights(e: any): string[] {
-  if (e.featuredPokemon?.length) return e.featuredPokemon.slice(0,3);
-  const text=String(e.name||'').toLowerCase();
-  for (const [part, names] of highlightRules) if (text.includes(part)) return names;
-  const names=Object.keys(dex).filter(k=> k.length>3 && text.includes(k)).sort((a,b)=>b.length-a.length);
-  return names.length ? names.slice(0,3).map(s=>s.replace(/(^|\s)\S/g,c=>c.toUpperCase())) : [];
+ if(e.featuredPokemon?.length)return e.featuredPokemon.slice(0,3);
+ const value=String(e.name||'').toLowerCase();
+ for(const [part,names] of highlightRules)if(value.includes(part))return names;
+ const names=Object.keys(dex).filter(n=>n.length>3&&value.includes(n)).sort((a,b)=>b.length-a.length);
+ return names.length?names.slice(0,3).map(s=>s.replace(/(^|\s)\S/g,c=>c.toUpperCase())):[];
 }
 
-async function spriteData(name: string): Promise<string|null> {
-  const id=dex[pokemonName(name)];
-  if (!id) return null;
-  const url='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/'+id+'.png';
-  try {
-    const res=await fetch(url,{next:{revalidate:86400},signal:AbortSignal.timeout(6000)});
-    if (!res.ok) return null;
-    const data=Buffer.from(await res.arrayBuffer()).toString('base64');
-    return 'data:image/png;base64,'+data;
-  } catch {
-    return null;
+async function getImageData(url:string):Promise<string|null>{
+ try{
+  const res=await fetch(url,{next:{revalidate:604800},signal:AbortSignal.timeout(4000)});
+  if(!res.ok)return null;
+  const mime=(res.headers.get('content-type')||'').split(';')[0].trim();
+  if(!['image/png','image/jpeg','image/webp'].includes(mime))return null;
+  const bytes=await res.arrayBuffer();
+  if(!bytes.byteLength||bytes.byteLength>2500000)return null;
+  return 'data:'+mime+';base64,'+Buffer.from(bytes).toString('base64');
+ }catch{return null}
+}
+
+async function singaporePikachu():Promise<string|null>{
+ // Dittobase hosts an individual Pokédex entry with the real Singapore-specific
+ // blue costume. Extract the matching image, not a different regional Pikachu.
+ try{
+  const page=await fetch('https://www.dittobase.com/pokemon-go/pokedex/pikachu-anniversary-2026-singapore-01',{
+    next:{revalidate:86400},signal:AbortSignal.timeout(4500),headers:{'User-Agent':'Mozilla/5.0 AlfaMitsuEventTracker/1.0'}
+  });
+  if(!page.ok)return null;
+  const html=await page.text();
+  const alt=/<img\b[^>]*alt=["']Blue Pok(?:é|e)Xciting! Pikachu["'][^>]*>/gi;
+  const tags=[...html.matchAll(alt)].map(m=>m[0]);
+  for(const tag of tags.slice(0,6)){
+   const m=tag.match(/\bsrc=["']([^"']+)["']/i);
+   if(!m)continue;
+   const raw=m[1].replace(/&amp;/g,'&');
+   const url=new URL(raw,'https://www.dittobase.com').href;
+   if(!url.startsWith('https://www.dittobase.com/')&&!url.startsWith('https://images.dittobase.com/'))continue;
+   const img=await getImageData(url);
+   if(img)return img;
   }
+  return null;
+ }catch{return null}
+}
+
+async function spriteData(name:string):Promise<string|null>{
+ const lower=name.toLowerCase().trim();
+ if(/(?:blue|singapore).*(?:poke.?xciting|afro).*pikachu|blue\s+pok[eé]xciting.*pikachu/i.test(lower)){
+  const costume=await singaporePikachu();
+  if(costume)return costume;
+ }
+ // Get authentic GO form imagery by exact name when the named variant is known.
+ const special:Record<string,string>={
+  'crowned sword zacian':'pm888.fCROWNED_SWORD.icon.png',
+  'crowned shield zamazenta':'pm889.fCROWNED_SHIELD.icon.png',
+  'gigantamax charizard':'pm6.fGIGANTAMAX.icon.png',
+  'gigantamax venusaur':'pm3.fGIGANTAMAX.icon.png',
+  'gigantamax blastoise':'pm9.fGIGANTAMAX.icon.png',
+  'gigantamax machamp':'pm68.fGIGANTAMAX.icon.png',
+  'pikachu wearing a kurta':'pm25.fKURTA.icon.png'
+ };
+ const exact=special[lower];
+ if(exact){
+  const url='https://raw.githubusercontent.com/PokeMiners/pogo_assets/master/Images/Pokemon/Addressable%20Assets/'+exact;
+  const img=await getImageData(url);if(img)return img;
+ }
+ const clean=pokemonName(name);
+ const id=dex[clean]||lookupSpecies(name)||lookupSpecies(clean);
+ if(!id)return null;
+ for(const suffix of ['other/official-artwork/','other/home/','']){
+  const url='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/'+suffix+id+'.png';
+  const result=await getImageData(url);if(result)return result;
+ }
+ const go='https://raw.githubusercontent.com/PokeMiners/pogo_assets/master/Images/Pokemon/Addressable%20Assets/pm'+id+'.icon.png';
+ return getImageData(go);
 }
 
 export async function GET(request: Request) {
