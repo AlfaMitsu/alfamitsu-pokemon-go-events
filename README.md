@@ -69,3 +69,12 @@ V26: Visitor counts (Online, 1 Day, 7 Days, 30 Days) display directly in the hea
 - Fixes blank-looking Sendai and Mexico City in-person 5-star raids, 3-star raids and Max Battles where the original poster files were already included.
 - Added the same release note to the website's Updates & Changelog.
 - The November–December event artwork and new poster files remain a separate pending synchronization; this commit does not claim to import them.
+
+
+## November 8, 2026 — Historical events and posters release
+- Added historical event entries covering January through October 2026, with relevant public calendar source links and individual AlfaMitsu archive artwork.
+- Completed events are visible by default in Events List; toggle Show completed events to hide them.
+- Corrected November 28 Mega Clefable Raid Day details and added unconfirmed December event placeholders distinctly labeled as datamines, with illustrative art.
+- Poster priority remains AlfaMitsu originals, G47IX, FlareBlaze, verified internet posters, then event-specific custom graphics. Archive graphics are custom illustrations rather than official event posters.
+- The in-person Wild Area guide posters and existing published event records were preserved.
+- Historical archive is a best-effort backfill; further region-exclusive or earlier-year events may still need verification.
