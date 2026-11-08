@@ -62,3 +62,10 @@ V24: Removed Raid & Coin Estimate. Website Visitors now appears as its own navig
 
 
 V26: Visitor counts (Online, 1 Day, 7 Days, 30 Days) display directly in the header beside the logo on desktop and on a compact second header row on mobile. No analytics page is needed. Counts remain unavailable (—) until a database is configured.
+
+
+## November 8, 2026 — In-person poster display fix
+- Weekly Event Tracker tiles now display an assigned poster image before attempting a Pokémon sprite fallback.
+- Fixes blank-looking Sendai and Mexico City in-person 5-star raids, 3-star raids and Max Battles where the original poster files were already included.
+- Added the same release note to the website's Updates & Changelog.
+- The November–December event artwork and new poster files remain a separate pending synchronization; this commit does not claim to import them.
