@@ -86,3 +86,11 @@ V26: Visitor counts (Online, 1 Day, 7 Days, 30 Days) display directly in the hea
 - Raids and Max Battles have separate tracker rows with source-backed featured Pokémon and event details.
 - All generated historical SVG poster artwork is refreshed with actual Pokémon sprite graphics or event-themed highlight graphics; AlfaMitsu original posters still take priority.
 - Historical schedules are based on monthly published calendars; recurring rotation end dates may change at 10 a.m. local rather than midnight.
+
+
+## November 8, 2026 — Featured-Pokémon poster rendering
+- Added `/api/event-poster?id=EVENT_ID` for generated/custom event poster artwork. Each poster shows the listed featured Pokémon or a clearly labeled event-theme illustration.
+- Generated raid posters display the featured raid bosses; generated Max Battle posters display the Dynamax Pokémon; community days use their featured species.
+- Existing supplied posters retain priority and are never replaced by the generator.
+- Poster PNG rendering uses the Next.js `ImageResponse` API, fetches Pokémon artwork with a cached fallback, and prevents broken calendar graphics when an image is unavailable.
+- Event-list poster previews are lazy-loaded to reduce loading a large historical archive all at once.
