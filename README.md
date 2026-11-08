@@ -136,3 +136,10 @@ V26: Visitor counts (Online, 1 Day, 7 Days, 30 Days) display directly in the hea
 - Event-card image failure first falls back to its existing poster and then the generated event graphic.
 - Corrected Festival Walk Pokémon GO Mall Exploration gameplay dates to November 9, 2026–January 3, 2027, from the official notice.
 - Updated event source links and website changelog in the same GitHub production release.
+
+
+## November 8, 2026 — GO Weekly image-first cards
+- Fixed text-only graphics in the GO Weekly Raids and Max Battles rows: when featured Pokémon are known, each calendar card now shows large real Pokémon images on the right over a contrasting gradient, with concise title/date information at left.
+- Added featured-Pokémon mappings for Cresselia, Darkrai, Mega Banette, Shadow Tornadus, Cresselia/Darkrai Raid Hour, Eternatus, Dynamax Trails and Pawniard Community Day.
+- Preserved existing full event posters for cards without known featured Pokémon, and retained the event detail views, data sources, and weekly calendar navigation.
+- Synced Website Updates & Changelog to this GitHub release.

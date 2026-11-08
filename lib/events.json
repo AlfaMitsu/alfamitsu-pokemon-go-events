@@ -4467,7 +4467,10 @@
     "posterType": "custom",
     "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
     "infographicCredit": "Pokémon GO Hub — November 2026 event calendar",
-    "category": "raid"
+    "category": "raid",
+    "featuredPokemon": [
+      "Cresselia"
+    ]
   },
   {
     "id": "ev035",
@@ -4483,7 +4486,10 @@
     "posterType": "custom",
     "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
     "infographicCredit": "Pokémon GO Hub — November 2026 event calendar",
-    "category": "raid"
+    "category": "raid",
+    "featuredPokemon": [
+      "Darkrai"
+    ]
   },
   {
     "id": "ev032",
@@ -4498,7 +4504,12 @@
     "source": "https://pokemongo.com/en/news/dynamax-trails-eternamax-eternatus-2026",
     "posterType": "supplied",
     "infographicSource": "https://www.instagram.com/p/DfC77UMCqhC/",
-    "infographicCredit": "G47IX — Dynamax Trails infographic (Oct 28, 2026)"
+    "infographicCredit": "G47IX — Dynamax Trails infographic (Oct 28, 2026)",
+    "featuredPokemon": [
+      "Eternatus",
+      "Bulbasaur",
+      "Charmander"
+    ]
   },
   {
     "id": "event-battles-dynamax-trails-all",
@@ -4513,7 +4524,11 @@
     "poster": "/posters/dynamax-trails.jpg",
     "posterType": "supplied",
     "source": "https://pokemongo.com/en/news/dynamax-trails-eternamax-eternatus-2026",
-    "featuredPokemon": [],
+    "featuredPokemon": [
+      "Bulbasaur",
+      "Charmander",
+      "Squirtle"
+    ],
     "linkedEventId": "ev032",
     "posterNote": "Uses the original supplied Dynamax Trails event artwork."
   },
@@ -4530,7 +4545,10 @@
     "source": null,
     "posterType": "custom",
     "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
-    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar",
+    "featuredPokemon": [
+      "Mega Banette"
+    ]
   },
   {
     "id": "ev036",
@@ -4545,7 +4563,10 @@
     "source": null,
     "posterType": "custom",
     "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
-    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar",
+    "featuredPokemon": [
+      "Shadow Tornadus"
+    ]
   },
   {
     "id": "ev037",
@@ -4561,7 +4582,11 @@
     "posterType": "custom",
     "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
     "infographicCredit": "Pokémon GO Hub — November 2026 event calendar",
-    "category": "raid"
+    "category": "raid",
+    "featuredPokemon": [
+      "Cresselia",
+      "Darkrai"
+    ]
   },
   {
     "id": "ev038",
@@ -4595,7 +4620,7 @@
     "category": "max-battle-rotation",
     "linkedEventId": "ev032",
     "featuredPokemon": [
-      "Eternamax Eternatus"
+      "Eternatus"
     ]
   },
   {
@@ -4611,7 +4636,10 @@
     "source": "https://pokemongo.com/news/communityday-november-2026-pawniard",
     "posterType": "custom",
     "infographicSource": "https://pokemongo.com/news/communityday-november-2026-pawniard",
-    "infographicCredit": "Official Pokémon GO — Pawniard Community Day"
+    "infographicCredit": "Official Pokémon GO — Pawniard Community Day",
+    "featuredPokemon": [
+      "Pawniard"
+    ]
   },
   {
     "id": "ev040",
