@@ -17,6 +17,15 @@ export async function GET(req:NextRequest){
    const u=assetBase+exact;
    if(await good(u))return NextResponse.redirect(u,{status:307});
  }
+
+ const verifiedOnlineCostumes:Record<string,string>={
+   'teddiursa wearing a witch hat':'https://www.pokemon.com/remote-assets/s3/pcom-main/cms2/img/video-games/_tiles/pokemon-go/2025/10/27/inline/01.png',
+   'pikachu wearing a saree':'https://staticg.sportskeeda.com/editor/2024/12/0ff18-17331599502270-1920.jpg',
+   'pikachu wearing a hat and capelet':'https://images.mein-mmo.de/medien/2026/10/Pokemon-GO-Halloween-2026-Teil-1-1024x576.jpg'
+ };
+ const online=verifiedOnlineCostumes[lower];
+ if(online&&await good(online))return NextResponse.redirect(online,{status:307,headers:{'Cache-Control':'public, s-maxage=86400'}});
+
  const aliases:Record<string,string>={
  'alolan grimer':'grimer-alola','primal kyogre':'kyogre-primal','primal groudon':'groudon-primal',
  'mega gengar':'gengar-mega','mega sableye':'sableye-mega','mega lucario':'lucario-mega',
@@ -76,6 +85,7 @@ export async function GET(req:NextRequest){
      if(url&&url.startsWith('https://'))return NextResponse.redirect(url,{status:307});
    }catch{}
  }
+ // Actual costume sprites not yet published are never replaced with a different costume.
  if(id){
    const url='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/'+id+'.png';
    if(await good(url))return NextResponse.redirect(url,{status:307});
