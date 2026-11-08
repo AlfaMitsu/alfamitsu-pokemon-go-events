@@ -143,3 +143,12 @@ V26: Visitor counts (Online, 1 Day, 7 Days, 30 Days) display directly in the hea
 - Added featured-Pokémon mappings for Cresselia, Darkrai, Mega Banette, Shadow Tornadus, Cresselia/Darkrai Raid Hour, Eternatus, Dynamax Trails and Pawniard Community Day.
 - Preserved existing full event posters for cards without known featured Pokémon, and retained the event detail views, data sources, and weekly calendar navigation.
 - Synced Website Updates & Changelog to this GitHub release.
+
+
+## November 8, 2026 — Weekly calendar imagery and changelog consolidation
+- Replaced giant text-only GO Weekly cards for Dynamax Espurr, Max Monday Espurr, Dynamax Cryogonal, Max Monday Cryogonal, and Twilight Wishes with real Pokémon pictures.
+- Regional custom poster cards with verified featured Pokémon (including party-hat Pikachu at SM Southmall) now show Pokémon rather than generic text-only poster art; supplied/web posters remain intact.
+- Twilight Wishes features scarf Espeon, scarf Umbreon, and Rockruff (source: https://leekduck.com/events/twilight-wishes-2026/). Exact costumes use actual Pokémon GO assets when available, with species artwork fallback.
+- Tropical Paradise remains unconfirmed with unknown encounters: its weekly card uses a neutral illustrated theme and does not assign fictional Pokémon.
+- Consolidated repetitive November 8 website changelog cards into three themed entries without deleting older distinct releases.
+- The latest website changelog and README describe the same deployed changes.

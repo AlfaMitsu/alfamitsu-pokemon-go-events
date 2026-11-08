@@ -4593,15 +4593,18 @@
     "start": "2026-11-20",
     "end": "2026-11-30",
     "name": "30th Anniversary Mall Explorations",
-    "detail": "SM Southmall, Philippines",
+    "detail": "SM Southmall, Philippines (November 20–30, 2026): Pokémon GO 30th Anniversary Mall Exploration features party-hat Pikachu, mall-specific Timed Research, and four-hour Lure Modules in designated areas.",
     "zone": "Asia/Manila",
     "endTime": "20:00",
     "startTime": "00:00",
     "poster": "/posters/custom-ev038.jpg",
-    "source": null,
+    "source": "https://pokemongo.com/news/apac-mall-exploration-2026?hl=en",
     "posterType": "custom",
     "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
-    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar",
+    "featuredPokemon": [
+      "Pikachu wearing a party hat"
+    ]
   },
   {
     "id": "ev031",
@@ -4655,7 +4658,10 @@
     "posterType": "custom",
     "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
     "infographicCredit": "Pokémon GO Hub — November 2026 event calendar",
-    "category": "max-battle-rotation"
+    "category": "max-battle-rotation",
+    "featuredPokemon": [
+      "Dynamax Espurr"
+    ]
   },
   {
     "id": "max-monday-2026-11-23",
@@ -4669,22 +4675,30 @@
     "poster": "/posters/custom-ev040.jpg",
     "posterType": "custom",
     "category": "event",
-    "source": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/"
+    "source": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
+    "featuredPokemon": [
+      "Dynamax Espurr"
+    ]
   },
   {
     "id": "ev041",
     "start": "2026-11-24",
     "end": "2026-11-30",
     "name": "Twilight Wishes",
-    "detail": "",
+    "detail": "Twilight Wishes (November 24–30, 10:00 AM–8:00 PM local) features Espeon wearing a sun scarf, Umbreon wearing a moon scarf, and Rockruff, with increased Shiny Staryu and Shiny Elgyem chances. Check the event guide for current bonuses and raids.",
     "zone": "",
     "endTime": "20:00",
-    "startTime": "00:00",
+    "startTime": "10:00",
     "poster": "/posters/custom-ev041.jpg",
-    "source": null,
+    "source": "https://leekduck.com/events/twilight-wishes-2026/",
     "posterType": "custom",
     "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
-    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar",
+    "featuredPokemon": [
+      "Espeon wearing a sun scarf",
+      "Umbreon wearing a moon scarf",
+      "Rockruff"
+    ]
   },
   {
     "id": "ev043",
@@ -4781,7 +4795,10 @@
     "posterType": "custom",
     "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
     "infographicCredit": "Pokémon GO Hub — November 2026 event calendar",
-    "category": "max-battle-rotation"
+    "category": "max-battle-rotation",
+    "featuredPokemon": [
+      "Dynamax Cryogonal"
+    ]
   },
   {
     "id": "max-monday-2026-11-30",
@@ -4795,7 +4812,10 @@
     "poster": "/posters/custom-ev047.jpg",
     "posterType": "custom",
     "category": "event",
-    "source": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/"
+    "source": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
+    "featuredPokemon": [
+      "Dynamax Cryogonal"
+    ]
   },
   {
     "id": "ev048",
