@@ -118,3 +118,5 @@ V26: Visitor counts (Online, 1 Day, 7 Days, 30 Days) display directly in the hea
 - Other costume names only resolve to exact costume sprites when the actual asset name supports that match. No random outfit or false costume substitutions.
 - Unmatched costumes continue using authentic base species art to prevent blank tiles.
 - Preserved existing events, README and website changelog synchronization.
+
+- Supplemented exact-form artwork with real published imagery for witch-hat Teddiursa (Pokémon.com), saree Pikachu, and the 2026 hat-and-capelet Pikachu. Online images are checked before selection; source URLs live in `app/api/pokemon-image/route.ts`.
