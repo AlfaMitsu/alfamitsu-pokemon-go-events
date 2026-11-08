@@ -48,7 +48,7 @@ function pokemonName(value: string) {
  const clean=value.replace(/^(dynamax|gigantamax|shadow|mega)\s+/i,'')
   .replace(/\s+(x|y|z)$/i,'').replace(/\s+\(.*\)$/,'').trim().toLowerCase();
  const match=lookupSpecies(value);
- if(match)return clean in dex?clean:Object.keys(speciesIds).find(n=>speciesIds[n]===match)||clean;
+ if(match)return clean in dex?clean:Object.keys(speciesIds).find(n=>(speciesIds as Record<string,number>)[n]===match)||clean;
  if(/pikachu/i.test(value))return 'pikachu';
  return clean;
 }
