@@ -128,3 +128,11 @@ V26: Visitor counts (Online, 1 Day, 7 Days, 30 Days) display directly in the hea
 - For Singapore Blue PokéXciting! Pikachu, the renderer attempts to locate the actual blue costume image on its dedicated Dittobase Pokédex entry first, then shows Pikachu's real official artwork if the third-party image cannot be reached.
 - Crowned Zacian/Zamazenta and available Gigantamax forms use actual Pokémon GO assets.
 - Kept the website changelog synchronized with GitHub README.
+
+
+## November 8, 2026 — Missing event-card artwork and details
+- Added verified featured Pokémon to regional mall explorations, Pokémon Night Out London, Pokémon RUN 30 Taipei, Festival Walk Hong Kong, Into the Wild, GO Wild Area Global, and Minior Leonids.
+- Poster routing now uses the event-specific generated Pokémon artwork only when featured species are known. Otherwise it uses the existing supplied/local poster, avoiding hollow icon placeholders on unrelated event cards.
+- Event-card image failure first falls back to its existing poster and then the generated event graphic.
+- Corrected Festival Walk Pokémon GO Mall Exploration gameplay dates to November 9, 2026–January 3, 2027, from the official notice.
+- Updated event source links and website changelog in the same GitHub production release.

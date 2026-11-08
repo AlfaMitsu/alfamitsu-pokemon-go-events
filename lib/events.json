@@ -4027,30 +4027,36 @@
     "start": "2026-11-07",
     "end": "2027-01-31",
     "name": "30th Anniversary Mall Explorations",
-    "detail": "Jewel Singapore",
+    "detail": "Jewel Singapore Pokémon 30th Anniversary Mall Exploration, November 7, 2026–January 31, 2027. Event-themed encounter: Pikachu wearing a party hat. Visiting a participating mall unlocks limited Timed Research; designated areas offer four-hour Lure Modules.",
     "zone": "Asia/Singapore",
     "endTime": "20:00",
     "startTime": "00:00",
     "poster": "/posters/custom-ev023.jpg",
-    "source": "https://pokemongo.com/en/news/event-singapore-30th-anniversary-2026",
+    "source": "https://pokemongo.com/news/apac-mall-exploration-2026?hl=en",
     "posterType": "custom",
     "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
-    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar",
+    "featuredPokemon": [
+      "Pikachu"
+    ]
   },
   {
     "id": "ev024",
     "start": "2026-11-07",
     "end": "2027-02-28",
     "name": "30th Anniversary Mall Explorations",
-    "detail": "Changi Airport Singapore",
+    "detail": "Changi Airport Singapore Pokémon 30th Anniversary Mall Exploration, November 7, 2026–February 28, 2027. Featured encounter: party-hat Pikachu, with limited mall Timed Research and four-hour Lure Module effects in designated areas.",
     "zone": "Asia/Singapore",
     "endTime": "20:00",
     "startTime": "00:00",
     "poster": "/posters/custom-ev024.jpg",
-    "source": "https://pokemongo.com/en/news/event-singapore-30th-anniversary-2026",
+    "source": "https://pokemongo.com/news/apac-mall-exploration-2026?hl=en",
     "posterType": "custom",
     "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
-    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar",
+    "featuredPokemon": [
+      "Pikachu"
+    ]
   },
   {
     "id": "ev022",
@@ -4105,7 +4111,12 @@
     "source": "https://pokemongo.com/news/into-the-wild-2026",
     "posterType": "custom",
     "infographicSource": "https://leekduck.com/events/into-the-wild-2026/",
-    "infographicCredit": "Leek Duck — Into the Wild event guide"
+    "infographicCredit": "Leek Duck — Into the Wild event guide",
+    "featuredPokemon": [
+      "Crowned Sword Zacian",
+      "Crowned Shield Zamazenta",
+      "Dynamax Regidrago"
+    ]
   },
   {
     "id": "event-battles-itw-one-two-star-max",
@@ -4191,15 +4202,20 @@
     "start": "2026-11-10",
     "end": "2026-11-10",
     "name": "Pokémon Night Out",
-    "detail": "London",
+    "detail": "Pokémon Night Out at The O2 arena in London, November 10, 2026. One-star Pikachu and three-star Gengar raids can award a London Location Background, plus venue Timed Research and one-hour Lure Modules.",
     "zone": "Europe/London",
-    "endTime": "20:00",
-    "startTime": "00:00",
+    "endTime": "23:59",
+    "startTime": "18:00",
     "poster": "/posters/custom-ev026.jpg",
-    "source": null,
+    "source": "https://pokemongo.com/news/pokemon-night-out-irl-details2026",
     "posterType": "custom",
     "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
-    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar",
+    "featuredPokemon": [
+      "Pikachu",
+      "Gengar",
+      "Toxtricity"
+    ]
   },
   {
     "id": "event-battles-itw-max-registeel",
@@ -4332,52 +4348,70 @@
     "posterType": "web",
     "infographicSource": "https://x.com/PokemonGOHubNet/status/2077528684823507023",
     "infographicCredit": "FlareBlaze × Pokémon GO Hub — GO Wild Area 2026 graphic",
-    "onlineImage": "https://pbs.twimg.com/media/HNTdVC_XMAATOUs.jpg"
+    "onlineImage": "https://pbs.twimg.com/media/HNTdVC_XMAATOUs.jpg",
+    "featuredPokemon": [
+      "Gigantamax Duraludon",
+      "Dynamax Dialga",
+      "Dynamax Palkia"
+    ]
   },
   {
     "id": "ev029",
-    "start": "2026-11-14",
-    "end": "2026-11-15",
+    "start": "2026-11-09",
+    "end": "2027-01-03",
     "name": "Hong Kong Festival Walk",
-    "detail": "Hong Kong",
+    "detail": "Pokémon's 30 Years of Joy at Festival Walk, Hong Kong. The Pokémon GO Mall Exploration gameplay period runs November 9, 2026–January 3, 2027, with party-hat Pikachu, event Timed Research, and four-hour Lure Modules within designated areas.",
     "zone": "Asia/Hong_Kong",
     "endTime": "20:00",
     "startTime": "00:00",
     "poster": "/posters/custom-ev029.jpg",
-    "source": null,
+    "source": "https://pokemongo.com/news/apac-mall-exploration-2026?hl=en",
     "posterType": "custom",
     "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
-    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar",
+    "featuredPokemon": [
+      "Pikachu",
+      "Bulbasaur",
+      "Charmander"
+    ]
   },
   {
     "id": "ev030",
     "start": "2026-11-14",
     "end": "2026-11-19",
     "name": "Minior: Leonids",
-    "detail": "",
+    "detail": "Minior Showers: Leonids runs November 14 at 5:00 p.m. through November 19 at 11:59 p.m. local time. Minior appears more often from 5–9 p.m., and each catch awards 1,000 Stardust. New core-color debut; exact color to be confirmed.",
     "zone": "",
-    "endTime": "20:00",
-    "startTime": "00:00",
+    "endTime": "23:59",
+    "startTime": "17:00",
     "poster": "/posters/custom-ev030.jpg",
-    "source": null,
+    "source": "https://pokemongo.com/news/minior-meteor-showers-2026",
     "posterType": "custom",
     "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
-    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar",
+    "featuredPokemon": [
+      "Minior"
+    ]
   },
   {
     "id": "ev028",
     "start": "2026-11-14",
     "end": "2026-11-15",
     "name": "New Taipei Metropolitan Park",
-    "detail": "Taiwan",
+    "detail": "Pokémon RUN 30 at New Taipei Metropolitan Park, Taiwan, November 14–15, 2026. Event includes themed wild encounters featuring first-partner Pokémon and Pikachu, plus special Incense encounters.",
     "zone": "Asia/Taipei",
     "endTime": "20:00",
     "startTime": "00:00",
     "poster": "/posters/custom-ev028.jpg",
-    "source": null,
+    "source": "https://pokemongo.com/en/news/pokemon-run-30-2026?hl=undefined",
     "posterType": "custom",
     "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
-    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar",
+    "featuredPokemon": [
+      "Pikachu",
+      "Bulbasaur",
+      "Charmander"
+    ]
   },
   {
     "id": "event-battles-wild-sun-five",
