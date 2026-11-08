@@ -10,3 +10,10 @@
 - Production status should be verified after deployment; this file does not claim publication.
 
 Home → Website Updates & Changelog now lists all significant tracker changes through the current release, newest first, without version labels. For each later feature change, manually append a new entry to the top of the changelog data in app/page.tsx; it is not automatically generated from code changes.
+
+## November 8, 2026 — Poster artwork sync
+- Imported three new AlfaMitsu-created GO Wild Area 2026 **in-person** event graphics: comprehensive guide, Raid Guide, and Max Battles Guide. Linked the supplementary guides to both the Sendai and Mexico City event details.
+- Added 13 clearly labeled, event-specific raid and Max Battle visual schedule tiles for Into the Wild and GO Wild Area: Global. These are locally composed calendar artwork, not official infographics or G47IX/FlareBlazeArt artwork.
+- Kept the in-person posters separate from the November 14–15 Global event to avoid incorrect dates or locations.
+- Kept author priority: AlfaMitsu → G47IX → FlareBlazeArt → other verified sources; retained older poster files and source links as appropriate.
+- Clone Special Raid Day remains excluded pending official confirmation.

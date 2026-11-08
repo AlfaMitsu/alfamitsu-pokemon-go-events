@@ -69,13 +69,14 @@
     "start": "2026-10-26",
     "end": "2026-11-01",
     "name": "Dynamax Sableye",
-    "detail": "",
+    "detail": "Weekly Max Battle / Power Spot rotation, separate from the Monday-only Max Monday takeover.",
     "zone": "",
     "endTime": "20:00",
     "startTime": "00:00",
     "poster": "/posters/custom-ev005.jpg",
     "source": null,
-    "posterType": "custom"
+    "posterType": "custom",
+    "category": "max-battle-rotation"
   },
   {
     "id": "ev006",
@@ -216,7 +217,7 @@
     "start": "2026-11-02",
     "end": "2026-11-08",
     "name": "Dynamax Machop",
-    "detail": "",
+    "detail": "Weekly Max Battle / Power Spot rotation, separate from the Monday-only Max Monday takeover.",
     "zone": "",
     "endTime": "20:00",
     "startTime": "00:00",
@@ -224,7 +225,8 @@
     "source": null,
     "posterType": "custom",
     "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
-    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar",
+    "category": "max-battle-rotation"
   },
   {
     "id": "ev017",
@@ -296,11 +298,22 @@
     "startTime": "10:00",
     "endTime": "18:00",
     "source": "https://pokemongo.com/news/save-the-date-go-wild-area-2026",
-    "poster": "/posters/custom-ev-wild-area-mexico.jpg",
-    "posterType": "web",
+    "poster": "/posters/wild-area-inperson-overview.png",
+    "posterType": "supplied",
     "onlineImage": "https://pbs.twimg.com/media/HNTdVC_XMAATOUs.jpg",
     "infographicSource": "https://x.com/PokemonGOHubNet/status/2077528684823507023",
-    "infographicCredit": "FlareBlaze × Pokémon GO Hub — GO Wild Area 2026 graphic"
+    "infographicCredit": "FlareBlaze × Pokémon GO Hub — GO Wild Area 2026 graphic",
+    "additionalPosters": [
+      {
+        "title": "AlfaMitsu in-person Raid Guide",
+        "src": "/posters/wild-area-inperson-raids.png"
+      },
+      {
+        "title": "AlfaMitsu in-person Max Battle Guide",
+        "src": "/posters/wild-area-inperson-max-battles.png"
+      }
+    ],
+    "posterNote": "In-person Sendai / Mexico City artwork, not the Global event schedule."
   },
   {
     "id": "ev-wild-area-sendai",
@@ -312,11 +325,22 @@
     "startTime": "10:00",
     "endTime": "18:00",
     "source": "https://pokemongo.com/news/save-the-date-go-wild-area-2026",
-    "poster": "/posters/custom-ev-wild-area-sendai.jpg",
-    "posterType": "web",
+    "poster": "/posters/wild-area-inperson-overview.png",
+    "posterType": "supplied",
     "onlineImage": "https://pbs.twimg.com/media/HNTdVC_XMAATOUs.jpg",
     "infographicSource": "https://x.com/PokemonGOHubNet/status/2077528684823507023",
-    "infographicCredit": "FlareBlaze × Pokémon GO Hub — GO Wild Area 2026 graphic"
+    "infographicCredit": "FlareBlaze × Pokémon GO Hub — GO Wild Area 2026 graphic",
+    "additionalPosters": [
+      {
+        "title": "AlfaMitsu in-person Raid Guide",
+        "src": "/posters/wild-area-inperson-raids.png"
+      },
+      {
+        "title": "AlfaMitsu in-person Max Battle Guide",
+        "src": "/posters/wild-area-inperson-max-battles.png"
+      }
+    ],
+    "posterNote": "In-person Sendai / Mexico City artwork, not the Global event schedule."
   },
   {
     "id": "ev021",
@@ -520,7 +544,7 @@
     "start": "2026-11-16",
     "end": "2026-11-24",
     "name": "Cresselia",
-    "detail": "Five-Star Raids",
+    "detail": "Five-Star Raids — November 16–24, 2026; Raid Hour November 18, 6–7 PM local time.",
     "zone": "",
     "endTime": "20:00",
     "startTime": "00:00",
@@ -528,14 +552,15 @@
     "source": null,
     "posterType": "custom",
     "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
-    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar",
+    "category": "raid"
   },
   {
     "id": "ev035",
     "start": "2026-11-16",
     "end": "2026-11-24",
     "name": "Darkrai",
-    "detail": "Five-Star Raids",
+    "detail": "Five-Star Raids — November 16–24, 2026; Raid Hour November 18, 6–7 PM local time.",
     "zone": "",
     "endTime": "20:00",
     "startTime": "00:00",
@@ -543,7 +568,8 @@
     "source": null,
     "posterType": "custom",
     "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
-    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar",
+    "category": "raid"
   },
   {
     "id": "ev036",
@@ -573,7 +599,8 @@
     "source": null,
     "posterType": "custom",
     "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
-    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar",
+    "category": "raid"
   },
   {
     "id": "ev038",
@@ -610,7 +637,7 @@
     "start": "2026-11-23",
     "end": "2026-11-29",
     "name": "Dynamax Espurr",
-    "detail": "",
+    "detail": "Weekly Max Battle / Power Spot rotation, separate from the Monday-only Max Monday takeover.",
     "zone": "",
     "endTime": "20:00",
     "startTime": "00:00",
@@ -618,7 +645,8 @@
     "source": null,
     "posterType": "custom",
     "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
-    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar",
+    "category": "max-battle-rotation"
   },
   {
     "id": "ev041",
@@ -648,14 +676,15 @@
     "source": null,
     "posterType": "custom",
     "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
-    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar",
+    "category": "raid"
   },
   {
     "id": "ev043",
     "start": "2026-11-25",
     "end": "2026-12-01",
     "name": "Deoxys — All Four Formes",
-    "detail": "",
+    "detail": "Five-Star Raids — November 25–December 1, 2026; Normal, Attack, Defense and Speed Formes; Raid Hour November 25, 6–7 PM local time.",
     "zone": "",
     "endTime": "20:00",
     "startTime": "00:00",
@@ -663,7 +692,8 @@
     "source": null,
     "posterType": "custom",
     "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
-    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar",
+    "category": "raid"
   },
   {
     "id": "ev044",
@@ -715,7 +745,7 @@
     "start": "2026-11-30",
     "end": "2026-12-06",
     "name": "Dynamax Cryogonal",
-    "detail": "",
+    "detail": "Weekly Max Battle / Power Spot rotation, separate from the Monday-only Max Monday takeover.",
     "zone": "",
     "endTime": "20:00",
     "startTime": "00:00",
@@ -723,7 +753,8 @@
     "source": null,
     "posterType": "custom",
     "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
-    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar",
+    "category": "max-battle-rotation"
   },
   {
     "id": "ev-pokemon-center-bangkok",
@@ -971,5 +1002,316 @@
     "poster": "/posters/custom-ev-wild-area-mexico.jpg",
     "posterType": "custom",
     "source": "https://pokemongo.com/news/forever-stamp-rally-go-wild-area-2026"
+  },
+  {
+    "id": "max-monday-2026-10-26",
+    "start": "2026-10-26",
+    "end": "2026-10-26",
+    "name": "Max Monday: Dynamax Sableye",
+    "detail": "Featured Dynamax Sableye Max Battles at Power Spots on Monday, 6:00 AM–9:00 PM local time. Weekly Max Battles continue on other days.",
+    "zone": "",
+    "startTime": "06:00",
+    "endTime": "21:00",
+    "poster": "/posters/custom-ev005.jpg",
+    "posterType": "custom",
+    "category": "event",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/"
+  },
+  {
+    "id": "max-monday-2026-11-02",
+    "start": "2026-11-02",
+    "end": "2026-11-02",
+    "name": "Max Monday: Dynamax Machop",
+    "detail": "Featured Dynamax Machop Max Battles at Power Spots on Monday, 6:00 AM–9:00 PM local time. Weekly Max Battles continue on other days.",
+    "zone": "",
+    "startTime": "06:00",
+    "endTime": "21:00",
+    "poster": "/posters/custom-ev016.jpg",
+    "posterType": "custom",
+    "category": "event",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/"
+  },
+  {
+    "id": "max-monday-2026-11-23",
+    "start": "2026-11-23",
+    "end": "2026-11-23",
+    "name": "Max Monday: Dynamax Espurr",
+    "detail": "Featured Dynamax Espurr Max Battles at Power Spots on Monday, 6:00 AM–9:00 PM local time. Weekly Max Battles continue on other days.",
+    "zone": "",
+    "startTime": "06:00",
+    "endTime": "21:00",
+    "poster": "/posters/custom-ev040.jpg",
+    "posterType": "custom",
+    "category": "event",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/"
+  },
+  {
+    "id": "max-monday-2026-11-30",
+    "start": "2026-11-30",
+    "end": "2026-11-30",
+    "name": "Max Monday: Dynamax Cryogonal",
+    "detail": "Featured Dynamax Cryogonal Max Battles at Power Spots on Monday, 6:00 AM–9:00 PM local time. Weekly Max Battles continue on other days.",
+    "zone": "",
+    "startTime": "06:00",
+    "endTime": "21:00",
+    "poster": "/posters/custom-ev047.jpg",
+    "posterType": "custom",
+    "category": "event",
+    "source": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/"
+  },
+  {
+    "id": "event-battles-itw-five-star",
+    "start": "2026-11-09",
+    "end": "2026-11-13",
+    "name": "Into the Wild • 5★ Raids",
+    "detail": "Five-star raids: Crowned Sword Zacian and Crowned Shield Zamazenta. Earn the corresponding Crowned Sword or Crowned Shield Energy.",
+    "zone": "",
+    "startTime": "10:00",
+    "endTime": "20:00",
+    "posterType": "custom",
+    "category": "raid",
+    "featuredPokemon": [
+      "Zacian",
+      "Zamazenta"
+    ],
+    "source": "https://pokemongo.com/news/into-the-wild-2026",
+    "linkedEventId": "ev025",
+    "poster": "/posters/battle-event-battles-itw-five-star.jpg",
+    "posterNote": "Event-specific schedule tile based on existing artwork. Raid and Max Battle details verified against official Pokémon GO event announcements."
+  },
+  {
+    "id": "event-battles-itw-three-star",
+    "start": "2026-11-09",
+    "end": "2026-11-13",
+    "name": "Into the Wild • 3★ Raids",
+    "detail": "Three-star raids: Druddigon and Orthworm.",
+    "zone": "",
+    "startTime": "10:00",
+    "endTime": "20:00",
+    "posterType": "custom",
+    "category": "raid",
+    "featuredPokemon": [
+      "Druddigon",
+      "Orthworm"
+    ],
+    "source": "https://pokemongo.com/news/into-the-wild-2026",
+    "linkedEventId": "ev025",
+    "poster": "/posters/battle-event-battles-itw-three-star.jpg",
+    "posterNote": "Event-specific schedule tile based on existing artwork. Raid and Max Battle details verified against official Pokémon GO event announcements."
+  },
+  {
+    "id": "event-battles-itw-zacian-raid-hour",
+    "start": "2026-11-09",
+    "end": "2026-11-09",
+    "name": "Crowned Sword Zacian Raid Hour",
+    "detail": "Into the Wild Raid Hour: Crowned Sword Zacian, 6:00–7:00 p.m. local time.",
+    "zone": "",
+    "startTime": "18:00",
+    "endTime": "19:00",
+    "posterType": "custom",
+    "category": "raid",
+    "featuredPokemon": [
+      "Zacian"
+    ],
+    "source": "https://pokemongo.com/news/into-the-wild-2026",
+    "linkedEventId": "ev025",
+    "poster": "/posters/battle-event-battles-itw-zacian-raid-hour.jpg",
+    "posterNote": "Event-specific schedule tile based on existing artwork. Raid and Max Battle details verified against official Pokémon GO event announcements."
+  },
+  {
+    "id": "event-battles-itw-zamazenta-raid-hour",
+    "start": "2026-11-10",
+    "end": "2026-11-10",
+    "name": "Crowned Shield Zamazenta Raid Hour",
+    "detail": "Into the Wild Raid Hour: Crowned Shield Zamazenta, 6:00–7:00 p.m. local time.",
+    "zone": "",
+    "startTime": "18:00",
+    "endTime": "19:00",
+    "posterType": "custom",
+    "category": "raid",
+    "featuredPokemon": [
+      "Zamazenta"
+    ],
+    "source": "https://pokemongo.com/news/into-the-wild-2026",
+    "linkedEventId": "ev025",
+    "poster": "/posters/battle-event-battles-itw-zamazenta-raid-hour.jpg",
+    "posterNote": "Event-specific schedule tile based on existing artwork. Raid and Max Battle details verified against official Pokémon GO event announcements."
+  },
+  {
+    "id": "event-battles-itw-one-two-star-max",
+    "start": "2026-11-09",
+    "end": "2026-11-13",
+    "name": "Into the Wild • 1★–2★ Max Battles",
+    "detail": "Featured Max Battles: one-star Ralts and two-star Machop.",
+    "zone": "",
+    "startTime": "10:00",
+    "endTime": "20:00",
+    "posterType": "custom",
+    "category": "max-battle-rotation",
+    "featuredPokemon": [
+      "Ralts",
+      "Machop"
+    ],
+    "source": "https://pokemongo.com/news/into-the-wild-2026",
+    "linkedEventId": "ev025",
+    "poster": "/posters/battle-event-battles-itw-one-two-star-max.jpg",
+    "posterNote": "Event-specific schedule tile based on existing artwork. Raid and Max Battle details verified against official Pokémon GO event announcements."
+  },
+  {
+    "id": "event-battles-itw-max-registeel",
+    "start": "2026-11-11",
+    "end": "2026-11-11",
+    "name": "Into the Wild • Dynamax Registeel",
+    "detail": "Five-star Max Battles featuring Dynamax Registeel. Featured Max Battle hour 6:00–7:00 p.m. local time.",
+    "zone": "",
+    "startTime": "18:00",
+    "endTime": "19:00",
+    "posterType": "custom",
+    "category": "max-battle-rotation",
+    "featuredPokemon": [
+      "Registeel"
+    ],
+    "source": "https://pokemongo.com/news/into-the-wild-2026",
+    "linkedEventId": "ev025",
+    "poster": "/posters/battle-event-battles-itw-max-registeel.jpg",
+    "posterNote": "Event-specific schedule tile based on existing artwork. Raid and Max Battle details verified against official Pokémon GO event announcements."
+  },
+  {
+    "id": "event-battles-itw-max-regidrago",
+    "start": "2026-11-12",
+    "end": "2026-11-12",
+    "name": "Into the Wild • Dynamax Regidrago",
+    "detail": "Five-star Max Battles featuring Dynamax Regidrago. Featured Max Battle hour 6:00–7:00 p.m. local time.",
+    "zone": "",
+    "startTime": "18:00",
+    "endTime": "19:00",
+    "posterType": "custom",
+    "category": "max-battle-rotation",
+    "featuredPokemon": [
+      "Regidrago"
+    ],
+    "source": "https://pokemongo.com/news/into-the-wild-2026",
+    "linkedEventId": "ev025",
+    "poster": "/posters/battle-event-battles-itw-max-regidrago.jpg",
+    "posterNote": "Event-specific schedule tile based on existing artwork. Raid and Max Battle details verified against official Pokémon GO event announcements."
+  },
+  {
+    "id": "event-battles-itw-max-latias-latios",
+    "start": "2026-11-13",
+    "end": "2026-11-13",
+    "name": "Into the Wild • Dynamax Latias & Latios",
+    "detail": "Five-star Max Battles featuring Dynamax Latias & Latios. Featured Max Battle hour 6:00–7:00 p.m. local time.",
+    "zone": "",
+    "startTime": "18:00",
+    "endTime": "19:00",
+    "posterType": "custom",
+    "category": "max-battle-rotation",
+    "featuredPokemon": [
+      "Latias",
+      "Latios"
+    ],
+    "source": "https://pokemongo.com/news/into-the-wild-2026",
+    "linkedEventId": "ev025",
+    "poster": "/posters/battle-event-battles-itw-max-latias-latios.jpg",
+    "posterNote": "Event-specific schedule tile based on existing artwork. Raid and Max Battle details verified against official Pokémon GO event announcements."
+  },
+  {
+    "id": "event-battles-wild-sat-five",
+    "start": "2026-11-14",
+    "end": "2026-11-14",
+    "name": "GO Wild Area • Saturday 5★ Raids",
+    "detail": "Saturday five-star raids: Zekrom and White Kyurem. White Kyurem rewards Fusion Energy.",
+    "zone": "",
+    "startTime": "10:00",
+    "endTime": "18:00",
+    "posterType": "custom",
+    "category": "raid",
+    "featuredPokemon": [
+      "Zekrom",
+      "Kyurem"
+    ],
+    "source": "https://pokemongo.com/gowildarea/global",
+    "linkedEventId": "ev027",
+    "poster": "/posters/battle-event-battles-wild-sat-five.jpg",
+    "posterNote": "Event-specific schedule tile based on existing artwork. Raid and Max Battle details verified against official Pokémon GO event announcements."
+  },
+  {
+    "id": "event-battles-wild-sun-five",
+    "start": "2026-11-15",
+    "end": "2026-11-15",
+    "name": "GO Wild Area • Sunday 5★ Raids",
+    "detail": "Sunday five-star raids: Reshiram and Black Kyurem. Black Kyurem rewards Fusion Energy.",
+    "zone": "",
+    "startTime": "10:00",
+    "endTime": "18:00",
+    "posterType": "custom",
+    "category": "raid",
+    "featuredPokemon": [
+      "Reshiram",
+      "Kyurem"
+    ],
+    "source": "https://pokemongo.com/gowildarea/global",
+    "linkedEventId": "ev027",
+    "poster": "/posters/battle-event-battles-wild-sun-five.jpg",
+    "posterNote": "Event-specific schedule tile based on existing artwork. Raid and Max Battle details verified against official Pokémon GO event announcements."
+  },
+  {
+    "id": "event-battles-wild-three",
+    "start": "2026-11-14",
+    "end": "2026-11-15",
+    "name": "GO Wild Area • 3★ Raids",
+    "detail": "Three-star raids: Machamp wearing a modern jacket. Available during event hours on both days.",
+    "zone": "",
+    "startTime": "10:00",
+    "endTime": "18:00",
+    "posterType": "custom",
+    "category": "raid",
+    "featuredPokemon": [
+      "Machamp"
+    ],
+    "source": "https://pokemongo.com/gowildarea/global",
+    "linkedEventId": "ev027",
+    "poster": "/posters/battle-event-battles-wild-three.jpg",
+    "posterNote": "Event-specific schedule tile based on existing artwork. Raid and Max Battle details verified against official Pokémon GO event announcements."
+  },
+  {
+    "id": "event-battles-wild-sat-max",
+    "start": "2026-11-14",
+    "end": "2026-11-14",
+    "name": "GO Wild Area • Saturday Max Battles",
+    "detail": "Dynamax Dialga and six-star Gigantamax Duraludon Max Battles on Saturday.",
+    "zone": "",
+    "startTime": "10:00",
+    "endTime": "18:00",
+    "posterType": "custom",
+    "category": "max-battle-rotation",
+    "featuredPokemon": [
+      "Dialga",
+      "Duraludon"
+    ],
+    "source": "https://pokemongo.com/gowildarea/global",
+    "linkedEventId": "ev027",
+    "poster": "/posters/battle-event-battles-wild-sat-max.jpg",
+    "posterNote": "Event-specific schedule tile based on existing artwork. Raid and Max Battle details verified against official Pokémon GO event announcements."
+  },
+  {
+    "id": "event-battles-wild-sun-max",
+    "start": "2026-11-15",
+    "end": "2026-11-15",
+    "name": "GO Wild Area • Sunday Max Battles",
+    "detail": "Dynamax Palkia and six-star Gigantamax Duraludon Max Battles on Sunday.",
+    "zone": "",
+    "startTime": "10:00",
+    "endTime": "18:00",
+    "posterType": "custom",
+    "category": "max-battle-rotation",
+    "featuredPokemon": [
+      "Palkia",
+      "Duraludon"
+    ],
+    "source": "https://pokemongo.com/gowildarea/global",
+    "linkedEventId": "ev027",
+    "poster": "/posters/battle-event-battles-wild-sun-max.jpg",
+    "posterNote": "Event-specific schedule tile based on existing artwork. Raid and Max Battle details verified against official Pokémon GO event announcements."
   }
 ]
