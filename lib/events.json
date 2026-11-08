@@ -4760,7 +4760,10 @@
     "source": null,
     "posterType": "custom",
     "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
-    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar",
+    "featuredPokemon": [
+      "Noibat"
+    ]
   },
   {
     "id": "ev046",

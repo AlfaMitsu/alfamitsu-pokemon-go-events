@@ -152,3 +152,5 @@ V26: Visitor counts (Online, 1 Day, 7 Days, 30 Days) display directly in the hea
 - Tropical Paradise remains unconfirmed with unknown encounters: its weekly card uses a neutral illustrated theme and does not assign fictional Pokémon.
 - Consolidated repetitive November 8 website changelog cards into three themed entries without deleting older distinct releases.
 - The latest website changelog and README describe the same deployed changes.
+
+- Noibat Spotlight Hour (November 26) now displays real Noibat artwork in GO Weekly and the generated event poster instead of a text-only tile; this fix is included in the consolidated November visual-improvements changelog.
