@@ -14,7 +14,7 @@ const dex: Record<string,number> = {
   registeel:379,garchomp:445,swampert:260,gyarados:130,beedrill:15,venusaur:3,malamar:687,victreebel:71,
   xerneas:716,yveltal:717,blastoise:9,dragonite:149,giratina:487,charizard:6,landorus:645,drampa:780,
   caterpie:10,beldum:374,roggenrola:524,wailmer:320,growlithe:58,machop:66,chansey:113,rookidee:821,
-  falinks:870,pikachu:25,woobat:527,trapinch:328,drilbur:529,shuckle:213,cottonee:546,combee:415,
+  falinks:870,hawlucha:701,pikachu:25,woobat:527,trapinch:328,drilbur:529,shuckle:213,cottonee:546,combee:415,
   inkay:686,electabuzz:125,hoothoot:163,pidove:519,trubbish:568,feebas:349,magmar:126,magikarp:129,
   hitmontop:237,ralts:280,rhyhorn:111,sobble:816,sizzlipede:850,sneasel:215,piplup:393,grookey:810,
   scorbunny:813,tinkatink:957,lechonk:915,deino:633,frigibax:996,nickit:827,gible:443,zorua:570,

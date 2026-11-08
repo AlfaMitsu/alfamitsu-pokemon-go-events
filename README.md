@@ -102,3 +102,10 @@ V26: Visitor counts (Online, 1 Day, 7 Days, 30 Days) display directly in the hea
 - If a costume cannot be verified, displays the real base Pokémon appearance rather than a fabricated costume, with a neutral fallback only if no source returns an image.
 - Sources: https://github.com/PokeMiners/pogo_assets and https://github.com/PokeAPI/sprites.
 - Website Updates & Changelog has been synchronized.
+
+
+## November 8, 2026 — Missing artwork fixes
+- Added a complete Pokémon species ID table sourced from the public PokéAPI Pokédex repository, including Hawlucha (#701).
+- Fast-paths standard species to real Pokémon artwork rather than relying on repeated live lookups.
+- The Singapore PokéXciting! Pikachu is the blue-costumed version, not Kuala Lumpur's turquoise version. If the exact sprite is not available, shows the real species rather than an incorrect costume.
+- Updated Singapore and Mexico City event featured Pokémon; preserved all events and supplied posters.

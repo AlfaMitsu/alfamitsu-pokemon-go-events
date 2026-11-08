@@ -3737,7 +3737,10 @@
     "endTime": "23:59",
     "poster": "/posters/custom-ev-wild-area-mexico.jpg",
     "posterType": "custom",
-    "source": "https://pokemongo.com/news/forever-stamp-rally-go-wild-area-2026"
+    "source": "https://pokemongo.com/news/forever-stamp-rally-go-wild-area-2026",
+    "featuredPokemon": [
+      "Hawlucha"
+    ]
   },
   {
     "id": "ev-stamp-rally-sendai-2026",
@@ -4045,7 +4048,13 @@
     "source": "https://pokemongo.com/en/news/event-singapore-30th-anniversary-2026",
     "posterType": "custom",
     "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
-    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar",
+    "featuredPokemon": [
+      "Blue PokéXciting! Pikachu",
+      "Gigantamax Venusaur",
+      "Gigantamax Charizard",
+      "Gigantamax Blastoise"
+    ]
   },
   {
     "id": "event-battles-itw-zacian-raid-hour",

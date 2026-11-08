@@ -1,5 +1,5 @@
 import {NextRequest,NextResponse} from 'next/server';
-import {artworkIds,normalizeGoName,realGoFormAssets} from '@/lib/pokemon-images';
+import {artworkIds,normalizeGoName,realGoFormAssets,lookupSpecies} from '@/lib/pokemon-images';
 import costumeAssets from '@/lib/pogo-costume-assets.json';
 export const runtime='nodejs';
 const assetBase='https://raw.githubusercontent.com/PokeMiners/pogo_assets/master/Images/Pokemon/Addressable%20Assets/';
@@ -26,12 +26,20 @@ export async function GET(req:NextRequest){
  'galarian weezing':'weezing-galar','galarian darmanitan':'darmanitan-galar-standard',
  'galarian darmanitan zen':'darmanitan-galar-zen','eternamax eternatus':'eternatus-eternamax',
  'machamp (modern jacket)':'machamp','machamp wearing a modern jacket':'machamp',
+ 'singapore afro pikachu':'pikachu','blue pokexciting pikachu':'pikachu',
+ 'blue pokéxciting pikachu':'pikachu','pokexciting pikachu (blue)':'pikachu',
  'crowned sword zacian':'zacian','crowned shield zamazenta':'zamazenta',
  'landorus therian':'landorus-therian','enamorus therian':'enamorus-therian'
  };
  const canonical=aliases[lower]||normalizeGoName(raw);
  const base=canonical.replace(/-mega(-[xy])?$/,'').replace(/-primal$/,'').replace(/-(alola|galar|hisui)$/,'');
- const id=artworkIds[canonical]||artworkIds[base];
+ const id=artworkIds[canonical]||artworkIds[base]||lookupSpecies(raw);
+
+ // Resolve confirmed base species directly to real artwork; avoid API timeouts.
+ if(id && !/(mega|primal|crowned|origin|therian|alolan|galarian|hisuian|paldean|costume|afro|pokexciting|pokéxciting|jacket|hat)/i.test(raw)){
+   const url='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/'+id+'.png';
+   return NextResponse.redirect(url,{status:307,headers:{'Cache-Control':'public, s-maxage=86400'}});
+ }
  // Match costumes only if the costume identifier is explicitly present in the request.
  if(id&&/(wearing|costume|hat|cap|jacket|scarf|crown|bow|cape|flower|hanbok)/i.test(raw)){
    const codes=(costumeAssets as Record<string,string[]>)[String(id)]||[];
