@@ -35,12 +35,6 @@ export async function GET(req:NextRequest){
  const base=canonical.replace(/-mega(-[xy])?$/,'').replace(/-primal$/,'').replace(/-(alola|galar|hisui)$/,'');
  const id=artworkIds[canonical]||artworkIds[base]||lookupSpecies(raw);
 
- // Resolve confirmed base species directly to real artwork; avoid API timeouts.
- if(id && !/(mega|primal|crowned|origin|therian|alolan|galarian|hisuian|paldean|costume|afro|pokexciting|pokéxciting|jacket|hat)/i.test(raw)){
-   const url='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/'+id+'.png';
-   return NextResponse.redirect(url,{status:307,headers:{'Cache-Control':'public, s-maxage=86400'}});
- }
-
  // Match actual form/costume codes from the GO game asset catalogue.
  // Never guess a costume on the basis of color alone.
  const variants=(variantAssets as Record<string,string[]>)[String(id)]||[];
