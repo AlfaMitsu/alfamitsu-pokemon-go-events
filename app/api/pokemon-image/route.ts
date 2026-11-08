@@ -1,6 +1,6 @@
 import {NextRequest,NextResponse} from 'next/server';
 import {artworkIds,normalizeGoName,realGoFormAssets,lookupSpecies} from '@/lib/pokemon-images';
-import costumeAssets from '@/lib/pogo-costume-assets.json';
+import variantAssets from '@/lib/pogo-variant-assets.json';
 export const runtime='nodejs';
 const assetBase='https://raw.githubusercontent.com/PokeMiners/pogo_assets/master/Images/Pokemon/Addressable%20Assets/';
 const safeSvg=(name:string)=>'<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256"><rect width="100%" height="100%" rx="24" fill="#12254b"/><circle cx="128" cy="100" r="61" fill="#0f1d3a" stroke="#80ddff" stroke-width="10"/><path d="M67 100h122" stroke="#80ddff" stroke-width="9"/><circle cx="128" cy="100" r="22" fill="#0f1d3a" stroke="#80ddff" stroke-width="9"/><text x="128" y="209" text-anchor="middle" font-size="15" font-family="Arial" fill="white">Image unavailable</text></svg>';
@@ -40,18 +40,37 @@ export async function GET(req:NextRequest){
    const url='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/'+id+'.png';
    return NextResponse.redirect(url,{status:307,headers:{'Cache-Control':'public, s-maxage=86400'}});
  }
- // Match costumes only if the costume identifier is explicitly present in the request.
- if(id&&/(wearing|costume|hat|cap|jacket|scarf|crown|bow|cape|flower|hanbok)/i.test(raw)){
-   const codes=(costumeAssets as Record<string,string[]>)[String(id)]||[];
-   const query=lower.replace(/[^a-z0-9]/g,'');
-   const match=codes.find(v=>{
-     const keys=v.slice(1).split('_').filter(s=>s.length>3&&!/^(NOEVOLVE|SHINY)$/.test(s));
-     return keys.length>0&&keys.every(x=>query.includes(x.toLowerCase()));
-   });
-   if(match){
-     const url=assetBase+'pm'+id+'.'+match+'.icon.png';
-     if(await good(url))return NextResponse.redirect(url,{status:307});
-   }
+
+ // Match actual form/costume codes from the GO game asset catalogue.
+ // Never guess a costume on the basis of color alone.
+ const variants=(variantAssets as Record<string,string[]>)[String(id)]||[];
+ const normalized=lower.normalize('NFKD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,' ');
+ const exactFormNames:Record<string,string>={
+   'pikachu wearing a kurta':'fKURTA',
+   'pikachu kurta':'fKURTA',
+   'pikachu wearing a saree':'fSAREE',
+   'pikachu saree':'fSAREE',
+   'gigantamax pikachu':'fGIGANTAMAX',
+   'gigantamax charizard':'fGIGANTAMAX',
+   'gigantamax blastoise':'fGIGANTAMAX',
+   'gigantamax venusaur':'fGIGANTAMAX',
+   'gigantamax meowth':'fGIGANTAMAX',
+   'gigantamax rillaboom':'fGIGANTAMAX',
+   'gigantamax cinderace':'fGIGANTAMAX',
+   'gigantamax duraludon':'fGIGANTAMAX'
+ };
+ const explicit=exactFormNames[lower]||null;
+ const chosen=explicit&&variants.includes(explicit)?explicit:null;
+ // For other costumes, only select an asset if its unique descriptive
+ // tokens are explicitly represented in the Pokémon's displayed name.
+ const code=chosen||variants.find(v=>{
+   if(!/\b(costume|wearing|hat|scarf|bow|flower|goggles|tiara|kurta|saree|winter|holiday|halloween|gofest)\b/i.test(raw))return false;
+   const tokens=v.slice(1).toLowerCase().split('_').filter(t=>t.length>3&&!['noevolve','costume','shiny'].includes(t)&&!/^20\d\d$/.test(t));
+   return tokens.length>0 && tokens.every(t=>normalized.split(' ').includes(t));
+ });
+ if(code){
+   const url=assetBase+'pm'+id+'.'+code+'.icon.png';
+   if(await good(url))return NextResponse.redirect(url,{status:307,headers:{'Cache-Control':'public, s-maxage=86400'}});
  }
  for(const candidate of Array.from(new Set([canonical,base]))){
    if(!/^[a-z0-9-]{1,80}$/.test(candidate))continue;

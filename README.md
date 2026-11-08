@@ -109,3 +109,12 @@ V26: Visitor counts (Online, 1 Day, 7 Days, 30 Days) display directly in the hea
 - Fast-paths standard species to real Pokémon artwork rather than relying on repeated live lookups.
 - The Singapore PokéXciting! Pikachu is the blue-costumed version, not Kuala Lumpur's turquoise version. If the exact sprite is not available, shows the real species rather than an incorrect costume.
 - Updated Singapore and Mexico City event featured Pokémon; preserved all events and supplied posters.
+
+
+## November 8, 2026 — Real costume and variant image fix
+- Expanded the real Pokémon GO asset index to include both event costume codes and alternate form codes (not only c-prefixed costumes).
+- Verified and mapped Pikachu in a kurta, alongside supported Gigantamax and crowned-form artwork.
+- Updated Festival of Lights, Halloween, and Teddiursa Spotlight Hour featured Pokémon to correctly specify their costumes.
+- Other costume names only resolve to exact costume sprites when the actual asset name supports that match. No random outfit or false costume substitutions.
+- Unmatched costumes continue using authentic base species art to prevent blank tiles.
+- Preserved existing events, README and website changelog synchronization.

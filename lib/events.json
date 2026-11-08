@@ -3558,7 +3558,12 @@
     "startTime": "00:00",
     "poster": "/posters/halloween1.jpg",
     "source": null,
-    "posterType": "supplied"
+    "posterType": "supplied",
+    "featuredPokemon": [
+      "Pikachu wearing a hat and capelet",
+      "Zubat wearing a top hat",
+      "Sinistea wearing a bow"
+    ]
   },
   {
     "id": "historic-raid-10-28-5-raids-giratina",
@@ -3694,7 +3699,12 @@
     "startTime": "10:00",
     "poster": "/posters/halloween2.jpg",
     "source": "https://leekduck.com/events/halloween-2026-part-2/",
-    "posterType": "supplied"
+    "posterType": "supplied",
+    "featuredPokemon": [
+      "Pikachu wearing a hat and capelet",
+      "Zubat wearing a top hat",
+      "Sinistea wearing a bow"
+    ]
   },
   {
     "id": "ev016",
@@ -3813,7 +3823,10 @@
     "source": null,
     "posterType": "custom",
     "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
-    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar",
+    "featuredPokemon": [
+      "Teddiursa wearing a witch hat"
+    ]
   },
   {
     "id": "ev021",
@@ -3829,7 +3842,11 @@
     "posterType": "web",
     "onlineImage": "https://media.pocketgamer.com/artwork/na-26466-1790464164/pokemon-go-diwali-26-header.jpg",
     "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
-    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar"
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar",
+    "featuredPokemon": [
+      "Pikachu wearing a saree",
+      "Pikachu wearing a kurta"
+    ]
   },
   {
     "id": "ev-wild-area-mexico",

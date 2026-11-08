@@ -45,5 +45,7 @@ export const realGoFormAssets:Record<string,string>={
  'crowned shield zamazenta':'pm889.fCROWNED_SHIELD.icon.png',
  'hero of many battles zacian':'pm888.fHERO.icon.png',
  'hero of many battles zamazenta':'pm889.fHERO.icon.png',
- 'gigantamax machamp':'pm68.fGIGANTAMAX.icon.png'
+ 'gigantamax machamp':'pm68.fGIGANTAMAX.icon.png',
+ 'pikachu wearing a kurta':'pm25.fKURTA.icon.png',
+ 'pikachu kurta':'pm25.fKURTA.icon.png'
 };
