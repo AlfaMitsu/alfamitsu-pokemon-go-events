@@ -12,7 +12,7 @@ const tba=(e:Event)=>/tba|unannounced|to be announced/i.test(e.name)||!/^[0-9]{4
 function SpriteImage({name,id,className}:{name:string;id?:number;className:string}){
  const fallback=artworkUrl(name);
  const base=id&&id>0?sprite(id):null;
- const urls=Array.from(new Set([fallback,'/api/pokemon-image?name='+encodeURIComponent(name.replace(/^Shadow\s+/i,'')),base].filter(Boolean))) as string[];
+ const urls=Array.from(new Set(['/api/pokemon-image?name='+encodeURIComponent(name.replace(/^Shadow\s+/i,'')),fallback,base].filter(Boolean))) as string[];
  const [stage,setStage]=useState(0);
  useEffect(()=>setStage(0),[name,id]);
  return stage<urls.length?<img className={className} src={urls[stage]} loading="lazy" alt={name} onError={()=>setStage(v=>v+1)}/>:<div className={className+' grid place-items-center text-sky-300'} aria-label={'Artwork unavailable: '+name}>◉</div>;
@@ -213,6 +213,7 @@ function HomeHub(){
    <div><h2 id="whats-new" className="text-2xl font-bold">Website Updates & Changelog</h2><p className="muted text-sm">A running history of tracker improvements, newest first. No version numbers.</p></div>
    <div className="grid gap-3 md:grid-cols-2">
     {([
+     {title:'Real GO costume, crowned-form and missing Pokémon art recovery — 8 Nov 2026',detail:'Prioritized the image resolver for every Pokémon tile, indexed verified Pokémon GO costume sprites, linked genuine Crowned Sword Zacian and Crowned Shield Zamazenta assets and expanded missing species IDs. Unmatched costumes fall back to their real base-species artwork rather than invented costume art; missing-image safeguards prevent blank tiles. README synchronized.'},
      {title:'Pokémon-featured generated event posters — 8 Nov 2026',detail:'Introduced dynamic event-specific poster artwork for generated cards, displaying the featured raid boss, Dynamax Pokémon or event highlight using Pokémon artwork. Existing AlfaMitsu/G47IX/FlareBlaze supplied posters are preserved. Includes fallback illustrations if artwork is unavailable and lazy-loads poster previews.'},
      {title:'GO Pass cleanup, historical Raids and Max Battles, featured poster artwork — 8 Nov 2026',detail:'Removed monthly GO Pass cards from the Events tracker. Backfilled verified 2026 five-star, Mega and weekend Shadow raid rotations and weekly Dynamax Max Battles across January–October, with dedicated Raid and Max Battle calendar rows, source links and Pokémon highlights. Replaced plain archive artwork with Pokémon-featured themed posters; updated the README in the same release.'},
      {title:'2026 historical event archive and artwork refresh — 8 Nov 2026',detail:'Added historical 2026 calendar events from January through October, with event-specific archive artwork and source links. Updated November 28 Mega Clefable Raid Day and added clearly labeled unconfirmed December concept events. Completed events are visible by default in Events List. README synchronized with this release.'},

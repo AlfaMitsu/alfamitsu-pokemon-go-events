@@ -94,3 +94,11 @@ V26: Visitor counts (Online, 1 Day, 7 Days, 30 Days) display directly in the hea
 - Existing supplied posters retain priority and are never replaced by the generator.
 - Poster PNG rendering uses the Next.js `ImageResponse` API, fetches Pokémon artwork with a cached fallback, and prevents broken calendar graphics when an image is unavailable.
 - Event-list poster previews are lazy-loaded to reduce loading a large historical archive all at once.
+
+
+## November 8, 2026 — Authentic Pokémon images and costume fallback
+- Corrected missing Pokémon images across the tracker, with a larger ID mapping and resilient image lookup.
+- Uses verified Pokémon GO mined costume sprites when a real named costume file can be matched. Includes exact GO sprites for Crowned Sword Zacian and Crowned Shield Zamazenta.
+- If a costume cannot be verified, displays the real base Pokémon appearance rather than a fabricated costume, with a neutral fallback only if no source returns an image.
+- Sources: https://github.com/PokeMiners/pogo_assets and https://github.com/PokeAPI/sprites.
+- Website Updates & Changelog has been synchronized.
