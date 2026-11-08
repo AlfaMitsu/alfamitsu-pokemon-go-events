@@ -22,7 +22,7 @@ const dex: Record<string,number> = {
   flittle:955,corviknight:823,snom:872,magby:240,smoochum:238,starmie:121,mewtwo:150,maschiff:942,
   phantump:708,applin:840,bramblin:946,sandile:551,minior:774,fidough:926,eevee:133,glimmet:969,
   butterfree:12,lapras:131,rayquaza:384,clefairy:35, "tapu koko":785, "tapu lele":786, "tapu bulu":787,
-  "tapu fini":788, clefable:36, gardevoir:282, durant:632, duraludon:884, druddigon:621, orthworm:968,
+  "tapu fini":788, clefable:36, gardevoir:282, durant:632, duraludon:884, druddigon:621,
   eternatus:890, cinderace:815, rillaboom:812, machamp:68, "ho-oh":250, luxray:405
 };
 
