@@ -176,3 +176,5 @@ V26: Visitor counts (Online, 1 Day, 7 Days, 30 Days) display directly in the hea
 - Consolidated all these audit fixes into the existing November 9 website changelog card; older distinct entries are preserved.
 - Retained the existing raid planner, battle calculators, event archive, portrait images, regional grouping and original sourced posters.
 - Residual limitation: rare costume variants without reliably published assets use authentic base species artwork. External event links and website images can change after deployment; production build validation cannot guarantee every external image loads in every visitor's browser.
+
+- Final audit follow-up: location-specific schedules without an IANA timezone now use the global date-window approximation for Upcoming/Ongoing/Completed status instead of remaining stuck on Upcoming; the visible timezone label still tells readers to verify the venue schedule.
