@@ -18,7 +18,7 @@ Open http://localhost:3000. `npm run build` for production; deploy this project 
 - Max Particle shop packs, raid rewards and pass prices are **user-editable estimates**, not guaranteed store values. Pokémon Stardust and Candy costs are rough modeling estimates; verify in-game.
 - Rocket Leaders and Giovanni are a dated roster. Grunt type counters are generic; exact current lineups must be checked at Leek Duck.
 - The page preserves saved event name/schedule/posters but does not claim a complete new write-up for each poster.
-- No account. Local data only. This source is a **test build**, not deployed.
+- No account. Local data only. The project is deployed to Vercel production at https://alfamitsu-services-v2.vercel.app.
 
 
 ## V14 raid and Rocket changes
@@ -164,3 +164,15 @@ V26: Visitor counts (Online, 1 Day, 7 Days, 30 Days) display directly in the hea
 - Battle preparation: live sourced Raid Planner counter suggestions for matching bosses, and a direct route to the editable Max Battle Particle/cost calculator.
 - Changes are grouped into the existing consolidated website changelog instead of adding repetitive one-fix entries. Existing historic events, supplied posters, services, tools and regional grouping preserved.
 - Caution: web source coverage is not complete for all rare 2026 costumes, and no unverified encounter bonuses or counters are invented.
+
+
+## November 9, 2026 — Site-wide audit and cleanup
+- Audited all 322 event records: IDs are unique, date ranges are ordered, and every linked parent event exists. Replaced **134 missing historical poster file references** with functional generated poster endpoint URLs; each has a populated featured-Pokémon field.
+- Fixed regional calendar labels incorrectly showing Mexico City for unrelated areas. Replaced raw timezone codes with readable location names across regional cards, event lists and event details.
+- Validated timezone IDs before displaying venue-specific conversions and Calendar links; location-specific events with no real IANA timezone now tell users to verify venue schedules rather than presenting misleading conversions.
+- Strengthened poster fallbacks to use event-specific graphics before the AlfaMitsu logo rather than producing broken-image icons.
+- Removed the nonfunctional Guides placeholder page and sidebar item. Removed the unused visitors endpoint and its obsolete header CSS, and deleted the superseded costume catalogue (the live resolver uses the form-variant index).
+- Added an automated event-data/poster reference validation script as a mandatory prebuild check, plus retained the existing poster collection check.
+- Consolidated all these audit fixes into the existing November 9 website changelog card; older distinct entries are preserved.
+- Retained the existing raid planner, battle calculators, event archive, portrait images, regional grouping and original sourced posters.
+- Residual limitation: rare costume variants without reliably published assets use authentic base species artwork. External event links and website images can change after deployment; production build validation cannot guarantee every external image loads in every visitor's browser.

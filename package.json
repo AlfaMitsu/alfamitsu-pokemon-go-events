@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "tsc --noEmit",
-    "check:posters": "node scripts/check-posters.mjs"
+    "check:posters": "node scripts/check-posters.mjs",
+    "prebuild": "node scripts/check-events.mjs && node scripts/check-posters.mjs",
+    "check:events": "node scripts/check-events.mjs"
   },
   "dependencies": {
     "next": "^15.5.0",
