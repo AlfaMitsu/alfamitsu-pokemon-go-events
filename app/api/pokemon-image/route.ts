@@ -3,16 +3,28 @@ import {artworkIds,normalizeGoName,realGoFormAssets,lookupSpecies} from '@/lib/p
 import variantAssets from '@/lib/pogo-variant-assets.json';
 export const runtime='nodejs';
 const assetBase='https://raw.githubusercontent.com/PokeMiners/pogo_assets/master/Images/Pokemon/Addressable%20Assets/';
+const publishedGoForms:Record<string,string>={
+ 'gigantamax charizard':'pm6.fGIGANTAMAX.icon.png',
+ 'gigantamax venusaur':'pm3.fGIGANTAMAX.icon.png',
+ 'gigantamax blastoise':'pm9.fGIGANTAMAX.icon.png',
+ 'gigantamax machamp':'pm68.fGIGANTAMAX.icon.png',
+ 'crowned sword zacian':'pm888.fCROWNED_SWORD.icon.png',
+ 'crowned shield zamazenta':'pm889.fCROWNED_SHIELD.icon.png',
+ 'pikachu wearing a kurta':'pm25.fKURTA.icon.png'
+};
 const safeSvg=(name:string)=>'<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256"><rect width="100%" height="100%" rx="24" fill="#12254b"/><circle cx="128" cy="100" r="61" fill="#0f1d3a" stroke="#80ddff" stroke-width="10"/><path d="M67 100h122" stroke="#80ddff" stroke-width="9"/><circle cx="128" cy="100" r="22" fill="#0f1d3a" stroke="#80ddff" stroke-width="9"/><text x="128" y="209" text-anchor="middle" font-size="15" font-family="Arial" fill="white">Image unavailable</text></svg>';
 async function good(url:string){
  try {const r=await fetch(url,{next:{revalidate:604800},signal:AbortSignal.timeout(3500)});return r.ok&&(r.headers.get('content-type')||'').startsWith('image/');}
  catch{return false;}
 }
+function isSpecialArtwork(label:string){
+ return /costum|wearing|hat|jacket|scarf|bow|afro|pok[eé]xciting|mega|primal|shadow|gigantamax|dynamax|crowned|therian|origin|galarian|hisuian|alolan|paldean/i.test(label);
+}
 export async function GET(req:NextRequest){
  const raw=(req.nextUrl.searchParams.get('name')||'').trim();
  if(!raw||raw.length>110)return new NextResponse(null,{status:404});
  const lower=raw.toLowerCase().replace(/^shadow\s+/,'');
- const exact=realGoFormAssets[lower];
+ const exact=realGoFormAssets[lower]||publishedGoForms[lower];
  if(exact){
    const u=assetBase+exact;
    if(await good(u))return NextResponse.redirect(u,{status:307});
@@ -43,6 +55,11 @@ export async function GET(req:NextRequest){
  const canonical=aliases[lower]||normalizeGoName(raw);
  const base=canonical.replace(/-mega(-[xy])?$/,'').replace(/-primal$/,'').replace(/-(alola|galar|hisui)$/,'');
  const id=artworkIds[canonical]||artworkIds[base]||lookupSpecies(raw);
+ // Base species have a deterministic official artwork URL; don't stall on external API queries.
+ if(id&&!isSpecialArtwork(raw)){
+  return NextResponse.redirect('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/'+id+'.png',{status:307,headers:{'Cache-Control':'public, s-maxage=604800'}});
+ }
+
 
  // Match actual form/costume codes from the GO game asset catalogue.
  // Never guess a costume on the basis of color alone.

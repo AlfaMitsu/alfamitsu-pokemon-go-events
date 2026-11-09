@@ -154,3 +154,13 @@ V26: Visitor counts (Online, 1 Day, 7 Days, 30 Days) display directly in the hea
 - The latest website changelog and README describe the same deployed changes.
 
 - Noibat Spotlight Hour (November 26) now displays real Noibat artwork in GO Weekly and the generated event poster instead of a text-only tile; this fix is included in the consolidated November visual-improvements changelog.
+
+
+## November 9, 2026 — Event discovery, artwork, calendar and battle preparation
+- Image reliability: full-species official-artwork fallback, deterministic base species image URLs, and explicitly verified GO form assets. The exact appearance of unpublished costume variants cannot be guaranteed; never substitute a different regional outfit.
+- GO Weekly: optional compact density, clearer featured-Pokémon cards and timezone annotation for events with a known venue timezone. Global-local events are not incorrectly converted to a single global time.
+- Events List: searchable event names, details, Pokémon names and regions; category, global/regional, confirmation, status and date-range filtering; one-click reset.
+- Event detail view: explicit event category, venue and local-time schedule, source-aware featured Pokémon and confirmation notes, optional Google Calendar handoff for events with a known venue timezone.
+- Battle preparation: live sourced Raid Planner counter suggestions for matching bosses, and a direct route to the editable Max Battle Particle/cost calculator.
+- Changes are grouped into the existing consolidated website changelog instead of adding repetitive one-fix entries. Existing historic events, supplied posters, services, tools and regional grouping preserved.
+- Caution: web source coverage is not complete for all rare 2026 costumes, and no unverified encounter bonuses or counters are invented.

@@ -28,7 +28,7 @@ export function canonicalPokemonName(input:string){
 }
 export function artworkUrl(name:string){
  const n=canonicalPokemonName(name);
- const id=artworkIds[n];
+ const id=artworkIds[n]||lookupSpecies(name);
  return id?`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png`:null;
 }
 
