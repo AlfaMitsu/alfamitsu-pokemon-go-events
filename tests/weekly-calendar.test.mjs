@@ -47,6 +47,7 @@ test('regional raids remain regional, never displayed under global-only',()=>{
 test('category filtering respects raids, max rotations, spotlight, and named events',()=>{
  assert.equal(weeklyEventLane(rotation),'max');
  assert.equal(weeklyEventCategory(spotlight),'Spotlight Hour');
+ assert.equal(weeklyEventCategory({id:'special',name:'Clone Special Raid Day',category:'event',start:'2026-11-10',end:'2026-11-10'}),'Raid');
  assert.deepEqual(filterWeeklyEvents(sample,days,{category:'Raid'}).map(x=>x.id),['raid','regional']);
  assert.deepEqual(filterWeeklyEvents(sample,days,{category:'Max Battle'}).map(x=>x.id),['max']);
 });
