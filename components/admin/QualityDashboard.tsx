@@ -4,6 +4,7 @@ type Level='error'|'warning'|'info';
 type Issue={id:string;severity:Level;code:string;eventId:string|null;eventName:string|null;field:string|null;message:string;suggestion:string};
 type Report={summary:{events:number;posterMappings:number;localPosters:number;generatedPosters:number;errors:number;warnings:number;info:number};issues:Issue[];checkedAt:string;externalUrlsChecked:boolean};
 type Decision='reviewed'|'needs-fix';
+type RemoteResult={checkedAt:string;checks:{url:string;eventIds:string[];status:'available'|'unavailable'|'manual-review';httpStatus:number|null;note:string}[]};
 const STORAGE='alfamitsu:quality-review:v1';
 const levelText:Record<Level,string>={error:'Blocking error',warning:'Needs review',info:'Informational'};
 const colors:Record<Level,string>={error:'bg-rose-950/50 text-rose-200 border-rose-700',warning:'bg-amber-950/40 text-amber-200 border-amber-700',info:'bg-sky-950/40 text-sky-200 border-sky-700'};
@@ -16,6 +17,9 @@ function safeRead():Record<string,Decision>{
 }
 export default function QualityDashboard(){
   const [report,setReport]=useState<Report|null>(null);
+  const [remote,setRemote]=useState<RemoteResult|null>(null);
+  const [remoteBusy,setRemoteBusy]=useState(false);
+  const [remoteError,setRemoteError]=useState('');
   const [loading,setLoading]=useState(true);
   const [error,setError]=useState('');
   const [query,setQuery]=useState('');
@@ -56,6 +60,16 @@ export default function QualityDashboard(){
     const link=document.createElement('a');link.href=href;link.download='alfamitsu-quality-review.json';link.click();
     setTimeout(()=>URL.revokeObjectURL(href),1000);
   }
+  async function checkRemoteImages(){
+    setRemoteBusy(true);setRemoteError('');
+    try{
+      const response=await fetch('/api/admin/external-images',{credentials:'same-origin',cache:'no-store'});
+      if(response.status===401){window.location.assign('/admin/login');return;}
+      if(!response.ok)throw new Error('External poster inspection failed.');
+      setRemote(await response.json());
+    }catch(e){setRemoteError(e instanceof Error?e.message:'Unable to check remote posters.');}
+    finally{setRemoteBusy(false);}
+  }
   async function logout(){
     try{await fetch('/api/admin/logout',{method:'POST',credentials:'same-origin'});}finally{window.location.assign('/admin/login');}
   }
@@ -91,6 +105,22 @@ export default function QualityDashboard(){
         <p>Last build-time audit: {report?.checkedAt?new Date(report.checkedAt).toLocaleString():'Not checked yet'} · The report is generated automatically for every deployment from repository data and local poster files. External webpages and image CDNs are not fetched, so links that later disappear still require manual verification.</p>
         <p className="mt-2">Mark findings reviewed or requiring fixes, then export the report for your GitHub update. Review decisions are saved in <strong>this browser only</strong>; they do not modify published event records or sync across devices.</p>
       </div>
+      <section className="rounded-xl border border-sky-900 bg-slate-900/60 p-4 space-y-3" aria-label="Remote image health">
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <div><h2 className="text-lg font-semibold">Remote poster health</h2><p className="mt-1 text-sm text-slate-300">Optional owner-only check of allowlisted external poster URLs referenced by saved event records.</p></div>
+          <button type="button" onClick={()=>void checkRemoteImages()} disabled={remoteBusy} className="rounded-lg border border-sky-600 px-4 py-2 text-sm hover:bg-sky-900 disabled:opacity-60">{remoteBusy?'Checking…':'Check remote images'}</button>
+        </div>
+        {remoteError&&<p role="alert" className="text-sm text-rose-300">{remoteError}</p>}
+        {remote&&<div className="space-y-2"><p className="text-xs text-slate-400">Checked {new Date(remote.checkedAt).toLocaleString()}. Inconclusive HEAD responses are not counted as broken.</p>
+          {remote.checks.length===0&&<p className="text-sm text-slate-300">No allowlisted external poster images were found.</p>}
+          {remote.checks.map(item=><div key={item.url} className="rounded-lg border border-slate-700 bg-slate-950 p-3 text-sm">
+            <p className={item.status==='available'?'text-emerald-300':item.status==='unavailable'?'text-rose-300':'text-amber-300'}>{item.status==='available'?'✓ Available':item.status==='unavailable'?'Unavailable':'Requires manual review'}{item.httpStatus?' · HTTP '+item.httpStatus:''}</p>
+            <p className="mt-1 text-slate-300">{item.note}</p>
+            <p className="mt-1 text-xs text-slate-400">Events: {item.eventIds.join(', ')}</p>
+            <a href={item.url} target="_blank" rel="noopener noreferrer" className="mt-1 inline-block break-all text-xs text-sky-300 underline">Inspect image source</a>
+          </div>)}
+        </div>}
+      </section>
       <section aria-label="Review findings" className="space-y-3">
         <div className="flex flex-wrap items-center justify-between gap-3">
           <h2 className="text-xl font-semibold">Findings {loading?'(checking…)':'('+visible.length+')'}</h2>
