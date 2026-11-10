@@ -70,7 +70,7 @@ export default function QualityDashboard(){
           <p className="mt-2 max-w-2xl text-sm text-slate-300">Private checks for Pokémon GO event data, original poster references and image routing. Public website functionality is unaffected.</p>
         </div>
         <div className="flex gap-2">
-          <button type="button" disabled={loading} onClick={()=>void reload()} className="rounded-lg border border-sky-700 px-4 py-2 text-sm hover:bg-sky-900 disabled:opacity-60">Run checks again</button>
+          <button type="button" disabled={loading} onClick={()=>void reload()} className="rounded-lg border border-sky-700 px-4 py-2 text-sm hover:bg-sky-900 disabled:opacity-60">Reload audit report</button>
           <button type="button" onClick={()=>void logout()} className="rounded-lg border border-slate-700 px-4 py-2 text-sm hover:bg-slate-800">Sign out</button>
         </div>
       </header>
@@ -88,7 +88,7 @@ export default function QualityDashboard(){
         </div>)}
       </div>
       <div className="rounded-xl border border-slate-700 bg-slate-900/60 p-4 text-sm text-slate-300">
-        <p>Last run: {report?.checkedAt?new Date(report.checkedAt).toLocaleString():'Not checked yet'} · This scan validates repository data and local images. External webpages and image CDNs are not fetched, so links that later disappear still require manual verification.</p>
+        <p>Last build-time audit: {report?.checkedAt?new Date(report.checkedAt).toLocaleString():'Not checked yet'} · The report is generated automatically for every deployment from repository data and local poster files. External webpages and image CDNs are not fetched, so links that later disappear still require manual verification.</p>
         <p className="mt-2">Mark findings reviewed or requiring fixes, then export the report for your GitHub update. Review decisions are saved in <strong>this browser only</strong>; they do not modify published event records or sync across devices.</p>
       </div>
       <section aria-label="Review findings" className="space-y-3">
