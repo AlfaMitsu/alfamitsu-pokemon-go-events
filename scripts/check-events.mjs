@@ -1,20 +1,11 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import {runQualityAudit} from '../lib/quality-core.mjs';
 const events=JSON.parse(fs.readFileSync('lib/events.json','utf8'));
-const ids=new Set();let errors=[];let generated=0,local=0;
-const available=(src)=>src.startsWith('/posters/')?fs.existsSync(path.join('public',src.slice(1))):src.startsWith('/api/event-poster?id=');
-for(const e of events){
- if(!e.id||ids.has(e.id))errors.push('Duplicate or missing event ID '+e.id);
- ids.add(e.id);
- if(!e.name)errors.push('Missing event name '+e.id);
- if(Boolean(e.start)!==Boolean(e.end))errors.push('Partially specified date '+e.id);
- if(e.start&&e.end&&e.start>e.end)errors.push('Reversed dates '+e.id);
- if(e.poster?.startsWith('/')){
-  if(!available(e.poster))errors.push('Missing or unsupported event poster '+e.id+': '+e.poster);
-  else if(e.poster.startsWith('/api/'))generated++;else local++;
- }
- for(const ext of e.additionalPosters||[])if(ext.src?.startsWith('/posters/')&&!available(ext.src))errors.push('Missing supplementary image '+e.id+': '+ext.src);
-}
-for(const e of events)if(e.linkedEventId&&!ids.has(e.linkedEventId))errors.push('Broken linked event '+e.id+' -> '+e.linkedEventId);
-console.log('Event audit: '+events.length+' entries, '+local+' local posters, '+generated+' generated posters, '+errors.length+' errors');
-if(errors.length){console.error(errors.join('\n'));process.exit(1)}
+const posters=JSON.parse(fs.readFileSync('lib/posters.json','utf8'));
+const localExists=(source)=>source.startsWith('/posters/') && fs.existsSync(path.join(process.cwd(),'public',source.slice(1)));
+const result=runQualityAudit(events,posters,localExists);
+console.log('Event & artwork audit:',JSON.stringify(result.summary));
+for(const issue of result.issues.filter(issue=>issue.severity==='error').slice(0,60)) console.error('[ERROR] '+issue.code+' '+(issue.eventId||'')+': '+issue.message);
+if(result.summary.errors) process.exit(1);
+console.log('All blocking integrity checks passed. Advisory findings: '+result.summary.warnings+' warnings, '+result.summary.info+' informational.');
