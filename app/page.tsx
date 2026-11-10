@@ -371,15 +371,15 @@ function WeeklyPosterCalendar({days,week,setWeek,onOpen,compact,timeZone}:{days:
   const featured=ev.featuredPokemon||[];
   const useFeatured=featured.length>0 && ev.posterType==='custom';
   return <article key={ev.id} className="min-w-0 overflow-hidden rounded-2xl border border-sky-700/80 bg-[#0a2147] shadow-[0_8px_24px_rgba(0,0,0,.15)]">
-   <button type="button" aria-expanded={opened} aria-controls={'weekly-expanded-'+ev.id} aria-label={(opened?'Collapse ':'Expand ')+ev.name} onClick={()=>setExpandedId(opened?null:ev.id)} className="flex min-h-[100px] w-full min-w-0 items-center gap-3 p-3 text-left transition hover:bg-sky-900/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-300">
+   <button type="button" aria-expanded={opened} aria-label={(opened?'Collapse ':'Expand ')+ev.name} onClick={()=>setExpandedId(opened?null:ev.id)} className="flex min-h-[100px] w-full min-w-0 items-center gap-3 p-3 text-left transition hover:bg-sky-900/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-300">
     <div className={`relative ${compact?'h-20 w-20':'h-24 w-24'} shrink-0 overflow-hidden rounded-xl border border-sky-700 bg-[#0b315c]`}>
      {useFeatured?<div className="flex h-full items-center justify-center gap-0.5 bg-gradient-to-br from-[#0b284d] to-[#174b79] p-1">{featured.slice(0,2).map(mon=><SpriteImage key={mon} name={mon} className="h-full min-w-0 flex-1 object-contain"/>)}</div>:src?<img src={src} alt={ev.name+' poster'} loading="lazy" onError={err=>posterFallback(err,ev)} className="h-full w-full object-cover"/>:<div className="flex h-full items-center justify-center text-cyan-300"><CalendarDays size={32}/></div>}
     </div>
     <div className="min-w-0 flex-1 space-y-1">
-     <div className="flex flex-wrap gap-1"><span className="rounded-md bg-[#1b4e83] px-2 py-0.5 text-[11px] font-bold text-cyan-100">{weeklyEventCategory(ev)}</span>{isUnconfirmedWeeklyEvent(ev)&&<span className="rounded-md border border-amber-700 px-1.5 py-0.5 text-[11px] font-bold text-amber-200">Unconfirmed</span>}</div>
+     <div className="flex flex-wrap gap-1"><span className="rounded-md bg-[#1b4e83] px-2 py-0.5 text-[11px] font-bold text-cyan-100">{weeklyEventCategory(ev)}</span><span className="rounded-md border border-sky-700/70 px-1.5 py-0.5 text-[11px] text-sky-200">{ev.start>todayKey?"Upcoming":ev.end<todayKey?"Past dates":"Includes today"}</span>{isUnconfirmedWeeklyEvent(ev)&&<span className="rounded-md border border-amber-700 px-1.5 py-0.5 text-[11px] font-bold text-amber-200">Unconfirmed</span>}</div>
      <h3 className="break-words text-sm font-bold leading-snug text-white">{ev.name}</h3>
      <p className="text-xs text-sky-300">{eventDateLabel(ev)}</p>
-     {hasSpecificTime(ev)&&<p className="text-xs font-medium text-amber-200">{eventTimeLabel(ev)} · venue-local</p>}
+     {hasSpecificTime(ev)&&<p className="text-xs font-medium text-amber-200">{eventTimeLabel(ev)} · {ev.zone?"venue-local time":"local event time"}</p>}
      <p className="text-xs text-cyan-200">{eventAreaLabel(ev)}</p>
     </div>
     <span aria-hidden="true" className="shrink-0 text-lg font-bold text-cyan-200">{opened?'−':'+'}</span>
