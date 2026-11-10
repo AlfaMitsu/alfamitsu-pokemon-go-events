@@ -328,6 +328,22 @@ function WeeklyPosterCalendar({days,week,setWeek,onOpen,compact,timeZone,onToggl
  const [category,setCategory]=useState('all');
  const [area,setArea]=useState<'all'|'global'|'regional'>('all');
  const [confirmation,setConfirmation]=useState<'all'|'confirmed'|'unconfirmed'>('all');
+ const [weeklyPrefsReady,setWeeklyPrefsReady]=useState(false);
+ useEffect(()=>{
+  try{
+   const prefs=JSON.parse(window.localStorage.getItem('alfamitsu:weekly-filter-preferences:v1')||'{}');
+   if(prefs&&typeof prefs==='object'){
+    if(['all','Raid','Max Battle','Community Day','Spotlight Hour','Max Monday','Event'].includes(prefs.category))setCategory(prefs.category);
+    if(['all','global','regional'].includes(prefs.area))setArea(prefs.area);
+    if(['all','confirmed','unconfirmed'].includes(prefs.confirmation))setConfirmation(prefs.confirmation);
+   }
+  }catch{}
+  setWeeklyPrefsReady(true);
+ },[]);
+ useEffect(()=>{
+  if(!weeklyPrefsReady)return;
+  try{window.localStorage.setItem('alfamitsu:weekly-filter-preferences:v1',JSON.stringify({category,area,confirmation}));}catch{}
+ },[category,area,confirmation,weeklyPrefsReady]);
  const [expandedId,setExpandedId]=useState<string|null>(null);
  const weekStart=days[0],weekEnd=days[6];
  const todayKey=localDateKey();
