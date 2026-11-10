@@ -8,12 +8,13 @@
     "start": "next start",
     "lint": "tsc --noEmit",
     "check:posters": "node scripts/check-posters.mjs",
-    "prebuild": "node scripts/check-events.mjs && node scripts/check-posters.mjs && node --test tests/quality-core.test.mjs && node --test tests/weekly-calendar.test.mjs && node --test tests/my-events.test.mjs",
+    "prebuild": "node scripts/check-events.mjs && node scripts/check-posters.mjs && node --test tests/*.test.mjs",
     "check:events": "node scripts/check-events.mjs",
     "test:quality": "node --test tests/quality-core.test.mjs",
     "check:quality": "node scripts/check-events.mjs && node scripts/check-posters.mjs && npm run test:quality",
     "test:calendar": "node --test tests/weekly-calendar.test.mjs",
-    "test:my-events": "node --test tests/my-events.test.mjs"
+    "test:my-events": "node --test tests/my-events.test.mjs",
+    "test:all": "node --test tests/*.test.mjs"
   },
   "dependencies": {
     "next": "^15.5.0",
