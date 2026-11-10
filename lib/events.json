@@ -4496,7 +4496,7 @@
     "start": "2026-11-16",
     "end": "2026-11-23",
     "name": "Dynamax Trails",
-    "detail": "Nov 16–23, 10 AM–8 PM local: Dynamax Trails, event-themed Dynamax Pokémon in Max Battles, possible Special Backgrounds, increased Power Spots and Max Particles, GO Pass Dynamax Trails and Eternatus rewards. Eternamax Eternatus Max Battles Nov 21, 11 AM–2 PM.",
+    "detail": "Dynamax Trails runs November 16, 10:00 AM through November 23, 8:00 PM local time. Previously available non-Legendary, non-Mythical Dynamax Pokémon return to Max Battles; more Power Spots and opportunities for Max Particles and Special Backgrounds. Eternatus is obtainable through GO Pass: Dynamax Trails progression (one encounter during this event); eligible trainers can access the pass early on November 14, 10:00 AM, while standard access begins November 16. Rank progression ends November 23, 8:00 PM and unlocked rewards can be claimed through November 25, 8:00 PM local time. Eternamax Eternatus is a separate Power Spot Max Battle takeover on November 21 only, 11:00 AM–2:00 PM local time; Eternamax cannot be caught after battle.",
     "zone": "",
     "endTime": "20:00",
     "startTime": "10:00",
@@ -4516,7 +4516,7 @@
     "start": "2026-11-16",
     "end": "2026-11-23",
     "name": "Dynamax Trails • Returning Dynamax Max Battles",
-    "detail": "Dynamax Trails (November 16, 10 AM through November 23, 8 PM local) brings back every previously released Dynamax Pokémon in Max Battles. This is a general returning rotation, not a list of every Pokémon at every Power Spot. Eternamax Eternatus has its own separate November 21 battle entry.",
+    "detail": "Dynamax Trails takes place November 16 (10:00 AM) through November 23 (8:00 PM), local time. Previously released non-Legendary and non-Mythical Dynamax Pokémon may return to Power Spot Max Battles. This is the weeklong general rotation, NOT weeklong Eternamax Eternatus availability. The Eternamax Eternatus Max Battle takeover is November 21 only, 11:00 AM–2:00 PM local time. The regular Eternatus encounter is obtained through GO Pass progression, not by catching Eternamax after battle.",
     "category": "max-battle-rotation",
     "zone": "",
     "startTime": "10:00",
@@ -4610,8 +4610,8 @@
     "id": "ev031",
     "start": "2026-11-21",
     "end": "2026-11-21",
-    "name": "Eternamax Eternatus Max Battles",
-    "detail": "Eternamax Eternatus Max Battles 11 AM–2 PM local. 8× Max Particles from Power Spots and 2,400 daily Max Particle collection limit. Earn Eternatus Candy and Candy XL; Eternamax cannot be caught after Max Battles.",
+    "name": "Eternamax Eternatus — Max Battle Day",
+    "detail": "CONFIRMED: Saturday, November 21, 2026 ONLY, 11:00 AM–2:00 PM local time. Eternamax Eternatus takes over most Power Spots in Max Battles (not regular Raids). Winning awards substantial Eternatus Candy and Candy XL; Eternamax Eternatus CANNOT be caught after battle. Bonuses: 8× Max Particles from Power Spots, collection limit raised to 2,400, and more frequent Power Spot refreshes. Separate from the catchable regular Eternatus encounter available through GO Pass: Dynamax Trails November 16–23 (early access November 14 for eligible trainers). No other Eternamax Max Battle dates are confirmed by the official announcement.",
     "zone": "",
     "endTime": "14:00",
     "startTime": "11:00",
@@ -4623,7 +4623,7 @@
     "category": "max-battle-rotation",
     "linkedEventId": "ev032",
     "featuredPokemon": [
-      "Eternatus"
+      "Eternamax Eternatus"
     ]
   },
   {

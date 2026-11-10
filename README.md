@@ -178,3 +178,11 @@ V26: Visitor counts (Online, 1 Day, 7 Days, 30 Days) display directly in the hea
 - Residual limitation: rare costume variants without reliably published assets use authentic base species artwork. External event links and website images can change after deployment; production build validation cannot guarantee every external image loads in every visitor's browser.
 
 - Final audit follow-up: location-specific schedules without an IANA timezone now use the global date-window approximation for Upcoming/Ongoing/Completed status instead of remaining stuck on Upcoming; the visible timezone label still tells readers to verify the venue schedule.
+
+
+## November 10, 2026 — Eternatus availability clarification (official-source verified)
+- The Eternamax Eternatus Power Spot Max Battle takeover is confirmed for Saturday, November 21, 2026, 11:00 AM–2:00 PM local time **only**. It is a Max Battle, not a conventional Raid, and Eternamax cannot be caught after winning. Wins give Eternatus Candy and Candy XL. No additional Eternamax battle day has been officially announced.
+- GO Pass: Dynamax Trails is distinct: eligible players can get early access November 14 at 10:00 AM; regular event/GO Pass progress runs November 16 at 10:00 AM–November 23 at 8:00 PM local time, with unlocked reward claims available until November 25 at 8:00 PM. Regular Eternatus is obtained through GO Pass progression (one catchable encounter), not the November 21 Eternamax battle.
+- Updated the parent Dynamax Trails event, the general returning Dynamax Max Battles rotation, and the Eternamax day entry to prevent confusion. Did not add a redundant standalone GO Pass event or speculate about unannounced battle dates.
+- Website changelog consolidated into the existing November reliability/event update rather than another near-identical card.
+- Official source: https://pokemongo.com/en/news/dynamax-trails-eternamax-eternatus-2026 ; cross-check: https://leekduck.com/events/eternamax-eternatus-max-battles-2026/
