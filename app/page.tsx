@@ -4,6 +4,7 @@ import {Button} from '@/components/ui/button';import {Card} from '@/components/u
 import {CalendarDays,Swords,Zap,Coins,Dna,Skull,BarChart3,Menu,Search,ChevronLeft,ChevronRight,RefreshCw,ExternalLink} from 'lucide-react';
 import eventsJson from '@/lib/events.json';import postersJson from '@/lib/posters.json';import {sprite,fmt,coinEstimate,rankIV,rocket} from '@/lib/game';
 import {artworkUrl,lookupSpecies} from '@/lib/pokemon-images';
+import {weekDatesFromOffset,weekOffsetForDate,weekdayIndex,isCalendarDateKey,filterWeeklyEvents,eventOnWeeklyDate,isRegionalWeeklyEvent,isUnconfirmedWeeklyEvent,weeklyEventCategory,weeklyEventLane} from '@/lib/weekly-calendar.mjs';
 type Event={id:string;start:string;end:string;name:string;category?:'raid'|'max-battle-rotation'|'event';featuredPokemon?:string[];linkedEventId?:string;detail?:string;zone?:string;startTime?:string;endTime?:string;poster?:string;posterType?:string;posterNote?:string;additionalPosters?:{title:string;src:string}[];onlineImage?:string;infographicSource?:string;infographicCredit?:string;source?:string};type Raid={name:string;tier:string;id:number;counters:string[];category?:string;region?:string;availability?:string;availableUntil?:string;endDate?:string;image?:string;counterBasis?:string};
 const events=eventsJson as Event[];const posterMap=postersJson as Record<string,string>;
 const TZ_OPTIONS=[{value:'device',label:'My device timezone'},{value:'Asia/Manila',label:'Philippines (Manila)'},{value:'Asia/Singapore',label:'Singapore'},{value:'Asia/Tokyo',label:'Japan (Tokyo)'},{value:'Europe/London',label:'UK (London)'},{value:'America/New_York',label:'US Eastern'},{value:'America/Los_Angeles',label:'US Pacific'}];
@@ -318,16 +319,38 @@ function HomeHub(){
 
 // Image-led weekly calendar: one tile per event, spanning the dates it actually runs.
 function WeeklyPosterCalendar({days,week,setWeek,onOpen,compact,timeZone}:{days:string[];week:number;setWeek:(v:number)=>void;onOpen:(e:Event)=>void;compact:boolean;timeZone:string}){
+ const [selectedDayIndex,setSelectedDayIndex]=useState(()=> (new Date().getDay()+6)%7);
+ const [category,setCategory]=useState('all');
+ const [area,setArea]=useState<'all'|'global'|'regional'>('all');
+ const [confirmation,setConfirmation]=useState<'all'|'confirmed'|'unconfirmed'>('all');
+ const [expandedId,setExpandedId]=useState<string|null>(null);
  const weekStart=days[0],weekEnd=days[6];
  const todayKey=localDateKey();
- const inWeek=(e:Event)=>!tba(e)&&e.start<=weekEnd&&e.end>=weekStart;
- const all=events.filter(inWeek);
- const regional=all.filter(e=>Boolean(e.zone)&&e.category!=='raid'&&e.category!=='max-battle-rotation').sort(evSort);
- const global=all.filter(e=>!e.zone||e.category==='raid'||e.category==='max-battle-rotation').sort((a,b)=>a.start.localeCompare(b.start)||a.end.localeCompare(b.end));
- // Keep raid rotations and Raid Hours in Raids, weekly Power Spot rotations in Max Battles,
- // and the special Monday takeover in Events. Major named events stay in Events.
- const isMaxRotation=(e:Event)=>e.category==='max-battle-rotation'||(/^Dynamax (Sableye|Machop|Espurr|Cryogonal)$/.test(e.name));
- const isRaid=(e:Event)=>e.category==='raid'||(/raid|giratina|cresselia|darkrai|deoxys|mega |shadow incarnate/i.test(e.name)&&e.category!=='event');
+ const all=filterWeeklyEvents(events,days,{category,area,confirmation});
+ const regional=all.filter(isRegionalWeeklyEvent).sort(evSort);
+ const global=all.filter(e=>!isRegionalWeeklyEvent(e)).sort((a,b)=>a.start.localeCompare(b.start)||a.end.localeCompare(b.end));
+ // Preserve existing desktop Raids, Max Battles, and Events lanes.
+ const isMaxRotation=(e:Event)=>weeklyEventLane(e)==='max';
+ const isRaid=(e:Event)=>weeklyEventLane(e)==='raids';
+ const selectedDate=days[selectedDayIndex]||days[0];
+ const dayEvents=all.filter(e=>eventOnWeeklyDate(e,selectedDate));
+ const dailyGlobal=dayEvents.filter(e=>!isRegionalWeeklyEvent(e));
+ const dailyRegional=dayEvents.filter(isRegionalWeeklyEvent);
+ const clearFilters=()=>{setCategory('all');setArea('all');setConfirmation('all');setExpandedId(null);};
+ const moveDay=(delta:number)=>{
+  setExpandedId(null);
+  const next=selectedDayIndex+delta;
+  if(next<0){setSelectedDayIndex(6);setWeek(week-1);}
+  else if(next>6){setSelectedDayIndex(0);setWeek(week+1);}
+  else setSelectedDayIndex(next);
+ };
+ const jumpToDate=(value:string)=>{
+  if(!isCalendarDateKey(value))return;
+  const offset=weekOffsetForDate(value);
+  if(offset===null)return;
+  setWeek(offset);setSelectedDayIndex(weekdayIndex(value));setExpandedId(null);
+ };
+ const jumpToday=()=>{setWeek(0);setSelectedDayIndex(weekdayIndex(localDateKey()));setExpandedId(null);};
  const raidEvents=global.filter(e=>!isMaxRotation(e)&&isRaid(e));
  const maxBattles=global.filter(isMaxRotation);
  const otherEvents=global.filter(e=>!isMaxRotation(e)&&!isRaid(e));
@@ -345,20 +368,20 @@ function WeeklyPosterCalendar({days,week,setWeek,onOpen,compact,timeZone}:{days:
  return <div className="space-y-5">
   <div className="flex flex-wrap items-center justify-between gap-3"><div><p className="mb-1 text-xs font-extrabold uppercase tracking-[.32em] text-cyan-300">AlfaMitsu Services</p><h1 className="text-3xl font-black uppercase tracking-tight sm:text-4xl">GO <span className="text-cyan-300">Weekly</span></h1><p className="text-sm text-sky-200">{nice(weekStart)} – {nice(weekEnd)}</p></div><div className="flex gap-2"><Button variant="outline" onClick={()=>setWeek(week-1)} aria-label="Previous week"><ChevronLeft size={18}/></Button><Button variant="outline" onClick={()=>setWeek(0)}>This Week</Button><Button variant="outline" onClick={()=>setWeek(week+1)} aria-label="Next week"><ChevronRight size={18}/></Button></div></div>
   
-  <div className="rounded-3xl border border-cyan-500/30 bg-gradient-to-b from-[#0a1b44] via-[#071731] to-[#040d25] p-3 shadow-2xl sm:p-5">
+  <div className="hidden rounded-3xl border border-cyan-500/30 bg-gradient-to-b from-[#0a1b44] via-[#071731] to-[#040d25] p-3 shadow-2xl xl:block xl:p-5">
    <div className="overflow-x-auto pb-1"><div className="min-w-[820px] space-y-3">
     <div className="grid grid-cols-[110px_minmax(0,1fr)] gap-2 md:grid-cols-[132px_minmax(0,1fr)]"><div className="flex items-center justify-center rounded-xl border border-cyan-600/30 bg-[#091a3b] px-1 text-center text-[10px] font-black uppercase tracking-normal whitespace-nowrap text-cyan-300 sm:text-[11px]">Weekly Schedule</div><div className="grid grid-cols-7 gap-1.5">{days.map(d=>{const isToday=d===todayKey;return <div key={d} className={`rounded-xl border px-1 py-3 text-center ${isToday?'border-amber-300 bg-gradient-to-b from-[#1b4374] to-[#0f2f59] shadow-[0_0_18px_rgba(251,191,36,.18)]':'border-sky-500/60 bg-[#0b2754]'}`}><div className={`text-xs font-extrabold uppercase ${isToday?'text-amber-100':'text-white'}`}>{formatDay(d)}</div><div className={`text-xs font-semibold ${isToday?'text-amber-200':'text-cyan-300'}`}>{new Date(d+'T12:00:00Z').getUTCDate()} {new Date(d+'T12:00:00Z').toLocaleDateString('en-US',{month:'short',timeZone:'UTC'})}</div>{isToday&&<div className="mt-1 text-[10px] font-black uppercase tracking-wide text-amber-200">Today</div>}</div>})}</div></div>
     {timeline(raidEvents,'raids')}{timeline(maxBattles,'max')}{timeline(otherEvents,'events')}
    </div></div>
   </div>
-  <section className="space-y-3"><div className="rounded-xl border border-amber-500/40 bg-gradient-to-r from-[#17133b] to-[#082b5e] px-4 py-3"><h2 className="text-xl font-black uppercase tracking-wide text-white"><span className="text-amber-300">✦</span> Regional / Location-Exclusive Events</h2><p className="text-xs text-sky-200">Only available in the listed locations. Select a picture for event details.</p></div>
+  <section className="hidden space-y-3 xl:block"><div className="rounded-xl border border-amber-500/40 bg-gradient-to-r from-[#17133b] to-[#082b5e] px-4 py-3"><h2 className="text-xl font-black uppercase tracking-wide text-white"><span className="text-amber-300">✦</span> Regional / Location-Exclusive Events</h2><p className="text-xs text-sky-200">Only available in the listed locations. Select a picture for event details.</p></div>
   {regional.length?<div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">{regional.map(ev=><button key={ev.id} onClick={()=>onOpen(ev)} className="group overflow-hidden rounded-2xl border border-sky-700/70 bg-[#0b2148] text-left transition hover:border-cyan-300 hover:shadow-[0_0_24px_rgba(34,211,238,.12)]"><div className="relative aspect-[16/9] overflow-hidden bg-[#14315c]">{ev.featuredPokemon?.length&&ev.posterType==='custom'?<div className="flex h-full w-full items-center justify-evenly gap-1 bg-gradient-to-br from-[#0b2648] via-[#164b70] to-[#2b3c70] px-3 py-2">{ev.featuredPokemon.slice(0,3).map(mon=><SpriteImage key={mon} name={mon} className="h-full max-w-[32%] min-w-0 flex-1 object-contain drop-shadow-[0_5px_10px_rgba(0,0,0,.65)]"/>)}</div>:poster(ev)?<img loading="lazy" src={poster(ev)} alt={ev.name} onError={err=>posterFallback(err,ev)} className="h-full w-full object-cover transition group-hover:scale-[1.04]"/>:<div className="flex h-full items-center justify-center bg-gradient-to-br from-[#132d56] to-[#265576] text-5xl">📍</div>}<div className="absolute inset-0 bg-gradient-to-t from-[#081730]/80 to-transparent"/><span className="absolute bottom-2 left-3 rounded-lg bg-[#04142d]/80 px-2 py-1 text-[10px] font-bold text-cyan-200">{eventAreaLabel(ev)}</span></div><div className="p-3"><div className="line-clamp-2 text-sm font-bold leading-snug text-white">{ev.name}</div><div className="mt-2 text-xs text-sky-300">{eventDateLabel(ev)}</div>{hasSpecificTime(ev)&&<div className="mt-1 text-[11px] font-semibold text-amber-200">{eventTimeLabel(ev)}</div>}</div></button>)}</div>:<p className="rounded-lg border border-sky-900 p-5 text-sm text-sky-300">No regional events scheduled during this week.</p>}
-  </section><p className="text-xs text-sky-400">Event images are previews. Tap a tile to view full event details, source links, and the larger poster. Scroll horizontally to view all seven days on smaller screens.</p>
+  </section><p className="text-xs text-sky-400">Event images are previews. Select a card to view details, sources, and full artwork. The desktop timeline spans all seven days; the mobile and tablet layout shows the selected day without horizontal scrolling.</p>
  </div>;
 }
 
 export default function Page(){const [page,setPage]=useState('tracker');const [detailBackPage,setDetailBackPage]=useState('tracker');const [tool,setTool]=useState('raid');const [search,setSearch]=useState('');const [categoryFilter,setCategoryFilter]=useState('all');const [regionFilter,setRegionFilter]=useState('all');const [statusFilter,setStatusFilter]=useState('all');const [dateFrom,setDateFrom]=useState('');const [dateTo,setDateTo]=useState('');const [timeZone,setTimeZone]=useState('device');const [compactWeekly,setCompactWeekly]=useState(false);const [selected,setSelected]=useState<Event|null>(null);const [week,setWeek]=useState(0);const [showCompleted,setCompleted]=useState(true);const [mobileMenu,setMobileMenu]=useState(false);const [zoom,setZoom]=useState(false);
-const now=new Date();const mon=new Date(now);mon.setDate(now.getDate()-((now.getDay()+6)%7)+week*7);const days=Array.from({length:7},(_,i)=>{const d=new Date(mon);d.setDate(d.getDate()+i);return [d.getFullYear(),String(d.getMonth()+1).padStart(2,'0'),String(d.getDate()).padStart(2,'0')].join('-')});const status=(e:Event)=>{if(tba(e))return 'TBA';try{const fmt=(z:string)=>{const parts=new Intl.DateTimeFormat('en-US',{timeZone:z,year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).formatToParts(new Date());const v=(type:string)=>parts.find(x=>x.type===type)?.value||'00';return v('year')+v('month')+v('day')+v('hour')+v('minute')};const z=hasVenueTimeZone(e)?e.zone!:'Pacific/Auckland';const endz=hasVenueTimeZone(e)?e.zone!:'Pacific/Honolulu';const start=fmt(z),end=fmt(endz);const stamp=(s:string,t:string)=>s.replace(/-/g,'')+t.replace(':','');return end>=stamp(e.end,e.endTime||'23:59')?'Completed':start>=stamp(e.start,e.startTime||'00:00')?'Ongoing':'Upcoming'}catch{return 'Upcoming'}};
+const days=weekDatesFromOffset(week);const status=(e:Event)=>{if(tba(e))return 'TBA';try{const fmt=(z:string)=>{const parts=new Intl.DateTimeFormat('en-US',{timeZone:z,year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).formatToParts(new Date());const v=(type:string)=>parts.find(x=>x.type===type)?.value||'00';return v('year')+v('month')+v('day')+v('hour')+v('minute')};const z=hasVenueTimeZone(e)?e.zone!:'Pacific/Auckland';const endz=hasVenueTimeZone(e)?e.zone!:'Pacific/Honolulu';const start=fmt(z),end=fmt(endz);const stamp=(s:string,t:string)=>s.replace(/-/g,'')+t.replace(':','');return end>=stamp(e.end,e.endTime||'23:59')?'Completed':start>=stamp(e.start,e.startTime||'00:00')?'Ongoing':'Upcoming'}catch{return 'Upcoming'}};
 const visible=useMemo(()=>events.filter(e=>{
  const haystack=[e.name,e.detail,e.zone,...(e.featuredPokemon||[])].filter(Boolean).join(' ').toLowerCase();
  if(!haystack.includes(search.toLowerCase()))return false;
