@@ -14,7 +14,8 @@
     "check:quality": "node scripts/check-events.mjs && node scripts/check-posters.mjs && npm run test:quality",
     "test:calendar": "node --test tests/weekly-calendar.test.mjs",
     "test:my-events": "node --test tests/my-events.test.mjs",
-    "test:all": "node --test tests/*.test.mjs"
+    "test:all": "node --test tests/*.test.mjs",
+    "test:battles": "node --test tests/go-battle-guides.test.mjs"
   },
   "dependencies": {
     "next": "^15.5.0",

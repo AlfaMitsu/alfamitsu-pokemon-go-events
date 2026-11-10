@@ -209,3 +209,10 @@ V26: Visitor counts (Online, 1 Day, 7 Days, 30 Days) display directly in the hea
 - The calendar export respects verified IANA venue timezones; unzoned global event clock times are floating local times, not falsely presented as UTC. Undated records are skipped and all-day events use exclusive end dates.
 - Existing visitor timezone, compact weekly display and Events List category/location preferences now persist in the visitor browser.
 - No accounts, push-notification infrastructure, remote storage or automatic synchronization were introduced. Event database, supplied posters, Phase 1 quality review and Phase 2 calendar remain intact. See README_PHASE3.md.
+
+
+## November 10, 2026 — Advanced Raid and Max Battle Guides (Phase 4)
+- Added a new Battle Guides tool and contextual handoffs from event details, Raid Planner boss cards and Max Battle Calculator without altering existing calculators, regional schedules, posters, My Events or the private quality dashboard.
+- Added validated species/form typing, Pokémon GO type effectiveness, weather/STAB scenarios, manually assembled Raid and Max teams, role and eligibility confirmation, source-linked raid simulations and standard species Candy-group Max Move upgrade previews.
+- Existing current raid counters are labeled illustrative examples, not simulated DPS rankings. Main-series move lists are not mislabeled as Pokémon GO movesets. Exceptional Eternatus/Crowned costs are not guessed.
+- Expanded required Phase 1–4 regression tests and documentation. See README_PHASE4.md for exact sources, caveats and testing instructions.
