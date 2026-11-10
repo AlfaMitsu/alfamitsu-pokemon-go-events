@@ -46,7 +46,7 @@ test('global-local time is floating, not an invented UTC timezone',()=>{
  const result=buildCalendarExport(s.items,[global],new Date(now));
  assert.match(result.content,/DTSTART:20261212T140000/);
  assert.doesNotMatch(result.content,/DTSTART;TZID=/);
- assert.match(result.content,/participating location/);
+ assert.match(result.content.replace(/\r\n /g,''),/participating location/);
 });
 test('all-day date ranges use exclusive following-day DTEND',()=>{
  const result=buildCalendarExport(saved(archive).items,[archive],new Date(now));
