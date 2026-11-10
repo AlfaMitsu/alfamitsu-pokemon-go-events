@@ -14,7 +14,7 @@ Phase 3 adds a public, account-free personal event collection **inside the exist
 ## Storage, privacy and limitations
 
 - Storage key: `alfamitsu:my-events:v1`. Records use **stable event IDs**, an originally saved schedule/source snapshot for detecting changes, and the user's reminder choice. Data remains only in the current browser/device; no login, server storage, or sync between devices.
-- Visitor timezone, compact weekly setting and Events List category/location filters are saved locally under `alfamitsu:event-preferences:v1`.
+- Visitor timezone, compact weekly setting and Events List category/location filters are saved locally under `alfamitsu:event-preferences:v1`. GO Weekly category/region/confirmation filters are saved separately under `alfamitsu:weekly-filter-preferences:v1`.
 - Import replaces the saved collection after a browser confirmation. Backup restores reminder preferences and original snapshots. Corrupt payloads and oversized imports are rejected or safely normalized.
 - Imported and saved events are linked to live entries from the website dataset. When a date/time/region/name/source field changes, My Events highlights it until the user reviews the updated record. Missing event IDs are retained with a warning rather than silently removed.
 - No background browser push notifications are implemented. Users should import the .ics file into a calendar application and enable notifications there.
