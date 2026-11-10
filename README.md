@@ -186,3 +186,10 @@ V26: Visitor counts (Online, 1 Day, 7 Days, 30 Days) display directly in the hea
 - Updated the parent Dynamax Trails event, the general returning Dynamax Max Battles rotation, and the Eternamax day entry to prevent confusion. Did not add a redundant standalone GO Pass event or speculate about unannounced battle dates.
 - Website changelog consolidated into the existing November reliability/event update rather than another near-identical card.
 - Official source: https://pokemongo.com/en/news/dynamax-trails-eternamax-eternatus-2026 ; cross-check: https://leekduck.com/events/eternamax-eternatus-max-battles-2026/
+
+
+## November 10, 2026 — Phase 1: data and poster quality, owner-only review
+- Extended the existing mandatory build checks to validate event relationships, schedules, poster routing and original asset integrity without removing historical records.
+- Added a private owner review interface with severity filters, per-browser triage markers, and a JSON findings export. Sensitive Vercel server variables protect login and session cookies; unauthenticated visitors cannot fetch the report.
+- Added automated Node regression tests and a build-generated quality report. External URLs and CDN assets are advisory/manual verification, not falsely described as live-verified.
+- Existing calendar, raid/max tools, resources, public pages and supplied posters unchanged. See README_PHASE1.md.

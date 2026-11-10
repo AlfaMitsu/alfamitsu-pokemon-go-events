@@ -8,8 +8,10 @@
     "start": "next start",
     "lint": "tsc --noEmit",
     "check:posters": "node scripts/check-posters.mjs",
-    "prebuild": "node scripts/check-events.mjs && node scripts/check-posters.mjs",
-    "check:events": "node scripts/check-events.mjs"
+    "prebuild": "node scripts/check-events.mjs && node scripts/check-posters.mjs && node --test tests/quality-core.test.mjs",
+    "check:events": "node scripts/check-events.mjs",
+    "test:quality": "node --test tests/quality-core.test.mjs",
+    "check:quality": "node scripts/check-events.mjs && node scripts/check-posters.mjs && npm run test:quality"
   },
   "dependencies": {
     "next": "^15.5.0",
