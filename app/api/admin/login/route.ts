@@ -9,8 +9,6 @@ export async function POST(request:NextRequest){
   if(!checkAdminPassword(submitted))return NextResponse.json({error:'Incorrect access password.'},{status:401,headers:{'Cache-Control':'no-store'}});
   const session=issueAdminSession();
   const response=NextResponse.json({ok:true},{headers:{'Cache-Control':'no-store'}});
-  response.cookies.set(ADMIN_COOKIE,session.value,{path:'/admin',httpOnly:true,secure:true,sameSite:'strict',maxAge:session.maxAge});
-  // The quality API is outside /admin, so use a site-wide cookie scoped to this host.
   response.cookies.set(ADMIN_COOKIE,session.value,{path:'/',httpOnly:true,secure:true,sameSite:'strict',maxAge:session.maxAge});
   return response;
 }
