@@ -1,0 +1,16 @@
+export type SavedSnapshot={id:string;name:string;start:string;end:string;startTime:string;endTime:string;zone:string;source:string};
+export type SavedEventRecord={id:string;addedAt:string;reminder:'none'|'PT10M'|'PT30M'|'PT1H'|'P1D';snapshot:SavedSnapshot};
+export type SavedCollection={version:1;items:SavedEventRecord[]};
+export type CalendarEvent={id:string;name:string;start:string;end:string;startTime?:string;endTime?:string;zone?:string;source?:string;detail?:string};
+export const SAVED_EVENTS_KEY:string;
+export const EVENT_PREFS_KEY:string;
+export const REMINDERS:Readonly<Record<SavedEventRecord['reminder'],string>>;
+export function eventSnapshot(event:CalendarEvent):SavedSnapshot;
+export function emptySavedCollection():SavedCollection;
+export function normalizeSavedCollection(raw:unknown):SavedCollection;
+export function toggleSavedEvent(collection:SavedCollection,event:CalendarEvent,now?:string):SavedCollection;
+export function setSavedReminder(collection:SavedCollection,id:string,reminder:SavedEventRecord['reminder']):SavedCollection;
+export function acknowledgeSavedEvent(collection:SavedCollection,event:CalendarEvent):SavedCollection;
+export function savedEventChanges(record:SavedEventRecord,current?:CalendarEvent):string[];
+export function serializeSavedCollection(collection:SavedCollection):string;
+export function buildCalendarExport(savedRecords:SavedEventRecord[],events:CalendarEvent[],now?:Date):{content:string;eventCount:number;skippedCount:number;reminderCount:number};
