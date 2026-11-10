@@ -8,7 +8,7 @@ The public Event Tracker, existing calendar, raid tools, original posters, histo
 - Private dashboard: `/admin`
 - Build-time quality findings: `/api/admin/quality` (401 without a valid owner session)
 - No dashboard navigation link appears in the public site.
-- The dashboard lists event IDs, issue codes, severity, suggested fixes, filters, browser-local review decisions and complete JSON export.
+- The dashboard lists event IDs, issue codes, severity, suggested fixes, filters, browser-local review decisions and complete JSON export. It also offers an optional private external-poster health check.
 - Review decisions do **not** edit published event data or synchronize across devices. Export the report and apply reviewed source changes via GitHub.
 - Every production/preview build runs the event and poster checks and writes a fresh private report to `lib/quality-report.json`. Clicking Reload refreshes this deployment's report. External URLs and image CDNs are not probed during builds.
 
@@ -44,4 +44,4 @@ Only confirmed local integrity violations block deployment. Unsupported/ambiguou
 
 ## Current scope and follow-up
 
-The quality check validates repository records and bundled local poster references. A live external HTTP image/link checker, automated correction proposals and shared server-side review state can be added later; they are not claimed to be provided by this phase.
+The quality check validates repository records and bundled local poster references. An optional owner-triggered remote poster check verifies HTTP image responses from the explicitly allowlisted image hosts in existing event records. Inconclusive CDN responses are flagged for manual review, not counted as broken. A broad external-source crawler, automated correction proposals and shared server-side review state remain future work.
