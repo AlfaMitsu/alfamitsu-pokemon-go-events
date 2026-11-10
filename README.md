@@ -193,3 +193,11 @@ V26: Visitor counts (Online, 1 Day, 7 Days, 30 Days) display directly in the hea
 - Added a private owner review interface with severity filters, per-browser triage markers, and a JSON findings export. Sensitive Vercel server variables protect login and session cookies; unauthenticated visitors cannot fetch the report.
 - Added automated Node regression tests and a build-generated quality report. External URLs and CDN assets are advisory/manual verification, not falsely described as live-verified.
 - Existing calendar, raid/max tools, resources, public pages and supplied posters unchanged. See README_PHASE1.md.
+
+
+## November 10, 2026 — Mobile-first GO Weekly calendar
+- GO Weekly now shows a compact day-focused agenda below 1280px, including weekday/day navigation, Today and direct date jumps, and expandable event cards with full event-detail navigation.
+- Global and regional events remain separate, including regional raids and regional Max Battles. Desktop seven-day Raids / Max Battles / Events lanes are preserved at desktop widths.
+- Calendar filters for type, location and confirmation are shared across desktop and mobile. Time-zone conversion remains limited to verified venue-specific zones.
+- Added eight week-navigation/data regression tests to the mandatory production build while retaining all seven Phase 1 quality tests and its owner dashboard.
+- No event database, poster mapping, service page, battle planner or calculator was removed or replaced. See README_PHASE2.md.

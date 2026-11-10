@@ -4,6 +4,7 @@ import {Button} from '@/components/ui/button';import {Card} from '@/components/u
 import {CalendarDays,Swords,Zap,Coins,Dna,Skull,BarChart3,Menu,Search,ChevronLeft,ChevronRight,RefreshCw,ExternalLink} from 'lucide-react';
 import eventsJson from '@/lib/events.json';import postersJson from '@/lib/posters.json';import {sprite,fmt,coinEstimate,rankIV,rocket} from '@/lib/game';
 import {artworkUrl,lookupSpecies} from '@/lib/pokemon-images';
+import {weekDatesFromOffset,weekOffsetForDate,weekdayIndex,isCalendarDateKey,filterWeeklyEvents,eventOnWeeklyDate,isRegionalWeeklyEvent,isUnconfirmedWeeklyEvent,weeklyEventCategory,weeklyEventLane} from '@/lib/weekly-calendar.mjs';
 type Event={id:string;start:string;end:string;name:string;category?:'raid'|'max-battle-rotation'|'event';featuredPokemon?:string[];linkedEventId?:string;detail?:string;zone?:string;startTime?:string;endTime?:string;poster?:string;posterType?:string;posterNote?:string;additionalPosters?:{title:string;src:string}[];onlineImage?:string;infographicSource?:string;infographicCredit?:string;source?:string};type Raid={name:string;tier:string;id:number;counters:string[];category?:string;region?:string;availability?:string;availableUntil?:string;endDate?:string;image?:string;counterBasis?:string};
 const events=eventsJson as Event[];const posterMap=postersJson as Record<string,string>;
 const TZ_OPTIONS=[{value:'device',label:'My device timezone'},{value:'Asia/Manila',label:'Philippines (Manila)'},{value:'Asia/Singapore',label:'Singapore'},{value:'Asia/Tokyo',label:'Japan (Tokyo)'},{value:'Europe/London',label:'UK (London)'},{value:'America/New_York',label:'US Eastern'},{value:'America/Los_Angeles',label:'US Pacific'}];
@@ -259,6 +260,7 @@ function HomeHub(){
    <div><h2 id="whats-new" className="text-2xl font-bold">Website Updates & Changelog</h2><p className="muted text-sm">A running history of tracker improvements, newest first. No version numbers.</p></div>
    <div className="grid gap-3 md:grid-cols-2">
     {([
+     {title:'Mobile-first GO Weekly calendar — 10 Nov 2026',detail:'Added a day-focused agenda for phones and tablets, date and weekday navigation, Today shortcut, expandable image-led event cards, and shared event-type, location and confirmation filters. Fixed regional raids and Max Battles appearing under global schedules. Preserved the desktop seven-day calendar, original artwork, existing tools and Phase 1 private quality checks.'},
      {title:'Event and poster quality checks with private owner review — 10 Nov 2026',detail:'Extended existing event and artwork prebuild validation, introduced repeatable regression tests and a private, authenticated owner quality-review dashboard. Event sources and external image URLs remain advisory when not verified. All public event tools, original posters and historical records remain unchanged.'},
      {title:'Site-wide reliability, visual calendar and event discovery — 9 Nov 2026',detail:'Introduced event-type, location, confirmation, status and date filters; searchable Pokémon names; viewer-selected timezone display with venue/local schedule labels; image-first weekly cards with compact option; richer event details, sourced raid counters and Max Battle preparation links. Expanded deterministic artwork resolution and verified GO forms while retaining original posters, historic event entries and the existing tool suite. Clarified Dynamax Trails GO Pass access November 14/16–23 and the November 25 reward deadline versus the November 21-only Eternamax Max Battle takeover, with no invented second battle date. Completed a repository-wide audit: corrected 134 missing historical poster paths, fixed region labels and location-specific timezone/status safeguards, removed an empty Guides page and unused visitor tracking, added event-data checks, improved artwork fallbacks, and kept all established event, raid and calculator features.'},
      {title:'2026 event archive, Raids and Max Battles — 8 Nov 2026',detail:'Backfilled historical events and weekly raid, Mega, Shadow Raid and Dynamax rotations from the 2026 calendar. Corrected in-person Sendai/Mexico City battle entries, maintained the Global vs Regional event split, removed GO Pass as a standalone event and added clearly marked unconfirmed upcoming events.'},
@@ -318,16 +320,38 @@ function HomeHub(){
 
 // Image-led weekly calendar: one tile per event, spanning the dates it actually runs.
 function WeeklyPosterCalendar({days,week,setWeek,onOpen,compact,timeZone}:{days:string[];week:number;setWeek:(v:number)=>void;onOpen:(e:Event)=>void;compact:boolean;timeZone:string}){
+ const [selectedDayIndex,setSelectedDayIndex]=useState(()=> (new Date().getDay()+6)%7);
+ const [category,setCategory]=useState('all');
+ const [area,setArea]=useState<'all'|'global'|'regional'>('all');
+ const [confirmation,setConfirmation]=useState<'all'|'confirmed'|'unconfirmed'>('all');
+ const [expandedId,setExpandedId]=useState<string|null>(null);
  const weekStart=days[0],weekEnd=days[6];
  const todayKey=localDateKey();
- const inWeek=(e:Event)=>!tba(e)&&e.start<=weekEnd&&e.end>=weekStart;
- const all=events.filter(inWeek);
- const regional=all.filter(e=>Boolean(e.zone)&&e.category!=='raid'&&e.category!=='max-battle-rotation').sort(evSort);
- const global=all.filter(e=>!e.zone||e.category==='raid'||e.category==='max-battle-rotation').sort((a,b)=>a.start.localeCompare(b.start)||a.end.localeCompare(b.end));
- // Keep raid rotations and Raid Hours in Raids, weekly Power Spot rotations in Max Battles,
- // and the special Monday takeover in Events. Major named events stay in Events.
- const isMaxRotation=(e:Event)=>e.category==='max-battle-rotation'||(/^Dynamax (Sableye|Machop|Espurr|Cryogonal)$/.test(e.name));
- const isRaid=(e:Event)=>e.category==='raid'||(/raid|giratina|cresselia|darkrai|deoxys|mega |shadow incarnate/i.test(e.name)&&e.category!=='event');
+ const all=filterWeeklyEvents(events,days,{category,area,confirmation});
+ const regional=all.filter(isRegionalWeeklyEvent).sort(evSort);
+ const global=all.filter(e=>!isRegionalWeeklyEvent(e)).sort((a,b)=>a.start.localeCompare(b.start)||a.end.localeCompare(b.end));
+ // Preserve existing desktop Raids, Max Battles, and Events lanes.
+ const isMaxRotation=(e:Event)=>weeklyEventLane(e)==='max';
+ const isRaid=(e:Event)=>weeklyEventLane(e)==='raids';
+ const selectedDate=days[selectedDayIndex]||days[0];
+ const dayEvents=all.filter(e=>eventOnWeeklyDate(e,selectedDate));
+ const dailyGlobal=dayEvents.filter(e=>!isRegionalWeeklyEvent(e));
+ const dailyRegional=dayEvents.filter(isRegionalWeeklyEvent);
+ const clearFilters=()=>{setCategory('all');setArea('all');setConfirmation('all');setExpandedId(null);};
+ const moveDay=(delta:number)=>{
+  setExpandedId(null);
+  const next=selectedDayIndex+delta;
+  if(next<0){setSelectedDayIndex(6);setWeek(week-1);}
+  else if(next>6){setSelectedDayIndex(0);setWeek(week+1);}
+  else setSelectedDayIndex(next);
+ };
+ const jumpToDate=(value:string)=>{
+  if(!isCalendarDateKey(value))return;
+  const offset=weekOffsetForDate(value);
+  if(offset===null)return;
+  setWeek(offset);setSelectedDayIndex(weekdayIndex(value));setExpandedId(null);
+ };
+ const jumpToday=()=>{setWeek(0);setSelectedDayIndex(weekdayIndex(localDateKey()));setExpandedId(null);};
  const raidEvents=global.filter(e=>!isMaxRotation(e)&&isRaid(e));
  const maxBattles=global.filter(isMaxRotation);
  const otherEvents=global.filter(e=>!isMaxRotation(e)&&!isRaid(e));
@@ -342,23 +366,89 @@ function WeeklyPosterCalendar({days,week,setWeek,onOpen,compact,timeZone}:{days:
    <div className="space-y-2">{lanes.length?lanes.map((lane,i)=><div key={i} className="grid min-h-[110px] grid-cols-7 gap-1.5 rounded-xl border border-[#1e3a72] bg-[#07152e] p-1.5">{lane.map(ev=>{const {gridColumn,span:cols}=span(ev);const src=poster(ev);const pokemon=ev.featuredPokemon?.length?ev.featuredPokemon:(kind==='raids'?ev.name.includes('Cresselia & Darkrai')?['Cresselia','Darkrai']:ev.name.includes('Shadow Incarnate')?['Shadow Tornadus']:ev.name.includes('Mega ')?[ev.name]:/^(Cresselia|Darkrai|Deoxys|Giratina)/.test(ev.name)?[ev.name]:[]:[]);const imageCard=pokemon.length>0;const themeOnly=ev.posterType==='custom'&&!imageCard&&!ev.onlineImage;return <button key={ev.id} style={{gridColumn}} onClick={()=>onOpen(ev)} className={`group relative ${compact?'min-h-[84px]':'min-h-[128px]'} overflow-hidden rounded-xl border border-sky-600/65 bg-gradient-to-br from-[#173b79] to-[#101c43] text-left shadow-md transition hover:z-10 hover:border-yellow-300 hover:brightness-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-300`} title={ev.name+' · '+eventDateTimeLabel(ev)}>{imageCard?<div className="absolute inset-0 flex items-center justify-end overflow-hidden bg-gradient-to-r from-[#06152e] via-[#173b70] to-[#254979]"><div className="absolute inset-y-0 right-0 flex w-[60%] items-center justify-evenly gap-1 pl-4 pr-2">{pokemon.slice(0,3).map(mon=><SpriteImage key={mon} name={mon} className="h-[86%] min-w-0 max-w-[47%] flex-1 object-contain drop-shadow-[0_5px_12px_rgba(0,0,0,.8)] transition-transform duration-300 group-hover:scale-110"/>)}</div></div>:themeOnly?<div className="absolute inset-0 flex items-center justify-end overflow-hidden bg-gradient-to-r from-[#0b1a39] via-[#124465] to-[#145e79]"><span aria-hidden="true" className="pointer-events-none mr-[10%] text-5xl opacity-70">{/tropical|paradise/i.test(ev.name)?'🌴':/twilight|wish/i.test(ev.name)?'🌙':/anniversary|mall/i.test(ev.name)?'🎉':'✨'}</span></div>:src?<img loading="lazy" src={src} alt={ev.name+' event poster'} onError={err=>posterFallback(err,ev)} className="absolute inset-0 h-full w-full object-cover object-center opacity-90 transition group-hover:scale-[1.03]"/>:null}<div className="absolute inset-0 bg-gradient-to-r from-[#020d25]/95 via-[#020d25]/75 to-transparent"/><div className="absolute inset-x-0 bottom-0 p-2"><span className="block text-[10px] font-bold uppercase leading-tight tracking-wide text-white drop-shadow sm:text-xs">{ev.name}</span>{ev.zone&&<span className="mt-0.5 block text-[9px] font-bold text-amber-200">{eventAreaLabel(ev)}</span>}<span className="mt-0.5 block text-[9px] font-medium text-cyan-200 sm:text-[10px]">{eventDateLabel(ev)}</span>{hasSpecificTime(ev)&&<span className="mt-0.5 block text-[9px] font-semibold text-amber-200 sm:text-[10px]">{eventTimeLabel(ev)}</span>}{ev.zone&&hasSpecificTime(ev)&&<span className="block text-[9px] text-sky-100" title={ev.zone}>{eventLocalTime(ev,timeZone)}</span>}</div>{cols>1&&<span className="absolute right-1.5 top-1.5 rounded-full border border-white/30 bg-black/50 px-2 py-0.5 text-[9px] font-semibold text-white">{cols} days</span>}</button>})}</div>):<div className="grid min-h-24 place-items-center rounded-xl border border-sky-900 bg-[#07152e] text-sm text-sky-300">No {kind} scheduled this week</div>}</div>
   </section>
  };
+ const renderMobileCard=(ev:Event)=>{
+  const opened=expandedId===ev.id;
+  const src=poster(ev);
+  const featured=ev.featuredPokemon||[];
+  const useFeatured=featured.length>0 && ev.posterType==='custom';
+  return <article key={ev.id} className="min-w-0 overflow-hidden rounded-2xl border border-sky-700/80 bg-[#0a2147] shadow-[0_8px_24px_rgba(0,0,0,.15)]">
+   <button type="button" aria-expanded={opened} aria-label={(opened?'Collapse ':'Expand ')+ev.name} onClick={()=>setExpandedId(opened?null:ev.id)} className="flex min-h-[100px] w-full min-w-0 items-center gap-3 p-3 text-left transition hover:bg-sky-900/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-300">
+    <div className={`relative ${compact?'h-20 w-20':'h-24 w-24'} shrink-0 overflow-hidden rounded-xl border border-sky-700 bg-[#0b315c]`}>
+     {useFeatured?<div className="flex h-full items-center justify-center gap-0.5 bg-gradient-to-br from-[#0b284d] to-[#174b79] p-1">{featured.slice(0,2).map(mon=><SpriteImage key={mon} name={mon} className="h-full min-w-0 flex-1 object-contain"/>)}</div>:src?<img src={src} alt={ev.name+' poster'} loading="lazy" onError={err=>posterFallback(err,ev)} className="h-full w-full object-cover"/>:<div className="flex h-full items-center justify-center text-cyan-300"><CalendarDays size={32}/></div>}
+    </div>
+    <div className="min-w-0 flex-1 space-y-1">
+     <div className="flex flex-wrap gap-1"><span className="rounded-md bg-[#1b4e83] px-2 py-0.5 text-[11px] font-bold text-cyan-100">{weeklyEventCategory(ev)}</span><span className="rounded-md border border-sky-700/70 px-1.5 py-0.5 text-[11px] text-sky-200">{ev.start>todayKey?"Upcoming":ev.end<todayKey?"Past dates":"Includes today"}</span>{isUnconfirmedWeeklyEvent(ev)&&<span className="rounded-md border border-amber-700 px-1.5 py-0.5 text-[11px] font-bold text-amber-200">Unconfirmed</span>}</div>
+     <h3 className="break-words text-sm font-bold leading-snug text-white">{ev.name}</h3>
+     <p className="text-xs text-sky-300">{eventDateLabel(ev)}</p>
+     {hasSpecificTime(ev)&&<p className="text-xs font-medium text-amber-200">{eventTimeLabel(ev)} · {ev.zone?"venue-local time":"local event time"}</p>}
+     <p className="text-xs text-cyan-200">{eventAreaLabel(ev)}</p>
+    </div>
+    <span aria-hidden="true" className="shrink-0 text-lg font-bold text-cyan-200">{opened?'−':'+'}</span>
+   </button>
+   {opened&&<div id={'weekly-expanded-'+ev.id} className="space-y-3 border-t border-sky-700 bg-[#071a39] p-4">
+    <p className="text-sm leading-relaxed text-slate-200">{ev.detail||'No further confirmed bonuses are recorded. Consult the event source for the latest details.'}</p>
+    {featured.length>0&&<p className="text-xs text-cyan-200"><strong>Featured Pokémon:</strong> {featured.join(' · ')}</p>}
+    <div className="rounded-lg border border-sky-800 bg-[#0a254b] p-3 text-xs text-sky-100"><strong className="block text-cyan-200">Event time and region</strong><p className="mt-1">{eventLocalTime(ev,timeZone)}</p><p className="mt-1 text-sky-300">{ev.zone?'Venue: '+eventAreaLabel(ev):'Global event — event hours are local to each participating location.'}</p></div>
+    <div className="flex flex-wrap gap-2"><button type="button" onClick={()=>onOpen(ev)} className="min-h-[44px] rounded-lg bg-blue-700 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-300">Open full event details</button>{ev.source&&<a href={ev.source} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-[44px] items-center rounded-lg border border-sky-700 px-3 py-2 text-sm text-cyan-200 hover:bg-sky-900/50">View event source ↗</a>}</div>
+   </div>}
+  </article>;
+ };
  return <div className="space-y-5">
-  <div className="flex flex-wrap items-center justify-between gap-3"><div><p className="mb-1 text-xs font-extrabold uppercase tracking-[.32em] text-cyan-300">AlfaMitsu Services</p><h1 className="text-3xl font-black uppercase tracking-tight sm:text-4xl">GO <span className="text-cyan-300">Weekly</span></h1><p className="text-sm text-sky-200">{nice(weekStart)} – {nice(weekEnd)}</p></div><div className="flex gap-2"><Button variant="outline" onClick={()=>setWeek(week-1)} aria-label="Previous week"><ChevronLeft size={18}/></Button><Button variant="outline" onClick={()=>setWeek(0)}>This Week</Button><Button variant="outline" onClick={()=>setWeek(week+1)} aria-label="Next week"><ChevronRight size={18}/></Button></div></div>
+  <div className="flex flex-wrap items-center justify-between gap-3"><div><p className="mb-1 text-xs font-extrabold uppercase tracking-[.32em] text-cyan-300">AlfaMitsu Services</p><h1 className="text-3xl font-black uppercase tracking-tight sm:text-4xl">GO <span className="text-cyan-300">Weekly</span></h1><p className="text-sm text-sky-200">{nice(weekStart)} – {nice(weekEnd)}</p></div><div className="flex gap-2"><Button variant="outline" onClick={()=>setWeek(week-1)} aria-label="Previous week"><ChevronLeft size={18}/></Button><Button variant="outline" onClick={jumpToday}>This Week</Button><Button variant="outline" onClick={()=>setWeek(week+1)} aria-label="Next week"><ChevronRight size={18}/></Button></div></div>
   
-  <div className="rounded-3xl border border-cyan-500/30 bg-gradient-to-b from-[#0a1b44] via-[#071731] to-[#040d25] p-3 shadow-2xl sm:p-5">
+  <section aria-label="Calendar filters" className="space-y-3 rounded-2xl border border-sky-800 bg-[#0a2449] p-3 sm:p-4">
+   <div className="flex flex-wrap items-center justify-between gap-2"><h2 className="text-sm font-bold uppercase tracking-wider text-cyan-200">Explore this week</h2><button type="button" onClick={clearFilters} className="min-h-[44px] rounded-lg border border-sky-600 px-3 py-2 text-xs font-semibold text-sky-100 hover:bg-sky-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-300">Clear calendar filters</button></div>
+   <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
+    <label className="space-y-1 text-xs font-semibold text-sky-200">Event type
+     <select aria-label="Filter GO Weekly by event type" value={category} onChange={e=>{setCategory(e.target.value);setExpandedId(null)}} className="min-h-[44px] w-full rounded-lg border border-sky-700 bg-[#05162c] px-3 py-2 text-sm text-white">
+      <option value="all">All event types</option>
+      {['Raid','Max Battle','Community Day','Spotlight Hour','Max Monday','Event'].map(type=><option key={type} value={type}>{type}</option>)}
+     </select>
+    </label>
+    <label className="space-y-1 text-xs font-semibold text-sky-200">Availability
+     <select aria-label="Filter GO Weekly by event location" value={area} onChange={e=>{setArea(e.target.value as 'all'|'global'|'regional');setExpandedId(null)}} className="min-h-[44px] w-full rounded-lg border border-sky-700 bg-[#05162c] px-3 py-2 text-sm text-white"><option value="all">Global and regional</option><option value="global">Global events</option><option value="regional">Regional / exclusive</option></select>
+    </label>
+    <label className="space-y-1 text-xs font-semibold text-sky-200">Confirmation
+     <select aria-label="Filter GO Weekly by confirmation" value={confirmation} onChange={e=>{setConfirmation(e.target.value as 'all'|'confirmed'|'unconfirmed');setExpandedId(null)}} className="min-h-[44px] w-full rounded-lg border border-sky-700 bg-[#05162c] px-3 py-2 text-sm text-white"><option value="all">Any confirmation</option><option value="confirmed">Not marked unconfirmed</option><option value="unconfirmed">Unconfirmed only</option></select>
+    </label>
+   </div>
+   <p className="text-xs text-sky-300" aria-live="polite">{all.length} matching events in this week. The calendar separates global and region-exclusive events. Event hours remain venue-local unless a verified venue timezone can be converted.</p>
+  </section>
+  <section aria-label="Daily GO Weekly calendar" className="space-y-4 xl:hidden">
+   <div className="space-y-3 rounded-2xl border border-cyan-600/40 bg-[#071b3e] p-3 sm:p-4">
+    <div className="flex flex-wrap items-end justify-between gap-3">
+     <div><p className="text-xs font-bold uppercase tracking-wider text-cyan-300">Daily schedule</p><h2 className="text-lg font-bold text-white">{new Date(selectedDate+'T12:00:00Z').toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric',year:'numeric',timeZone:'UTC'})}</h2></div>
+     <div className="flex gap-2">
+      <button type="button" onClick={()=>moveDay(-1)} aria-label="Previous day" className="flex min-h-[44px] min-w-[44px] items-center justify-center rounded-lg border border-sky-600 bg-[#0b315d] hover:bg-sky-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-300"><ChevronLeft size={18}/></button>
+      <button type="button" onClick={jumpToday} className="min-h-[44px] rounded-lg border border-sky-600 bg-[#0b315d] px-3 py-2 text-sm font-semibold hover:bg-sky-800">Today</button>
+      <button type="button" onClick={()=>moveDay(1)} aria-label="Next day" className="flex min-h-[44px] min-w-[44px] items-center justify-center rounded-lg border border-sky-600 bg-[#0b315d] hover:bg-sky-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-300"><ChevronRight size={18}/></button>
+     </div>
+    </div>
+    <div role="group" aria-label="Choose a day" className="grid grid-cols-4 gap-2 sm:grid-cols-7">{days.map((d,i)=>{const active=i===selectedDayIndex;return <button key={d} type="button" aria-pressed={active} aria-label={new Date(d+'T12:00:00Z').toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric',timeZone:'UTC'})} onClick={()=>{setSelectedDayIndex(i);setExpandedId(null)}} className={`min-h-[58px] rounded-xl border px-1.5 py-2 text-center transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-300 ${active?'border-cyan-300 bg-[#1c5390] text-white shadow-[0_0_12px_rgba(34,211,238,.2)]':d===todayKey?'border-amber-400/70 bg-[#1d3552] text-amber-100':'border-sky-700 bg-[#0a2a53] text-sky-100 hover:bg-sky-800'}`}><span className="block text-[11px] font-bold uppercase">{formatDay(d)}</span><span className="block text-base font-black">{new Date(d+'T12:00:00Z').getUTCDate()}</span>{d===todayKey&&<span className="block text-[10px] text-amber-200">Today</span>}</button>})}</div>
+    <label className="flex flex-wrap items-center gap-3 text-xs text-sky-200">Jump to date <input type="date" aria-label="Jump to a GO Weekly date" value={selectedDate} onChange={e=>jumpToDate(e.target.value)} className="min-h-[44px] min-w-0 rounded-lg border border-sky-700 bg-[#06152d] px-3 py-2 text-sm text-white [color-scheme:dark]"/></label>
+   </div>
+   <div className="space-y-5" aria-live="polite">
+    {([{title:'Global Events',items:dailyGlobal,kind:'global'},{title:'Regional / Location-Exclusive Events',items:dailyRegional,kind:'regional'}] as const).map(group=><section key={group.kind} className="space-y-3" aria-label={group.title}>
+     <div className="flex flex-wrap items-center justify-between gap-2 rounded-xl border border-sky-700/60 bg-[#092953] px-4 py-3"><h3 className="font-black uppercase tracking-wide text-cyan-100">{group.kind==='regional'?'📍 ':'🌐 '}{group.title}</h3><span className="rounded-full border border-sky-500/60 px-2.5 py-1 text-xs font-bold text-sky-200">{group.items.length}</span></div>
+     {group.items.length?<div className="grid min-w-0 grid-cols-1 items-start gap-3 md:grid-cols-2">{group.items.map(renderMobileCard)}</div>:<p className="rounded-xl border border-sky-900 bg-[#06162f] p-4 text-sm text-sky-300">No {group.kind==='regional'?'regional':'global'} events match the selected date and filters.</p>}
+    </section>)}
+   </div>
+  </section>
+
+  <div className="hidden rounded-3xl border border-cyan-500/30 bg-gradient-to-b from-[#0a1b44] via-[#071731] to-[#040d25] p-3 shadow-2xl xl:block xl:p-5">
    <div className="overflow-x-auto pb-1"><div className="min-w-[820px] space-y-3">
     <div className="grid grid-cols-[110px_minmax(0,1fr)] gap-2 md:grid-cols-[132px_minmax(0,1fr)]"><div className="flex items-center justify-center rounded-xl border border-cyan-600/30 bg-[#091a3b] px-1 text-center text-[10px] font-black uppercase tracking-normal whitespace-nowrap text-cyan-300 sm:text-[11px]">Weekly Schedule</div><div className="grid grid-cols-7 gap-1.5">{days.map(d=>{const isToday=d===todayKey;return <div key={d} className={`rounded-xl border px-1 py-3 text-center ${isToday?'border-amber-300 bg-gradient-to-b from-[#1b4374] to-[#0f2f59] shadow-[0_0_18px_rgba(251,191,36,.18)]':'border-sky-500/60 bg-[#0b2754]'}`}><div className={`text-xs font-extrabold uppercase ${isToday?'text-amber-100':'text-white'}`}>{formatDay(d)}</div><div className={`text-xs font-semibold ${isToday?'text-amber-200':'text-cyan-300'}`}>{new Date(d+'T12:00:00Z').getUTCDate()} {new Date(d+'T12:00:00Z').toLocaleDateString('en-US',{month:'short',timeZone:'UTC'})}</div>{isToday&&<div className="mt-1 text-[10px] font-black uppercase tracking-wide text-amber-200">Today</div>}</div>})}</div></div>
     {timeline(raidEvents,'raids')}{timeline(maxBattles,'max')}{timeline(otherEvents,'events')}
    </div></div>
   </div>
-  <section className="space-y-3"><div className="rounded-xl border border-amber-500/40 bg-gradient-to-r from-[#17133b] to-[#082b5e] px-4 py-3"><h2 className="text-xl font-black uppercase tracking-wide text-white"><span className="text-amber-300">✦</span> Regional / Location-Exclusive Events</h2><p className="text-xs text-sky-200">Only available in the listed locations. Select a picture for event details.</p></div>
+  <section className="hidden space-y-3 xl:block"><div className="rounded-xl border border-amber-500/40 bg-gradient-to-r from-[#17133b] to-[#082b5e] px-4 py-3"><h2 className="text-xl font-black uppercase tracking-wide text-white"><span className="text-amber-300">✦</span> Regional / Location-Exclusive Events</h2><p className="text-xs text-sky-200">Only available in the listed locations. Select a picture for event details.</p></div>
   {regional.length?<div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">{regional.map(ev=><button key={ev.id} onClick={()=>onOpen(ev)} className="group overflow-hidden rounded-2xl border border-sky-700/70 bg-[#0b2148] text-left transition hover:border-cyan-300 hover:shadow-[0_0_24px_rgba(34,211,238,.12)]"><div className="relative aspect-[16/9] overflow-hidden bg-[#14315c]">{ev.featuredPokemon?.length&&ev.posterType==='custom'?<div className="flex h-full w-full items-center justify-evenly gap-1 bg-gradient-to-br from-[#0b2648] via-[#164b70] to-[#2b3c70] px-3 py-2">{ev.featuredPokemon.slice(0,3).map(mon=><SpriteImage key={mon} name={mon} className="h-full max-w-[32%] min-w-0 flex-1 object-contain drop-shadow-[0_5px_10px_rgba(0,0,0,.65)]"/>)}</div>:poster(ev)?<img loading="lazy" src={poster(ev)} alt={ev.name} onError={err=>posterFallback(err,ev)} className="h-full w-full object-cover transition group-hover:scale-[1.04]"/>:<div className="flex h-full items-center justify-center bg-gradient-to-br from-[#132d56] to-[#265576] text-5xl">📍</div>}<div className="absolute inset-0 bg-gradient-to-t from-[#081730]/80 to-transparent"/><span className="absolute bottom-2 left-3 rounded-lg bg-[#04142d]/80 px-2 py-1 text-[10px] font-bold text-cyan-200">{eventAreaLabel(ev)}</span></div><div className="p-3"><div className="line-clamp-2 text-sm font-bold leading-snug text-white">{ev.name}</div><div className="mt-2 text-xs text-sky-300">{eventDateLabel(ev)}</div>{hasSpecificTime(ev)&&<div className="mt-1 text-[11px] font-semibold text-amber-200">{eventTimeLabel(ev)}</div>}</div></button>)}</div>:<p className="rounded-lg border border-sky-900 p-5 text-sm text-sky-300">No regional events scheduled during this week.</p>}
-  </section><p className="text-xs text-sky-400">Event images are previews. Tap a tile to view full event details, source links, and the larger poster. Scroll horizontally to view all seven days on smaller screens.</p>
+  </section><p className="text-xs text-sky-400">Event images are previews. Select a card to view details, sources, and full artwork. The desktop timeline spans all seven days; the mobile and tablet layout shows the selected day without horizontal scrolling.</p>
  </div>;
 }
 
 export default function Page(){const [page,setPage]=useState('tracker');const [detailBackPage,setDetailBackPage]=useState('tracker');const [tool,setTool]=useState('raid');const [search,setSearch]=useState('');const [categoryFilter,setCategoryFilter]=useState('all');const [regionFilter,setRegionFilter]=useState('all');const [statusFilter,setStatusFilter]=useState('all');const [dateFrom,setDateFrom]=useState('');const [dateTo,setDateTo]=useState('');const [timeZone,setTimeZone]=useState('device');const [compactWeekly,setCompactWeekly]=useState(false);const [selected,setSelected]=useState<Event|null>(null);const [week,setWeek]=useState(0);const [showCompleted,setCompleted]=useState(true);const [mobileMenu,setMobileMenu]=useState(false);const [zoom,setZoom]=useState(false);
-const now=new Date();const mon=new Date(now);mon.setDate(now.getDate()-((now.getDay()+6)%7)+week*7);const days=Array.from({length:7},(_,i)=>{const d=new Date(mon);d.setDate(d.getDate()+i);return [d.getFullYear(),String(d.getMonth()+1).padStart(2,'0'),String(d.getDate()).padStart(2,'0')].join('-')});const status=(e:Event)=>{if(tba(e))return 'TBA';try{const fmt=(z:string)=>{const parts=new Intl.DateTimeFormat('en-US',{timeZone:z,year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).formatToParts(new Date());const v=(type:string)=>parts.find(x=>x.type===type)?.value||'00';return v('year')+v('month')+v('day')+v('hour')+v('minute')};const z=hasVenueTimeZone(e)?e.zone!:'Pacific/Auckland';const endz=hasVenueTimeZone(e)?e.zone!:'Pacific/Honolulu';const start=fmt(z),end=fmt(endz);const stamp=(s:string,t:string)=>s.replace(/-/g,'')+t.replace(':','');return end>=stamp(e.end,e.endTime||'23:59')?'Completed':start>=stamp(e.start,e.startTime||'00:00')?'Ongoing':'Upcoming'}catch{return 'Upcoming'}};
+const days=weekDatesFromOffset(week);const status=(e:Event)=>{if(tba(e))return 'TBA';try{const fmt=(z:string)=>{const parts=new Intl.DateTimeFormat('en-US',{timeZone:z,year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).formatToParts(new Date());const v=(type:string)=>parts.find(x=>x.type===type)?.value||'00';return v('year')+v('month')+v('day')+v('hour')+v('minute')};const z=hasVenueTimeZone(e)?e.zone!:'Pacific/Auckland';const endz=hasVenueTimeZone(e)?e.zone!:'Pacific/Honolulu';const start=fmt(z),end=fmt(endz);const stamp=(s:string,t:string)=>s.replace(/-/g,'')+t.replace(':','');return end>=stamp(e.end,e.endTime||'23:59')?'Completed':start>=stamp(e.start,e.startTime||'00:00')?'Ongoing':'Upcoming'}catch{return 'Upcoming'}};
 const visible=useMemo(()=>events.filter(e=>{
  const haystack=[e.name,e.detail,e.zone,...(e.featuredPokemon||[])].filter(Boolean).join(' ').toLowerCase();
  if(!haystack.includes(search.toLowerCase()))return false;

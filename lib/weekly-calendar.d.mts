@@ -1,0 +1,12 @@
+export type WeeklyEventRecord={id:string;name:string;start:string;end:string;category?:string;zone?:string;detail?:string;confirmation?:string};
+export type WeeklyFilters={category?:string;area?:'all'|'global'|'regional';confirmation?:'all'|'confirmed'|'unconfirmed'};
+export function isCalendarDateKey(key:unknown):boolean;
+export function weekDatesFromOffset(offset?:number,now?:Date):string[];
+export function weekOffsetForDate(key:string,now?:Date):number|null;
+export function weekdayIndex(key:string):number;
+export function isRegionalWeeklyEvent(event:WeeklyEventRecord):boolean;
+export function isUnconfirmedWeeklyEvent(event:WeeklyEventRecord):boolean;
+export function weeklyEventLane(event:WeeklyEventRecord):'raids'|'max'|'events';
+export function weeklyEventCategory(event:WeeklyEventRecord):'Raid'|'Max Battle'|'Spotlight Hour'|'Community Day'|'Max Monday'|'Event';
+export function eventOnWeeklyDate(event:WeeklyEventRecord,key:string):boolean;
+export function filterWeeklyEvents<T extends WeeklyEventRecord>(events:T[],days:string[],filters?:WeeklyFilters):T[];
