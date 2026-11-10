@@ -19,6 +19,7 @@ test('neutral, resisted, and invalid types are differentiated',()=>{
  assert.equal(goTypeMultiplier('fire',['rock','water']),0.390625);
  assert.equal(goTypeMultiplier('fire',['electric']),1);
  assert.equal(goTypeMultiplier('fake',['electric']),null);
+ assert.equal(goTypeMultiplier('fire',['water','water']),null);
  assert.equal(goTypeMultiplier('fire',[]),null);
 });
 test('Pokémon GO STAB and weather boosts stack on same attack type',()=>{
