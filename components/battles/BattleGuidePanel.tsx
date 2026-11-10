@@ -52,7 +52,7 @@ export default function BattleGuidePanel({initialMode='raid',initialBoss='',onOp
  const [move,setMove]=useState<'attack'|'guard'|'spirit'>('attack');
  const [fromLevel,setFromLevel]=useState(1);
  const [toLevel,setToLevel]=useState(3);
- const [candyGroup,setCandyGroup]=useState<'A'|'B'|'C'|'D'>('A');
+ const [candyGroup,setCandyGroup]=useState<'A'|'B'|'C'|'D'|''>('');
  const nextMember=useRef(1);
  const maxChoices=useMemo(()=>asMaxChoices(maxEvents),[maxEvents]);
  const raidBoss=raidData.bosses.find(b=>b.name===bossName);
@@ -102,13 +102,13 @@ export default function BattleGuidePanel({initialMode='raid',initialBoss='',onOp
  const strong=matchups.filter(x=>x.multiplier>1.001);
  const weak=matchups.filter(x=>x.multiplier<0.999);
  const teamRanked=useMemo(()=>coverageCandidates(team,types),[team,types]);
- const cost=maxMoveCost(move,fromLevel,toLevel,{group:candyGroup});
+ const cost=maxSpecial||!candyGroup?null:maxMoveCost(move,fromLevel,toLevel,{group:candyGroup});
  const isCurrentRaid=mode==='raid'&&raidBoss;
  const maxEligible=team.filter(x=>x.eligible).length;
  const teamLimit=mode==='raid'?6:3;
  const selectMode=(next:Mode)=>{
   if(next===mode)return;
-  setMode(next);setTeamMessage('');
+  setMode(next);setTeam([]);setTeamInput('');setTeamMessage('');
   setBossName(next==='raid'?raidData.bosses[0]?.name||'':maxChoices[0]?.name||'');
  };
  async function addTeamMember(){
@@ -249,11 +249,11 @@ export default function BattleGuidePanel({initialMode='raid',initialBoss='',onOp
     </select></label>
     <label className={formLabel}>Current level<select className={formInput} value={fromLevel} onChange={e=>setFromLevel(Number(e.target.value))}>{(move==='attack'?[1,2]:[0,1,2]).map(level=><option key={level} value={level}>{level===0?'Locked':String(level)}</option>)}</select></label>
     <label className={formLabel}>Target level<select className={formInput} value={toLevel} onChange={e=>setToLevel(Number(e.target.value))}>{[1,2,3].map(level=><option key={level} value={level}>Level {level}</option>)}</select></label>
-    <label className={formLabel}>Species Candy cost group<select className={formInput} value={candyGroup} onChange={e=>setCandyGroup(e.target.value as 'A'|'B'|'C'|'D')}>{(['A','B','C','D'] as const).map(group=><option value={group} key={group}>Group {group}</option>)}</select></label>
+    <label className={formLabel}>Species Candy cost group<select className={formInput} value={candyGroup} onChange={e=>setCandyGroup(e.target.value as 'A'|'B'|'C'|'D'|'')}><option value="">Select verified group</option>{(['A','B','C','D'] as const).map(group=><option value={group} key={group}>Group {group}</option>)}</select></label>
    </div>
    {cost?<div className="grid gap-3 sm:grid-cols-3">
     {[['Max Particles',cost.mp],['Candy',cost.candy],['Candy XL',cost.candyXL]].map(([unit,value])=><div key={unit} className="rounded-xl border border-sky-800 bg-[#07152d] p-4 text-center"><p className="text-2xl font-black text-cyan-200">{Number(value).toLocaleString()}</p><p className="mt-1 text-xs text-sky-200">{unit}</p></div>)}
-   </div>:<p className="rounded-lg border border-amber-700/60 p-3 text-sm text-amber-200">Target level must be above the current level. Max Attack starts unlocked at level 1.</p>}
+   </div>:<p className="rounded-lg border border-amber-700/60 p-3 text-sm text-amber-200">{maxSpecial?'Special Pokémon need their own verified cost table; use the existing dedicated calculator or in-game values.':!candyGroup?'Select the Candy cost group verified for your Pokémon before calculating resources.':'Target level must be above the current level. Max Attack starts unlocked at level 1.'}</p>}
    <div className="flex flex-wrap gap-2"><a href={sourceMechanics} target="_blank" rel="noopener noreferrer" className="text-xs text-cyan-200 underline">Official Max Battle mechanics <ExternalLink size={12} className="inline"/></a><a href={sourceCosts} target="_blank" rel="noopener noreferrer" className="text-xs text-cyan-200 underline">Particle and upgrade cost reference <ExternalLink size={12} className="inline"/></a></div>
   </section>}
   <section className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-cyan-700/50 bg-gradient-to-r from-[#0b3058] to-[#091d43] p-4">
