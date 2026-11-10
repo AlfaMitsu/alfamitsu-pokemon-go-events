@@ -5,6 +5,7 @@ const events=JSON.parse(fs.readFileSync('lib/events.json','utf8'));
 const posters=JSON.parse(fs.readFileSync('lib/posters.json','utf8'));
 const localExists=(source)=>source.startsWith('/posters/') && fs.existsSync(path.join(process.cwd(),'public',source.slice(1)));
 const result=runQualityAudit(events,posters,localExists);
+fs.writeFileSync('lib/quality-report.json',JSON.stringify({...result,checkedAt:new Date().toISOString(),externalUrlsChecked:false},null,2)+'\\n');
 console.log('Event & artwork audit:',JSON.stringify(result.summary));
 for(const issue of result.issues.filter(issue=>issue.severity==='error').slice(0,60)) console.error('[ERROR] '+issue.code+' '+(issue.eventId||'')+': '+issue.message);
 if(result.summary.errors) process.exit(1);
