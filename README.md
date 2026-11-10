@@ -201,3 +201,11 @@ V26: Visitor counts (Online, 1 Day, 7 Days, 30 Days) display directly in the hea
 - Calendar filters for type, location and confirmation are shared across desktop and mobile. Time-zone conversion remains limited to verified venue-specific zones.
 - Added eight week-navigation/data regression tests to the mandatory production build while retaining all seven Phase 1 quality tests and its owner dashboard.
 - No event database, poster mapping, service page, battle planner or calculator was removed or replaced. See README_PHASE2.md.
+
+
+## November 10, 2026 — My Events, bookmarks and personal calendar reminders
+- Added an account-free My Events page with bookmark controls across GO Weekly (mobile and desktop), Events List and Event Details. Saved events persist locally by stable ID, with schedule snapshots to identify changed times, dates, region and event source.
+- Added upcoming/completed filters, search, individual and bulk downloadable .ics calendar entries with user-selected VALARM reminders, and a JSON backup/restore workflow.
+- The calendar export respects verified IANA venue timezones; unzoned global event clock times are floating local times, not falsely presented as UTC. Undated records are skipped and all-day events use exclusive end dates.
+- Existing visitor timezone, compact weekly display and Events List category/location preferences now persist in the visitor browser.
+- No accounts, push-notification infrastructure, remote storage or automatic synchronization were introduced. Event database, supplied posters, Phase 1 quality review and Phase 2 calendar remain intact. See README_PHASE3.md.
