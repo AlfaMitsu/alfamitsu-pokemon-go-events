@@ -160,7 +160,7 @@ export default function BattleGuidePanel({initialMode='raid',initialBoss='',onOp
    </div>}
    <div className="grid gap-3 sm:grid-cols-2">
     {[0,1].map(index=><label className={formLabel} key={index}>{index===0?'Defending type 1':'Defending type 2 (optional)'}
-     <select className={formInput} value={typing[index]||''} onChange={e=>{setTyping(old=>{const next=[old[0]||'',old[1]||''];next[index]=e.target.value;return next.filter(Boolean)});setTypeStatus('manual')}} aria-label={index===0?'Boss type 1':'Boss type 2'}>
+     <select className={formInput} value={typing[index]||''} onChange={e=>{setTyping(old=>{const next=[old[0]||'',old[1]||''];next[index]=e.target.value;return [...new Set(next.filter(Boolean))]});setTypeStatus('manual')}} aria-label={index===0?'Boss type 1':'Boss type 2'}>
       <option value="">No type selected</option>{GO_TYPES.map(type=><option key={type} value={type}>{label(type)}</option>)}
      </select>
     </label>)}
