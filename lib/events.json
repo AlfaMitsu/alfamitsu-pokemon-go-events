@@ -1,18 +1,5 @@
 [
   {
-    "id": "ev063",
-    "start": "",
-    "end": "",
-    "name": "Thailand Event",
-    "detail": "Date TBA",
-    "zone": "Asia/Bangkok",
-    "endTime": "20:00",
-    "startTime": "00:00",
-    "poster": "/posters/custom-ev063.jpg",
-    "source": null,
-    "posterType": "custom"
-  },
-  {
     "id": "historic-raid-01-01-5-raids-blacephalon",
     "start": "2026-01-01",
     "end": "2026-01-05",
@@ -4179,6 +4166,26 @@
     "posterNote": "Event-specific schedule tile based on existing artwork. Raid and Max Battle details verified against official Pokémon GO event announcements."
   },
   {
+    "id": "ev029",
+    "start": "2026-11-09",
+    "end": "2027-01-03",
+    "name": "Hong Kong Festival Walk",
+    "detail": "Pokémon's 30 Years of Joy at Festival Walk, Hong Kong. The Pokémon GO Mall Exploration gameplay period runs November 9, 2026–January 3, 2027, with party-hat Pikachu, event Timed Research, and four-hour Lure Modules within designated areas.",
+    "zone": "Asia/Hong_Kong",
+    "endTime": "20:00",
+    "startTime": "00:00",
+    "poster": "/posters/custom-ev029.jpg",
+    "source": "https://pokemongo.com/news/apac-mall-exploration-2026?hl=en",
+    "posterType": "custom",
+    "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar",
+    "featuredPokemon": [
+      "Pikachu",
+      "Bulbasaur",
+      "Charmander"
+    ]
+  },
+  {
     "id": "event-battles-itw-zamazenta-raid-hour",
     "start": "2026-11-10",
     "end": "2026-11-10",
@@ -4353,26 +4360,6 @@
       "Gigantamax Duraludon",
       "Dynamax Dialga",
       "Dynamax Palkia"
-    ]
-  },
-  {
-    "id": "ev029",
-    "start": "2026-11-09",
-    "end": "2027-01-03",
-    "name": "Hong Kong Festival Walk",
-    "detail": "Pokémon's 30 Years of Joy at Festival Walk, Hong Kong. The Pokémon GO Mall Exploration gameplay period runs November 9, 2026–January 3, 2027, with party-hat Pikachu, event Timed Research, and four-hour Lure Modules within designated areas.",
-    "zone": "Asia/Hong_Kong",
-    "endTime": "20:00",
-    "startTime": "00:00",
-    "poster": "/posters/custom-ev029.jpg",
-    "source": "https://pokemongo.com/news/apac-mall-exploration-2026?hl=en",
-    "posterType": "custom",
-    "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
-    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar",
-    "featuredPokemon": [
-      "Pikachu",
-      "Bulbasaur",
-      "Charmander"
     ]
   },
   {
@@ -4860,6 +4847,20 @@
     "posterNote": "Unconfirmed event; illustrative concept poster only. No featured encounters are confirmed."
   },
   {
+    "id": "schedule-2026-12-05-gigantamax-inteleon-max-battle-day",
+    "start": "2026-12-05",
+    "end": "2026-12-05",
+    "name": "Gigantamax Inteleon Max Battle Day",
+    "category": "max-battle",
+    "detail": "Schedule supplied by AlfaMitsu Services. Exact local start/end times, bonuses, and any unannounced featured Pokémon are not yet specified; check official event details before planning.",
+    "source": null,
+    "poster": "/api/event-poster?id=schedule-2026-12-05-gigantamax-inteleon-max-battle-day",
+    "posterType": "custom",
+    "featuredPokemon": [
+      "Gigantamax Inteleon"
+    ]
+  },
+  {
     "id": "event-champions-celebration-dec2026",
     "name": "Pokémon Champions Celebration (Unconfirmed)",
     "start": "2026-12-08",
@@ -4912,6 +4913,17 @@
     "posterType": "custom"
   },
   {
+    "id": "schedule-2026-12-12-december-community-day-all-star-weekend",
+    "start": "2026-12-12",
+    "end": "2026-12-13",
+    "name": "December Community Day All-Star Weekend",
+    "category": "community-day",
+    "detail": "Schedule supplied by AlfaMitsu Services. Exact local start/end times, bonuses, and any unannounced featured Pokémon are not yet specified; check official event details before planning.",
+    "source": null,
+    "poster": "/api/event-poster?id=schedule-2026-12-12-december-community-day-all-star-weekend",
+    "posterType": "custom"
+  },
+  {
     "id": "event-clone-special-raid-day-dec2026",
     "name": "Clone Special Raid Day (Unconfirmed)",
     "start": "2026-12-19",
@@ -4925,6 +4937,45 @@
     "posterNote": "Unconfirmed event; illustrative concept poster only. No featured encounters are confirmed."
   },
   {
+    "id": "schedule-2026-12-19-raid-day",
+    "start": "2026-12-19",
+    "end": "2026-12-19",
+    "name": "Raid Day",
+    "category": "raid",
+    "detail": "Schedule supplied by AlfaMitsu Services. Exact local start/end times, bonuses, and any unannounced featured Pokémon are not yet specified; check official event details before planning.",
+    "source": null,
+    "poster": "/api/event-poster?id=schedule-2026-12-19-raid-day",
+    "posterType": "custom"
+  },
+  {
+    "id": "schedule-2026-12-26-chingling-hatch-day",
+    "start": "2026-12-26",
+    "end": "2026-12-26",
+    "name": "Chingling Hatch Day",
+    "category": "event",
+    "detail": "Schedule supplied by AlfaMitsu Services. Exact local start/end times, bonuses, and any unannounced featured Pokémon are not yet specified; check official event details before planning.",
+    "source": null,
+    "poster": "/api/event-poster?id=schedule-2026-12-26-chingling-hatch-day",
+    "posterType": "custom",
+    "featuredPokemon": [
+      "Chingling"
+    ]
+  },
+  {
+    "id": "schedule-2027-01-02-treecko-community-day-classic",
+    "start": "2027-01-02",
+    "end": "2027-01-02",
+    "name": "Treecko Community Day Classic",
+    "category": "community-day",
+    "detail": "Schedule supplied by AlfaMitsu Services. Exact local start/end times, bonuses, and any unannounced featured Pokémon are not yet specified; check official event details before planning.",
+    "source": null,
+    "poster": "/api/event-poster?id=schedule-2027-01-02-treecko-community-day-classic",
+    "posterType": "custom",
+    "featuredPokemon": [
+      "Treecko"
+    ]
+  },
+  {
     "id": "ev052",
     "start": "2027-01-09",
     "end": "2027-01-10",
@@ -4935,6 +4986,17 @@
     "startTime": "00:00",
     "poster": "/posters/custom-ev052.jpg",
     "source": null,
+    "posterType": "custom"
+  },
+  {
+    "id": "schedule-2027-01-09-super-mega-raid-day",
+    "start": "2027-01-09",
+    "end": "2027-01-09",
+    "name": "Super Mega Raid Day",
+    "category": "raid",
+    "detail": "Schedule supplied by AlfaMitsu Services. Exact local start/end times, bonuses, and any unannounced featured Pokémon are not yet specified; check official event details before planning.",
+    "source": null,
+    "poster": "/api/event-poster?id=schedule-2027-01-09-super-mega-raid-day",
     "posterType": "custom"
   },
   {
@@ -4951,6 +5013,17 @@
     "posterType": "custom"
   },
   {
+    "id": "schedule-2027-01-16-community-day",
+    "start": "2027-01-16",
+    "end": "2027-01-16",
+    "name": "Community Day",
+    "category": "community-day",
+    "detail": "Schedule supplied by AlfaMitsu Services. Exact local start/end times, bonuses, and any unannounced featured Pokémon are not yet specified; check official event details before planning.",
+    "source": null,
+    "poster": "/api/event-poster?id=schedule-2027-01-16-community-day",
+    "posterType": "custom"
+  },
+  {
     "id": "ev054",
     "start": "2027-01-23",
     "end": "2027-01-24",
@@ -4961,6 +5034,28 @@
     "startTime": "00:00",
     "poster": "/posters/custom-ev054.jpg",
     "source": "https://pokemongo.com/news/save-the-date-apac-30th-anniversary-2026",
+    "posterType": "custom"
+  },
+  {
+    "id": "schedule-2027-01-23-max-battle-day",
+    "start": "2027-01-23",
+    "end": "2027-01-23",
+    "name": "Max Battle Day",
+    "category": "max-battle",
+    "detail": "Schedule supplied by AlfaMitsu Services. Exact local start/end times, bonuses, and any unannounced featured Pokémon are not yet specified; check official event details before planning.",
+    "source": null,
+    "poster": "/api/event-poster?id=schedule-2027-01-23-max-battle-day",
+    "posterType": "custom"
+  },
+  {
+    "id": "schedule-2027-01-30-super-mega-raid-day",
+    "start": "2027-01-30",
+    "end": "2027-01-30",
+    "name": "Super Mega Raid Day",
+    "category": "raid",
+    "detail": "Schedule supplied by AlfaMitsu Services. Exact local start/end times, bonuses, and any unannounced featured Pokémon are not yet specified; check official event details before planning.",
+    "source": null,
+    "poster": "/api/event-poster?id=schedule-2027-01-30-super-mega-raid-day",
     "posterType": "custom"
   },
   {
@@ -4977,6 +5072,17 @@
     "posterType": "custom"
   },
   {
+    "id": "schedule-2027-02-06-community-day",
+    "start": "2027-02-06",
+    "end": "2027-02-06",
+    "name": "Community Day",
+    "category": "community-day",
+    "detail": "Schedule supplied by AlfaMitsu Services. Exact local start/end times, bonuses, and any unannounced featured Pokémon are not yet specified; check official event details before planning.",
+    "source": null,
+    "poster": "/api/event-poster?id=schedule-2027-02-06-community-day",
+    "posterType": "custom"
+  },
+  {
     "id": "ev056",
     "start": "2027-02-13",
     "end": "2027-02-14",
@@ -4987,6 +5093,17 @@
     "startTime": "00:00",
     "poster": "/posters/custom-ev056.jpg",
     "source": "https://pokemongo.com/news/save-the-date-apac-30th-anniversary-2026",
+    "posterType": "custom"
+  },
+  {
+    "id": "schedule-2027-02-13-raid-day",
+    "start": "2027-02-13",
+    "end": "2027-02-13",
+    "name": "Raid Day",
+    "category": "raid",
+    "detail": "Schedule supplied by AlfaMitsu Services. Exact local start/end times, bonuses, and any unannounced featured Pokémon are not yet specified; check official event details before planning.",
+    "source": null,
+    "poster": "/api/event-poster?id=schedule-2027-02-13-raid-day",
     "posterType": "custom"
   },
   {
@@ -5064,6 +5181,19 @@
     "endTime": "20:00",
     "startTime": "00:00",
     "poster": "/posters/custom-ev062.jpg",
+    "source": null,
+    "posterType": "custom"
+  },
+  {
+    "id": "ev063",
+    "start": "",
+    "end": "",
+    "name": "Thailand Event",
+    "detail": "Date TBA",
+    "zone": "Asia/Bangkok",
+    "endTime": "20:00",
+    "startTime": "00:00",
+    "poster": "/posters/custom-ev063.jpg",
     "source": null,
     "posterType": "custom"
   }
