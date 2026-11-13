@@ -1,7 +1,7 @@
 'use client';
 import {useEffect,useMemo,useState} from 'react';
 import {EVENT_INTELLIGENCE_PREFS,eventState,countdownDays,filterIntelligence,overlappingEvents,weeklyDigest} from '@/lib/event-intelligence.mjs';
-type Event={id:string;name:string;start:string;end:string;startTime?:string;endTime?:string;zone?:string;category?:string;detail?:string;featuredPokemon?:string[]};
+type Event={id:string;name:string;start:string;end:string;startTime?:string;endTime?:string;zone?:string;category?:'raid'|'max-battle-rotation'|'event';detail?:string;featuredPokemon?:string[]};
 type Props={events:Event[];savedIds:Set<string>;onOpen:(event:Event)=>void;onSave:(event:Event)=>void;timeZone:string};
 const localDate=()=>{const d=new Date();return [d.getFullYear(),String(d.getMonth()+1).padStart(2,'0'),String(d.getDate()).padStart(2,'0')].join('-')};
 export default function EventIntelligencePanel({events,savedIds,onOpen,onSave,timeZone}:Props){
