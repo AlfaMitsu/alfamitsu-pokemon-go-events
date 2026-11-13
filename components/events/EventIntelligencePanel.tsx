@@ -5,7 +5,7 @@ type Event={id:string;name:string;start:string;end:string;startTime?:string;endT
 type Props={events:Event[];savedIds:Set<string>;onOpen:(event:Event)=>void;onSave:(event:Event)=>void;timeZone:string};
 const localDate=()=>{const d=new Date();return [d.getFullYear(),String(d.getMonth()+1).padStart(2,'0'),String(d.getDate()).padStart(2,'0')].join('-')};
 export default function EventIntelligencePanel({events,savedIds,onOpen,onSave,timeZone}:Props){
- const [today,setToday]=useState('');const [area,setArea]=useState('all');const [category,setCategory]=useState('all');const [query,setQuery]=useState('');const [archive,setArchive]=useState(false);const [onlySaved,setOnlySaved]=useState(false);const [notice,setNotice]=useState('');
+ const [today,setToday]=useState(localDate);const [area,setArea]=useState('all');const [category,setCategory]=useState('all');const [query,setQuery]=useState('');const [archive,setArchive]=useState(false);const [onlySaved,setOnlySaved]=useState(false);const [notice,setNotice]=useState('');
  useEffect(()=>{setToday(localDate());try{const p=JSON.parse(localStorage.getItem(EVENT_INTELLIGENCE_PREFS)||'{}');if(['all','regional','global'].includes(p.area))setArea(p.area);if(typeof p.category==='string')setCategory(p.category);setOnlySaved(p.onlySaved===true)}catch{}},[]);
  useEffect(()=>{try{localStorage.setItem(EVENT_INTELLIGENCE_PREFS,JSON.stringify({area,category,onlySaved}))}catch{}},[area,category,onlySaved]);
  const filtered=useMemo(()=>(filterIntelligence(events,{area,category,query,includeEnded:archive},today) as Event[]).filter((e:Event)=>!onlySaved||savedIds.has(e.id)),[events,area,category,query,archive,onlySaved,savedIds,today]);
