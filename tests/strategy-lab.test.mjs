@@ -1,0 +1,3 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {defenseMultiplier,analyzeCoverage,estimateBattlePressure} from '../lib/strategy-lab.mjs';
+test('GO super effective and double resistances',()=>{assert.equal(defenseMultiplier('Water',['Fire']),1.6);assert.equal(defenseMultiplier('Electric',['Ground']),0.390625);assert.equal(defenseMultiplier('Fire',['Grass','Steel']),2.5600000000000005)});
+test('coverage and weather comparison',()=>{assert.ok(analyzeCoverage(['Water']).covered.includes('Fire'));assert.ok(!analyzeCoverage(['Water']).covered.includes('Grass'));assert.ok(estimateBattlePressure('Water',['Fire'],'Water')>estimateBattlePressure('Water',['Fire']))});
