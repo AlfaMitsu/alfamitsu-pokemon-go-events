@@ -4556,6 +4556,23 @@
     ]
   },
   {
+    "id": "apple-stores-japan-applin-2026",
+    "start": "2026-11-16",
+    "end": "2026-11-30",
+    "startTime": "10:00",
+    "endTime": "21:00",
+    "zone": "Asia/Tokyo",
+    "name": "Apple Stores × Pokémon GO — Japan Applin Event",
+    "category": "event",
+    "featuredPokemon": [
+      "Applin"
+    ],
+    "detail": "Regional / Japan-exclusive event at all 11 Apple Stores in Japan. Special PokéStops at participating stores, Mossy Lure Modules active during store hours, and apples around the stores that may lead to Applin encounters. Daily 10:00–21:00 JST. Event details supplied by AlfaMitsu Services; official source not yet attached.",
+    "source": null,
+    "poster": "/api/event-poster?id=apple-stores-japan-applin-2026",
+    "posterType": "custom"
+  },
+  {
     "id": "ev037",
     "start": "2026-11-18",
     "end": "2026-11-18",
