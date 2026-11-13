@@ -140,7 +140,7 @@ export async function GET(request: Request) {
   const theme=isRaid?['#25143e','#ef92ff','#62358d']:isMax?['#063e42','#66f4c4','#17666e']:isUnconfirmed?['#492e12','#ffe094','#755120']:['#0d3159','#8ae3ff','#18567c'];
   const mons=highlights(e);
   const artwork=await Promise.all(mons.map(async name=>({name,src:await spriteData(name)})));
-  const title=String(e.name).replace(/\s*\(Unconfirmed\)$/i,'');
+  const title=String(e.name).replace(/\s*\(Unconfirmed\)$/i,'').replace(/[★☆]/g,'Star');
   const dates=e.start===e.end?e.start:e.start+'  –  '+e.end;
   const label=artwork.length?'FEATURED POKÉMON':'EVENT HIGHLIGHT';
   const color=theme[1];
