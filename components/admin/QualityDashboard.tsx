@@ -1,5 +1,6 @@
 'use client';
 import {useEffect,useMemo,useState} from 'react';
+import EventMonitorPanel from '@/components/admin/EventMonitorPanel';
 type Level='error'|'warning'|'info';
 type Issue={id:string;severity:Level;code:string;eventId:string|null;eventName:string|null;field:string|null;message:string;suggestion:string};
 type Report={summary:{events:number;posterMappings:number;localPosters:number;generatedPosters:number;errors:number;warnings:number;info:number};issues:Issue[];checkedAt:string;externalUrlsChecked:boolean};
@@ -105,6 +106,7 @@ export default function QualityDashboard(){
         <p>Last build-time audit: {report?.checkedAt?new Date(report.checkedAt).toLocaleString():'Not checked yet'} · The report is generated automatically for every deployment from repository data and local poster files. External webpages and image CDNs are not fetched, so links that later disappear still require manual verification.</p>
         <p className="mt-2">Mark findings reviewed or requiring fixes, then export the report for your GitHub update. Review decisions are saved in <strong>this browser only</strong>; they do not modify published event records or sync across devices.</p>
       </div>
+      <EventMonitorPanel/>
       <section className="rounded-xl border border-sky-900 bg-slate-900/60 p-4 space-y-3" aria-label="Remote image health">
         <div className="flex flex-wrap items-center justify-between gap-3">
           <div><h2 className="text-lg font-semibold">Remote poster health</h2><p className="mt-1 text-sm text-slate-300">Optional owner-only check of allowlisted external poster URLs referenced by saved event records.</p></div>
