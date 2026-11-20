@@ -9,6 +9,7 @@ const controller=new AbortController();const timer=setTimeout(()=>controller.abo
 let html;try{const r=await fetch(OFFICIAL_NEWS,{signal:controller.signal,headers:{'User-Agent':'AlfaMitsuEventMonitor/1.0'}});if(!r.ok)throw Error('Official news unavailable '+r.status);html=await r.text()}finally{clearTimeout(timer)}
 const events=JSON.parse(fs.readFileSync('lib/events.json','utf8'));
 const candidates=compareDiscovery(discoverLinks(html),events).filter(x=>x.match==='review-new-source').slice(0,12);
+for(const [name,color,description] of [['event-discovery','0e8a16','Official news links awaiting verification'],['event-approved','5319e7','Owner-approved structured event proposal']]){const response=await fetch(api+'/labels',{method:'POST',headers:{...headers,'Content-Type':'application/json'},body:JSON.stringify({name,color,description})});if(!response.ok&&response.status!==422)throw Error('Cannot configure label '+name+': '+response.status)}
 const existing=await gh('/issues?state=open&labels=event-discovery&per_page=100');
 let created=0;
 for(const item of candidates){if(existing.some(issue=>issue.body?.includes('Official URL: '+item.url)))continue;
