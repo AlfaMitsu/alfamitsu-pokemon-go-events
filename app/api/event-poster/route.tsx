@@ -160,13 +160,13 @@ export async function GET(request: Request) {
             {artwork.map((mon,i)=>(
               <div key={i} style={{display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',width:artwork.length===1?'86%':artwork.length===2?'49%':'32%',minHeight:300}}>
                 {mon.src?<img src={mon.src} width={artwork.length===1?410:artwork.length===2?305:225} height={artwork.length===1?410:artwork.length===2?305:225} style={{objectFit:'contain'}} alt={mon.name}/>:
-                 <div style={{display:'flex',width:210,height:210,borderRadius:110,alignItems:'center',justifyContent:'center',border:'12px solid '+color,background:'#13243b',fontSize:80}}>◉</div>}
+                 <div style={{display:'flex',width:210,height:210,borderRadius:110,alignItems:'center',justifyContent:'center',border:'12px solid '+color,background:'#13243b',fontSize:80}}>GO</div>}
                 <div style={{display:'flex',background:'#06152b',border:'2px solid '+color,borderRadius:12,padding:'12px 16px',fontWeight:800,fontSize:artwork.length===1?28:21,textAlign:'center',justifyContent:'center',maxWidth:'100%'}}>{mon.name}</div>
               </div>
             ))}
            </div>:
            <div style={{display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',gap:26}}>
-             <div style={{display:'flex',width:290,height:290,borderRadius:165,border:'20px solid '+color,background:'#072b47',alignItems:'center',justifyContent:'center',fontSize:145,color}}>◉</div>
+             <div style={{display:'flex',width:290,height:290,borderRadius:165,border:'20px solid '+color,background:'#072b47',alignItems:'center',justifyContent:'center',fontSize:145,color}}>GO</div>
              <div style={{display:'flex',fontSize:31,fontWeight:800,color,textAlign:'center'}}>{label}</div>
            </div>}
         </div>
