@@ -1,5 +1,18 @@
 [
   {
+    "id": "ev063",
+    "start": "",
+    "end": "",
+    "name": "Thailand Event",
+    "detail": "Date TBA",
+    "zone": "Asia/Bangkok",
+    "endTime": "20:00",
+    "startTime": "00:00",
+    "poster": "/posters/custom-ev063.jpg",
+    "source": null,
+    "posterType": "custom"
+  },
+  {
     "id": "historic-raid-01-01-5-raids-blacephalon",
     "start": "2026-01-01",
     "end": "2026-01-05",
@@ -4086,6 +4099,26 @@
     "posterNote": "Event-specific schedule tile based on existing artwork. Raid and Max Battle details verified against official Pokémon GO event announcements."
   },
   {
+    "id": "ev029",
+    "start": "2026-11-09",
+    "end": "2027-01-03",
+    "name": "Hong Kong Festival Walk",
+    "detail": "Pokémon's 30 Years of Joy at Festival Walk, Hong Kong. The Pokémon GO Mall Exploration gameplay period runs November 9, 2026–January 3, 2027, with party-hat Pikachu, event Timed Research, and four-hour Lure Modules within designated areas.",
+    "zone": "Asia/Hong_Kong",
+    "endTime": "20:00",
+    "startTime": "00:00",
+    "poster": "/posters/custom-ev029.jpg",
+    "source": "https://pokemongo.com/news/apac-mall-exploration-2026?hl=en",
+    "posterType": "custom",
+    "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
+    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar",
+    "featuredPokemon": [
+      "Pikachu",
+      "Bulbasaur",
+      "Charmander"
+    ]
+  },
+  {
     "id": "ev025",
     "start": "2026-11-09",
     "end": "2026-11-13",
@@ -4164,26 +4197,6 @@
     "linkedEventId": "ev025",
     "poster": "/posters/battle-event-battles-itw-five-star.jpg",
     "posterNote": "Event-specific schedule tile based on existing artwork. Raid and Max Battle details verified against official Pokémon GO event announcements."
-  },
-  {
-    "id": "ev029",
-    "start": "2026-11-09",
-    "end": "2027-01-03",
-    "name": "Hong Kong Festival Walk",
-    "detail": "Pokémon's 30 Years of Joy at Festival Walk, Hong Kong. The Pokémon GO Mall Exploration gameplay period runs November 9, 2026–January 3, 2027, with party-hat Pikachu, event Timed Research, and four-hour Lure Modules within designated areas.",
-    "zone": "Asia/Hong_Kong",
-    "endTime": "20:00",
-    "startTime": "00:00",
-    "poster": "/posters/custom-ev029.jpg",
-    "source": "https://pokemongo.com/news/apac-mall-exploration-2026?hl=en",
-    "posterType": "custom",
-    "infographicSource": "https://pokemongohub.net/post/event/pokemon-go-november-2026-events/",
-    "infographicCredit": "Pokémon GO Hub — November 2026 event calendar",
-    "featuredPokemon": [
-      "Pikachu",
-      "Bulbasaur",
-      "Charmander"
-    ]
   },
   {
     "id": "event-battles-itw-zamazenta-raid-hour",
@@ -4401,6 +4414,20 @@
     ]
   },
   {
+    "id": "schedule-2026-11-14-buenos-aires-regional-championships",
+    "start": "2026-11-14",
+    "end": "2026-11-15",
+    "startTime": "08:00",
+    "endTime": "18:00",
+    "name": "Pokémon GO Regional Championships — Buenos Aires",
+    "category": "event",
+    "zone": "America/Argentina/Buenos_Aires",
+    "detail": "Pokémon GO Regional Championships at the Buenos Aires Convention Center, Argentina, November 14, 8:00 AM through November 15, 6:00 PM local time, according to the user-supplied schedule. Historical event.",
+    "source": null,
+    "poster": "/api/event-poster?id=schedule-2026-11-14-buenos-aires-regional-championships",
+    "posterType": "custom"
+  },
+  {
     "id": "event-battles-wild-sun-five",
     "start": "2026-11-15",
     "end": "2026-11-15",
@@ -4439,6 +4466,23 @@
     "linkedEventId": "ev027",
     "poster": "/posters/battle-event-battles-wild-sun-max.jpg",
     "posterNote": "Event-specific schedule tile based on existing artwork. Raid and Max Battle details verified against official Pokémon GO event announcements."
+  },
+  {
+    "id": "apple-stores-japan-applin-2026",
+    "start": "2026-11-16",
+    "end": "2026-11-30",
+    "startTime": "10:00",
+    "endTime": "21:00",
+    "zone": "Asia/Tokyo",
+    "name": "Apple Stores × Pokémon GO — Japan Applin Event",
+    "category": "event",
+    "featuredPokemon": [
+      "Applin"
+    ],
+    "detail": "Regional / Japan-exclusive event at all 11 Apple Stores in Japan. Special PokéStops at participating stores, Mossy Lure Modules active during store hours, and apples around the stores that may lead to Applin encounters. Daily 10:00–21:00 JST. Event details supplied by AlfaMitsu Services; official source not yet attached.",
+    "source": null,
+    "poster": "/api/event-poster?id=apple-stores-japan-applin-2026",
+    "posterType": "custom"
   },
   {
     "id": "ev034",
@@ -4556,23 +4600,6 @@
     ]
   },
   {
-    "id": "apple-stores-japan-applin-2026",
-    "start": "2026-11-16",
-    "end": "2026-11-30",
-    "startTime": "10:00",
-    "endTime": "21:00",
-    "zone": "Asia/Tokyo",
-    "name": "Apple Stores × Pokémon GO — Japan Applin Event",
-    "category": "event",
-    "featuredPokemon": [
-      "Applin"
-    ],
-    "detail": "Regional / Japan-exclusive event at all 11 Apple Stores in Japan. Special PokéStops at participating stores, Mossy Lure Modules active during store hours, and apples around the stores that may lead to Applin encounters. Daily 10:00–21:00 JST. Event details supplied by AlfaMitsu Services; official source not yet attached.",
-    "source": null,
-    "poster": "/api/event-poster?id=apple-stores-japan-applin-2026",
-    "posterType": "custom"
-  },
-  {
     "id": "ev037",
     "start": "2026-11-18",
     "end": "2026-11-18",
@@ -4609,6 +4636,18 @@
     "featuredPokemon": [
       "Pikachu wearing a party hat"
     ]
+  },
+  {
+    "id": "schedule-2026-11-20-laic-2027-brazil",
+    "start": "2026-11-20",
+    "end": "2026-11-22",
+    "name": "Pokémon GO LAIC 2027 — Brazil",
+    "category": "event",
+    "zone": "America/Sao_Paulo",
+    "detail": "2027 Pokémon Latin America International Championships in Brazil, November 20–22, 2026. Event dates and country supplied by AlfaMitsu Services; exact venue/session hours and in-game rewards require confirmation.",
+    "source": null,
+    "poster": "/api/event-poster?id=schedule-2026-11-20-laic-2027-brazil",
+    "posterType": "custom"
   },
   {
     "id": "ev031",
@@ -4868,14 +4907,16 @@
     "start": "2026-12-05",
     "end": "2026-12-05",
     "name": "Gigantamax Inteleon Max Battle Day",
-    "category": "max-battle",
-    "detail": "Schedule supplied by AlfaMitsu Services. Exact local start/end times, bonuses, and any unannounced featured Pokémon are not yet specified; check official event details before planning.",
+    "category": "max-battle-rotation",
+    "detail": "Gigantamax Inteleon Max Battle Day, December 5, 2026, 2:00–5:00 PM local time, per the user-supplied schedule. Additional bonuses and Max Battle details are unverified.",
     "source": null,
     "poster": "/api/event-poster?id=schedule-2026-12-05-gigantamax-inteleon-max-battle-day",
     "posterType": "custom",
     "featuredPokemon": [
       "Gigantamax Inteleon"
-    ]
+    ],
+    "startTime": "14:00",
+    "endTime": "17:00"
   },
   {
     "id": "event-champions-celebration-dec2026",
@@ -4917,6 +4958,31 @@
     "posterType": "custom"
   },
   {
+    "id": "schedule-2026-12-11-ana-blue-pokemon-jet",
+    "start": "2026-12-11",
+    "end": "2027-08-31",
+    "name": "Pokémon GO × ANA: Blue Pokémon Jet — Japan",
+    "category": "event",
+    "zone": "Asia/Tokyo",
+    "detail": "Japan-specific Pokémon GO × ANA Blue Pokémon Jet collaboration period, December 11, 2026–August 31, 2027. User-supplied dates; flight routes, availability, and in-game details have not been independently verified.",
+    "source": null,
+    "poster": "/api/event-poster?id=schedule-2026-12-11-ana-blue-pokemon-jet",
+    "posterType": "custom"
+  },
+  {
+    "id": "schedule-2026-12-12-december-community-day-all-star-weekend",
+    "start": "2026-12-12",
+    "end": "2026-12-13",
+    "name": "December Community Day All-Star Weekend",
+    "category": "event",
+    "detail": "December Community Day weekend, December 12 at 9:00 AM through December 13 at 9:00 PM local time, per the user-supplied schedule. These are the overall event bounds; specific featured encounter hours and bonuses are not confirmed.",
+    "source": null,
+    "poster": "/api/event-poster?id=schedule-2026-12-12-december-community-day-all-star-weekend",
+    "posterType": "custom",
+    "startTime": "09:00",
+    "endTime": "21:00"
+  },
+  {
     "id": "ev051",
     "start": "2026-12-12",
     "end": "2026-12-13",
@@ -4927,17 +4993,6 @@
     "startTime": "00:00",
     "poster": "/posters/custom-ev051.jpg",
     "source": null,
-    "posterType": "custom"
-  },
-  {
-    "id": "schedule-2026-12-12-december-community-day-all-star-weekend",
-    "start": "2026-12-12",
-    "end": "2026-12-13",
-    "name": "December Community Day All-Star Weekend",
-    "category": "community-day",
-    "detail": "Schedule supplied by AlfaMitsu Services. Exact local start/end times, bonuses, and any unannounced featured Pokémon are not yet specified; check official event details before planning.",
-    "source": null,
-    "poster": "/api/event-poster?id=schedule-2026-12-12-december-community-day-all-star-weekend",
     "posterType": "custom"
   },
   {
@@ -4993,6 +5048,17 @@
     ]
   },
   {
+    "id": "schedule-2027-01-09-super-mega-raid-day",
+    "start": "2027-01-09",
+    "end": "2027-01-09",
+    "name": "Super Mega Raid Day",
+    "category": "raid",
+    "detail": "Schedule supplied by AlfaMitsu Services. Exact local start/end times, bonuses, and any unannounced featured Pokémon are not yet specified; check official event details before planning.",
+    "source": null,
+    "poster": "/api/event-poster?id=schedule-2027-01-09-super-mega-raid-day",
+    "posterType": "custom"
+  },
+  {
     "id": "ev052",
     "start": "2027-01-09",
     "end": "2027-01-10",
@@ -5003,17 +5069,6 @@
     "startTime": "00:00",
     "poster": "/posters/custom-ev052.jpg",
     "source": null,
-    "posterType": "custom"
-  },
-  {
-    "id": "schedule-2027-01-09-super-mega-raid-day",
-    "start": "2027-01-09",
-    "end": "2027-01-09",
-    "name": "Super Mega Raid Day",
-    "category": "raid",
-    "detail": "Schedule supplied by AlfaMitsu Services. Exact local start/end times, bonuses, and any unannounced featured Pokémon are not yet specified; check official event details before planning.",
-    "source": null,
-    "poster": "/api/event-poster?id=schedule-2027-01-09-super-mega-raid-day",
     "posterType": "custom"
   },
   {
@@ -5030,6 +5085,20 @@
     "posterType": "custom"
   },
   {
+    "id": "schedule-2027-01-16-charcadet-community-day",
+    "start": "2027-01-16",
+    "end": "2027-01-16",
+    "name": "Charcadet Community Day",
+    "category": "event",
+    "featuredPokemon": [
+      "Charcadet"
+    ],
+    "detail": "January 16, 2027 Community Day featuring Charcadet, according to the user-supplied schedule. Local event hours and bonuses have not been confirmed.",
+    "source": null,
+    "poster": "/api/event-poster?id=schedule-2027-01-16-charcadet-community-day",
+    "posterType": "custom"
+  },
+  {
     "id": "schedule-2027-01-16-community-day",
     "start": "2027-01-16",
     "end": "2027-01-16",
@@ -5038,6 +5107,17 @@
     "detail": "Schedule supplied by AlfaMitsu Services. Exact local start/end times, bonuses, and any unannounced featured Pokémon are not yet specified; check official event details before planning.",
     "source": null,
     "poster": "/api/event-poster?id=schedule-2027-01-16-community-day",
+    "posterType": "custom"
+  },
+  {
+    "id": "schedule-2027-01-23-max-battle-day",
+    "start": "2027-01-23",
+    "end": "2027-01-23",
+    "name": "Max Battle Day",
+    "category": "max-battle",
+    "detail": "Schedule supplied by AlfaMitsu Services. Exact local start/end times, bonuses, and any unannounced featured Pokémon are not yet specified; check official event details before planning.",
+    "source": null,
+    "poster": "/api/event-poster?id=schedule-2027-01-23-max-battle-day",
     "posterType": "custom"
   },
   {
@@ -5051,17 +5131,6 @@
     "startTime": "00:00",
     "poster": "/posters/custom-ev054.jpg",
     "source": "https://pokemongo.com/news/save-the-date-apac-30th-anniversary-2026",
-    "posterType": "custom"
-  },
-  {
-    "id": "schedule-2027-01-23-max-battle-day",
-    "start": "2027-01-23",
-    "end": "2027-01-23",
-    "name": "Max Battle Day",
-    "category": "max-battle",
-    "detail": "Schedule supplied by AlfaMitsu Services. Exact local start/end times, bonuses, and any unannounced featured Pokémon are not yet specified; check official event details before planning.",
-    "source": null,
-    "poster": "/api/event-poster?id=schedule-2027-01-23-max-battle-day",
     "posterType": "custom"
   },
   {
@@ -5137,6 +5206,36 @@
     "posterType": "custom"
   },
   {
+    "id": "schedule-2027-02-27-go-tour-alola-masterwork-poipole",
+    "start": "2027-02-27",
+    "end": "2027-02-28",
+    "name": "GO Tour: Alola — Shiny Poipole Masterwork Research",
+    "category": "event",
+    "detail": "User-reported Shiny Poipole reward in GO Tour 2027 Masterwork Research. Availability, ticket requirements, research release and completion deadlines are unverified; the displayed dates reflect the related Global event window, not a confirmed research deadline.",
+    "source": null,
+    "linkedEventId": "schedule-2027-02-27-go-tour-alola-global",
+    "featuredPokemon": [
+      "Shiny Poipole"
+    ],
+    "poster": "/api/event-poster?id=schedule-2027-02-27-go-tour-alola-masterwork-poipole",
+    "posterType": "custom"
+  },
+  {
+    "id": "schedule-2027-02-27-go-tour-alola-global",
+    "start": "2027-02-27",
+    "end": "2027-02-28",
+    "name": "Pokémon GO Tour: Alola — Global",
+    "category": "event",
+    "endTime": "18:00",
+    "detail": "Global GO Tour: Alola, February 27–28, 2027, ending at 6:00 PM February 28 according to the supplied schedule. Start time and event mechanics not provided; times are local unless officially specified otherwise.",
+    "source": null,
+    "poster": "/api/event-poster?id=schedule-2027-02-27-go-tour-alola-global",
+    "posterType": "custom",
+    "featuredPokemon": [
+      "Poipole"
+    ]
+  },
+  {
     "id": "ev058",
     "start": "2027-03-13",
     "end": "2027-03-28",
@@ -5198,19 +5297,6 @@
     "endTime": "20:00",
     "startTime": "00:00",
     "poster": "/posters/custom-ev062.jpg",
-    "source": null,
-    "posterType": "custom"
-  },
-  {
-    "id": "ev063",
-    "start": "",
-    "end": "",
-    "name": "Thailand Event",
-    "detail": "Date TBA",
-    "zone": "Asia/Bangkok",
-    "endTime": "20:00",
-    "startTime": "00:00",
-    "poster": "/posters/custom-ev063.jpg",
     "source": null,
     "posterType": "custom"
   }
