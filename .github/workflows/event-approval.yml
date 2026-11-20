@@ -1,0 +1,39 @@
+name: Publish owner-approved Pokémon GO event
+on:
+  issues:
+    types: [labeled]
+permissions:
+  contents: write
+  issues: write
+concurrency:
+  group: event-approval-main
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: github.event.label.name == 'event-approved'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: main
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: '22'
+      - name: Validate approved proposal
+        run: node scripts/publish-approved-event.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Validate schedule and tests
+        run: npm ci && npm run prebuild
+      - name: Commit approved event to main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add lib/events.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "content(events): publish approved event from issue #${{ github.event.issue.number }}"
+          git -c http.extraheader="AUTHORIZATION: basic $(printf 'x-access-token:%s' "$GITHUB_TOKEN" | base64 -w0)" push origin HEAD:main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

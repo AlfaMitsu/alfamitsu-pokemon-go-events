@@ -1,0 +1,6 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {discoverLinks,compareDiscovery,validateProposal} from '../lib/event-discovery.mjs';
+const source='https://pokemongo.com/news/example-event';
+const good={id:'schedule-2027-example',name:'Example GO Event',start:'2027-02-01',end:'2027-02-02',source};
+test('discovery limits links to official news and removes duplicates',()=>{const html='<a href="/news/example-event">Example Event Announcement</a><a href="/news/example-event">Example Event Announcement</a><a href="https://evil.test/news/bad">Fake Event Announcement</a>';const r=discoverLinks(html);assert.equal(r.length,1);assert.equal(r[0].url,source)});
+test('discovery compares sources to current calendar',()=>{assert.equal(compareDiscovery([{url:source,title:'Example'}],[{id:'x',source}])[0].match,'existing-source')});
+test('proposal validates source, dates, duplicates and updates',()=>{assert.equal(validateProposal(good,[]).action,'add');assert.equal(validateProposal({...good,detail:'Updated'},[{...good,detail:'Old'}]).action,'update');assert.throws(()=>validateProposal({...good,start:'2027-02-30'},[]));assert.throws(()=>validateProposal({...good,source:'https://evil.test/event'},[]));assert.throws(()=>validateProposal({...good,id:'other-event'},[good]))});

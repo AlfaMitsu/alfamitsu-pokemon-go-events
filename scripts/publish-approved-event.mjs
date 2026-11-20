@@ -1,0 +1,18 @@
+import fs from 'node:fs';
+import {validateProposal} from '../lib/event-discovery.mjs';
+const path='lib/events.json',events=JSON.parse(fs.readFileSync(path,'utf8'));
+const issue=JSON.parse(fs.readFileSync(process.env.GITHUB_EVENT_PATH,'utf8')).issue;
+if(!issue||issue.state!=='open'||!issue.labels?.some(x=>x.name==='event-approved'))throw Error('Issue must be open and approved');
+const actor=process.env.GITHUB_ACTOR||'';
+const token=process.env.GITHUB_TOKEN,repo=process.env.GITHUB_REPOSITORY;
+const r=await fetch('https://api.github.com/repos/'+repo+'/collaborators/'+encodeURIComponent(actor)+'/permission',{headers:{Authorization:'Bearer '+token,Accept:'application/vnd.github+json','User-Agent':'AlfaMitsu-Publisher'}});
+if(!r.ok)throw Error('Unable to verify approver permissions');
+const permission=(await r.json()).permission;
+if(!['admin','maintain','write'].includes(permission))throw Error('Only repository maintainers may approve');
+const matches=[...String(issue.body||'').matchAll(/```json\s*([\s\S]*?)```/g)];
+if(matches.length!==1)throw Error('Exactly one JSON proposal block required');
+const {event,action}=validateProposal(JSON.parse(matches[0][1]),events);
+if(action==='update'){const i=events.findIndex(x=>x.id===event.id);events[i]=event}else events.push(event);
+events.sort((a,b)=>(a.start||'').localeCompare(b.start||'')||(a.name||'').localeCompare(b.name||''));
+fs.writeFileSync(path,JSON.stringify(events,null,2)+'\n');
+console.log(action+' '+event.id+' approved by '+actor);
