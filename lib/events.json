@@ -5299,5 +5299,20 @@
     "poster": "/posters/custom-ev062.jpg",
     "source": null,
     "posterType": "custom"
+  },
+  {
+    "id": "gbl-master-mega-catch-cup-nov-2026",
+    "start": "2026-11-24",
+    "end": "2026-12-01",
+    "name": "GO Battle League: Master League + Mega Catch Cup",
+    "category": "pvp",
+    "zone": "America/Los_Angeles",
+    "startTime": "13:00",
+    "endTime": "13:00",
+    "detail": "Master League and Mega Catch Cup: Great League Edition. Master League has no CP cap. Mega Catch Cup is capped at 1,500 CP, permits Mega-Evolved Pokémon, excludes Mythical Pokémon, and only permits Pokémon caught during the Twilight Trails Season. 4× Stardust from win rewards (not end-of-set rewards). Starts November 24 at 1:00 p.m. PST; ends December 1 at 1:00 p.m. PST.",
+    "source": "https://pokemongo.com/news/go-battle-league-twilight-trails",
+    "poster": "/api/event-poster?id=gbl-master-mega-catch-cup-nov-2026",
+    "posterType": "generated",
+    "region": "Global"
   }
 ]
