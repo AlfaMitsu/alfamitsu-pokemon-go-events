@@ -23,11 +23,10 @@ export default function RegionalCoveragePanel(){
  }
  function exportCsv(){
   if(!data)return;
-  const csvCell=(v:string|null)=>'"'+String(v??'').replace(/"/g,'""').replace(/^[=+@\-\t\r]/,"'const csvCell=(v:string|null)=>'"'+String(v??'').replace(/"/g,'""').replace(/^\s*[=+@\-]/,"'const csvCell=(v:string|null)=>'"'+String(v??'').replace(/"/g,'""').replace(/^[=+@\-\t\r]/,"'$&")+'"';")+'"';
-  const rows=")+'"';
+  const csvCell=(v:string|null)=>'"'+String(v??'').replace(/"/g,'""').replace(/^[=+@\-\t\r]/,"'$&")+'"';
   const rows=[['ID','Name','Start','End','Region','Source'].join(','),...data.regional.map(e=>[e.id,e.name,e.start,e.end,e.zone,e.source].map(csvCell).join(','))];
   const url=URL.createObjectURL(new Blob([rows.join('\r\n')+'\r\n'],{type:'text/csv;charset=utf-8'}));
-  const a=document.createElement('a');a.href=url;a.download='alfamitsu-regional-coverage.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+  const link=document.createElement('a');link.href=url;link.download='alfamitsu-regional-coverage.csv';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
  }
  return <section className="space-y-3 rounded-xl border border-sky-800 bg-slate-900/70 p-4">
   <h2 className="text-xl font-bold">Phase 14 · Regional event review center</h2>
