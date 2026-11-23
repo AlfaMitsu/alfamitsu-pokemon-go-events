@@ -1,0 +1,5 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {regionalCoverage} from '../lib/regional-coverage.mjs';
+const events=[{id:'g',name:'Global',start:'2026-11-20',end:'2026-11-30',source:'https://pokemongo.com/news/a'},{id:'j',name:'Japan',start:'2026-11-16',end:'2026-11-30',zone:'Asia/Tokyo'},{id:'x',name:'Expired',start:'2026-11-01',end:'2026-11-02'}];
+test('regional coverage counts overlapping multi-day events',()=>{const x=regionalCoverage(events,'2026-11-23','2026-11-29');assert.equal(x.total,2);assert.equal(x.regionalCount,1);assert.equal(x.globalCount,1);assert.equal(x.byZone[0].zone,'Asia/Tokyo');assert.equal(x.review.length,1)});
+test('invalid dates are rejected',()=>{assert.throws(()=>regionalCoverage(events,'2026-11-31','2026-12-01'));assert.throws(()=>regionalCoverage(events,'2026-12-01','2026-11-23'))});
+test('empty week reports zero without inventing regional events',()=>{const x=regionalCoverage(events,'2027-03-01','2027-03-07');assert.equal(x.total,0);assert.equal(x.regionalCount,0)});
