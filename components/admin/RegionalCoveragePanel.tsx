@@ -23,7 +23,8 @@ export default function RegionalCoveragePanel(){
  }
  function exportCsv(){
   if(!data)return;
-  const csvCell=(v:string|null)=>'"'+String(v??'').replace(/"/g,'""').replace(/^\s*[=+@\-]/,"'const csvCell=(v:string|null)=>'"'+String(v??'').replace(/"/g,'""').replace(/^[=+@\-\t\r]/,"'$&")+'"';")+'"';
+  const csvCell=(v:string|null)=>'"'+String(v??'').replace(/"/g,'""').replace(/^[=+@\-\t\r]/,"'const csvCell=(v:string|null)=>'"'+String(v??'').replace(/"/g,'""').replace(/^\s*[=+@\-]/,"'const csvCell=(v:string|null)=>'"'+String(v??'').replace(/"/g,'""').replace(/^[=+@\-\t\r]/,"'$&")+'"';")+'"';
+  const rows=")+'"';
   const rows=[['ID','Name','Start','End','Region','Source'].join(','),...data.regional.map(e=>[e.id,e.name,e.start,e.end,e.zone,e.source].map(csvCell).join(','))];
   const url=URL.createObjectURL(new Blob([rows.join('\r\n')+'\r\n'],{type:'text/csv;charset=utf-8'}));
   const a=document.createElement('a');a.href=url;a.download='alfamitsu-regional-coverage.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
