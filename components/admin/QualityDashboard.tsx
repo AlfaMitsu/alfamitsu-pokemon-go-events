@@ -3,6 +3,7 @@ import {useEffect,useMemo,useState} from 'react';
 import EventMonitorPanel from '@/components/admin/EventMonitorPanel';
 import ScheduleAuditPanel from '@/components/admin/ScheduleAuditPanel';
 import DiscoveryPanel from '@/components/admin/DiscoveryPanel';
+import PosterReviewPanel from '@/components/admin/PosterReviewPanel';
 import RegionalCoveragePanel from '@/components/admin/RegionalCoveragePanel';
 type Level='error'|'warning'|'info';
 type Issue={id:string;severity:Level;code:string;eventId:string|null;eventName:string|null;field:string|null;message:string;suggestion:string};
@@ -110,6 +111,7 @@ export default function QualityDashboard(){
         <p className="mt-2">Mark findings reviewed or requiring fixes, then export the report for your GitHub update. Review decisions are saved in <strong>this browser only</strong>; they do not modify published event records or sync across devices.</p>
       </div>
       <RegionalCoveragePanel/>
+<PosterReviewPanel/>
       <DiscoveryPanel/>
       <ScheduleAuditPanel/>
       <EventMonitorPanel/>
