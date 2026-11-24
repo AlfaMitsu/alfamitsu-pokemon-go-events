@@ -1,0 +1,2 @@
+# Phase 16 — source change monitoring
+Daily official discovery now also checks up to 20 distinct active/upcoming official event sources. Open GitHub issues store baseline fingerprints and record changes for owner review. Missing content is not treated as cancellation. No event dates or artwork are automatically overwritten. Sunday external review of web, POSTER and CAPTION remains a separate ChatGPT task; this workflow cannot read private chats. Monitoring is bounded and requires GitHub Actions issue write permission. Baseline issues are not proof of a changed event.
