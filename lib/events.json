@@ -5314,5 +5314,761 @@
     "poster": "/api/event-poster?id=gbl-master-mega-catch-cup-nov-2026",
     "posterType": "generated",
     "region": "Global"
+  },
+  {
+    "id": "archive-2016-10-26-halloween-2016",
+    "start": "2016-10-26",
+    "end": "2016-11-01",
+    "name": "Halloween 2016",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://pokemongo.com/news/halloween2016"
+  },
+  {
+    "id": "archive-2016-11-07-daily-bonus-celebration",
+    "start": "2016-11-07",
+    "end": "2016-11-11",
+    "name": "Daily Bonus Celebration",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://pokemongo.fandom.com/wiki/List_of_Events"
+  },
+  {
+    "id": "archive-2016-11-23-thanksgiving-2016",
+    "start": "2016-11-23",
+    "end": "2016-11-30",
+    "name": "Thanksgiving 2016",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2016-12-25-holiday-2016",
+    "start": "2016-12-25",
+    "end": "2017-01-08",
+    "name": "Holiday 2016",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://pokemongo.com/news/holiday2016"
+  },
+  {
+    "id": "archive-2017-02-08-valentine-s-day-2017",
+    "start": "2017-02-08",
+    "end": "2017-02-15",
+    "name": "Valentine's Day 2017",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2017-03-22-water-festival-2017",
+    "start": "2017-03-22",
+    "end": "2017-03-29",
+    "name": "Water Festival 2017",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2017-04-13-eggstravaganza-2017",
+    "start": "2017-04-13",
+    "end": "2017-04-20",
+    "name": "Eggstravaganza 2017",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2017-05-05-grass-weekend-2017",
+    "start": "2017-05-05",
+    "end": "2017-05-08",
+    "name": "Grass Weekend 2017",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2017-05-18-adventure-week-2017",
+    "start": "2017-05-18",
+    "end": "2017-05-25",
+    "name": "Adventure Week 2017",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2017-06-13-solstice-event-2017",
+    "start": "2017-06-13",
+    "end": "2017-06-21",
+    "name": "Solstice Event 2017",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2017-07-06-anniversary-event-2017",
+    "start": "2017-07-06",
+    "end": "2017-07-13",
+    "name": "Anniversary Event 2017",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2017-09-22-equinox-2017",
+    "start": "2017-09-22",
+    "end": "2017-10-03",
+    "name": "Equinox 2017",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2017-10-20-halloween-2017",
+    "start": "2017-10-20",
+    "end": "2017-11-02",
+    "name": "Halloween 2017",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2017-12-21-holiday-2017",
+    "start": "2017-12-21",
+    "end": "2018-01-04",
+    "name": "Holiday 2017",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2018-02-13-valentine-s-day-2018",
+    "start": "2018-02-13",
+    "end": "2018-02-15",
+    "name": "Valentine's Day 2018",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2018-02-15-year-of-the-dog",
+    "start": "2018-02-15",
+    "end": "2018-02-17",
+    "name": "Year of the Dog",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2018-02-23-legendary-week-2018",
+    "start": "2018-02-23",
+    "end": "2018-03-16",
+    "name": "Legendary Week 2018",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2018-02-26-pok-mon-day-2018",
+    "start": "2018-02-26",
+    "end": "2018-02-28",
+    "name": "Pokémon Day 2018",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2018-03-22-eggstravaganza-2018",
+    "start": "2018-03-22",
+    "end": "2018-04-02",
+    "name": "Eggstravaganza 2018",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2018-03-31-april-fools-2018",
+    "start": "2018-03-31",
+    "end": "2018-04-02",
+    "name": "April Fools 2018",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2018-04-10-kanto-celebration",
+    "start": "2018-04-10",
+    "end": "2018-04-17",
+    "name": "Kanto Celebration",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2018-10-05-psychic-spectacular-2018",
+    "start": "2018-10-05",
+    "end": "2018-10-14",
+    "name": "Psychic Spectacular 2018",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2018-10-23-halloween-2018",
+    "start": "2018-10-23",
+    "end": "2018-11-01",
+    "name": "Halloween 2018",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2018-11-06-stardust-blast-2018",
+    "start": "2018-11-06",
+    "end": "2018-11-13",
+    "name": "Stardust Blast 2018",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2018-11-14-hatchathon-2018",
+    "start": "2018-11-14",
+    "end": "2018-11-27",
+    "name": "Hatchathon 2018",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2018-11-16-let-s-go-celebration",
+    "start": "2018-11-16",
+    "end": "2018-11-27",
+    "name": "Let's Go Celebration",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2018-12-18-holiday-2018",
+    "start": "2018-12-18",
+    "end": "2019-01-02",
+    "name": "Holiday 2018",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2019-01-02-hatchathon-january-2019",
+    "start": "2019-01-02",
+    "end": "2019-01-15",
+    "name": "Hatchathon January 2019",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2019-01-15-hoenn-event",
+    "start": "2019-01-15",
+    "end": "2019-01-29",
+    "name": "Hoenn Event",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2019-02-04-lunar-new-year-2019",
+    "start": "2019-02-04",
+    "end": "2019-02-13",
+    "name": "Lunar New Year 2019",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2019-02-05-shiny-meltan",
+    "start": "2019-02-05",
+    "end": "2019-03-04",
+    "name": "Shiny Meltan",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2019-02-08-friendship-weekend-2019",
+    "start": "2019-02-08",
+    "end": "2019-02-11",
+    "name": "Friendship Weekend 2019",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2019-02-13-valentine-s-day-2019",
+    "start": "2019-02-13",
+    "end": "2019-02-21",
+    "name": "Valentine's Day 2019",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2019-02-26-pok-mon-day-2019",
+    "start": "2019-02-26",
+    "end": "2019-02-28",
+    "name": "Pokémon Day 2019",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2019-03-05-battle-showdown-2019",
+    "start": "2019-03-05",
+    "end": "2019-03-12",
+    "name": "Battle Showdown 2019",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2019-03-19-equinox-2019",
+    "start": "2019-03-19",
+    "end": "2019-03-26",
+    "name": "Equinox 2019",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2019-04-01-april-fools-2019",
+    "start": "2019-04-01",
+    "end": "2019-04-02",
+    "name": "April Fools 2019",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2019-08-23-water-festival-2019",
+    "start": "2019-08-23",
+    "end": "2019-08-30",
+    "name": "Water Festival 2019",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2019-09-26-world-tourism-day",
+    "start": "2019-09-26",
+    "end": "2019-10-01",
+    "name": "World Tourism Day",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2019-10-03-stardust-blast-2019",
+    "start": "2019-10-03",
+    "end": "2019-10-10",
+    "name": "Stardust Blast 2019",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2019-10-17-halloween-2019",
+    "start": "2019-10-17",
+    "end": "2019-11-01",
+    "name": "Halloween 2019",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2019-11-01-regi-weekend",
+    "start": "2019-11-01",
+    "end": "2019-11-04",
+    "name": "Regi Weekend",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2019-11-07-team-go-rocket-leaders-disruption",
+    "start": "2019-11-07",
+    "end": "2019-11-14",
+    "name": "Team GO Rocket Leaders Disruption",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2019-11-19-supereffective-week",
+    "start": "2019-11-19",
+    "end": "2019-11-26",
+    "name": "Supereffective Week",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2019-11-27-friend-fest",
+    "start": "2019-11-27",
+    "end": "2019-12-02",
+    "name": "Friend Fest",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2019-12-05-evolution-event",
+    "start": "2019-12-05",
+    "end": "2019-12-12",
+    "name": "Evolution Event",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2019-12-24-holiday-2019",
+    "start": "2019-12-24",
+    "end": "2020-01-01",
+    "name": "Holiday 2019",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2020-01-02-adventure-sync-hatchathon",
+    "start": "2020-01-02",
+    "end": "2020-01-16",
+    "name": "Adventure Sync Hatchathon",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2020-01-24-lunar-new-year-2020",
+    "start": "2020-01-24",
+    "end": "2020-02-03",
+    "name": "Lunar New Year 2020",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2020-02-07-sinnoh-celebration",
+    "start": "2020-02-07",
+    "end": "2020-02-10",
+    "name": "Sinnoh Celebration",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2020-02-14-valentine-s-day-2020",
+    "start": "2020-02-14",
+    "end": "2020-02-17",
+    "name": "Valentine's Day 2020",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2020-02-21-friendship-weekend-2020",
+    "start": "2020-02-21",
+    "end": "2020-02-24",
+    "name": "Friendship Weekend 2020",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2020-07-31-dragon-week",
+    "start": "2020-07-31",
+    "end": "2020-08-07",
+    "name": "Dragon Week",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2020-08-08-enigma-week",
+    "start": "2020-08-08",
+    "end": "2020-08-14",
+    "name": "Enigma Week",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2020-08-15-unova-week",
+    "start": "2020-08-15",
+    "end": "2020-08-21",
+    "name": "Unova Week",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2020-09-01-mega-raid-challenge",
+    "start": "2020-09-01",
+    "end": "2020-09-07",
+    "name": "Mega Raid Challenge",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2020-09-11-mega-battle-challenge",
+    "start": "2020-09-11",
+    "end": "2020-09-17",
+    "name": "Mega Battle Challenge",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2020-09-22-mega-buddy-challenge",
+    "start": "2020-09-22",
+    "end": "2020-09-28",
+    "name": "Mega Buddy Challenge",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2020-10-02-longchamp-collaboration",
+    "start": "2020-10-02",
+    "end": "2020-10-08",
+    "name": "Longchamp Collaboration",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2020-10-24-halloween-2020",
+    "start": "2020-10-24",
+    "end": "2020-11-04",
+    "name": "Halloween 2020",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2020-11-06-animation-week-2020",
+    "start": "2020-11-06",
+    "end": "2020-11-12",
+    "name": "Animation Week 2020",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2020-11-17-pok-mon-home-celebration",
+    "start": "2020-11-17",
+    "end": "2020-11-23",
+    "name": "Pokémon HOME Celebration",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2020-11-18-12-days-of-friendship",
+    "start": "2020-11-18",
+    "end": "2020-11-30",
+    "name": "12 Days of Friendship",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2020-11-24-lake-legends",
+    "start": "2020-11-24",
+    "end": "2020-11-30",
+    "name": "Lake Legends",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2020-12-02-kalos-celebration",
+    "start": "2020-12-02",
+    "end": "2020-12-08",
+    "name": "Kalos Celebration",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2020-12-11-wooper-watch",
+    "start": "2020-12-11",
+    "end": "2020-12-12",
+    "name": "Wooper Watch",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2020-12-22-holiday-event-2020",
+    "start": "2020-12-22",
+    "end": "2020-12-31",
+    "name": "Holiday Event 2020",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2021-06-08-a-very-slow-discovery",
+    "start": "2021-06-08",
+    "end": "2021-06-13",
+    "name": "A Very Slow Discovery",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2021-06-17-solstice-event-2021",
+    "start": "2021-06-17",
+    "end": "2021-06-20",
+    "name": "Solstice Event 2021",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2021-07-06-fifth-anniversary-event",
+    "start": "2021-07-06",
+    "end": "2021-07-15",
+    "name": "Fifth Anniversary Event",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2021-07-23-ultra-unlock-2021-time",
+    "start": "2021-07-23",
+    "end": "2021-08-03",
+    "name": "Ultra Unlock 2021: Time",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2021-08-06-ultra-unlock-2021-space",
+    "start": "2021-08-06",
+    "end": "2021-08-17",
+    "name": "Ultra Unlock 2021: Space",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2021-08-20-ultra-unlock-2021-sword-and-shield",
+    "start": "2021-08-20",
+    "end": "2021-08-31",
+    "name": "Ultra Unlock 2021: Sword and Shield",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2021-09-08-psychic-spectacular-2021",
+    "start": "2021-09-08",
+    "end": "2021-09-13",
+    "name": "Psychic Spectacular 2021",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2021-09-21-fashion-week-2021",
+    "start": "2021-09-21",
+    "end": "2021-09-28",
+    "name": "Fashion Week 2021",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2021-10-01-secrets-of-the-jungle-event",
+    "start": "2021-10-01",
+    "end": "2021-10-10",
+    "name": "Secrets of the Jungle Event",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2021-10-15-halloween-mischief-creepy-companions",
+    "start": "2021-10-15",
+    "end": "2021-10-22",
+    "name": "Halloween Mischief: Creepy Companions",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2021-10-22-halloween-mischief-ghoulish-pals",
+    "start": "2021-10-22",
+    "end": "2021-10-31",
+    "name": "Halloween Mischief: Ghoulish Pals",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2021-11-05-festival-of-lights-2021",
+    "start": "2021-11-05",
+    "end": "2021-11-14",
+    "name": "Festival of Lights 2021",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2021-11-22-ed-sheeran-collaboration",
+    "start": "2021-11-22",
+    "end": "2021-11-30",
+    "name": "Ed Sheeran Collaboration",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2021-12-07-dragonspiral-descent",
+    "start": "2021-12-07",
+    "end": "2021-12-12",
+    "name": "Dragonspiral Descent",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2021-12-16-holiday-event-2021-part-1",
+    "start": "2021-12-16",
+    "end": "2021-12-23",
+    "name": "Holiday Event 2021: Part 1",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2021-12-23-holiday-event-2021-part-2",
+    "start": "2021-12-23",
+    "end": "2021-12-31",
+    "name": "Holiday Event 2021: Part 2",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
+  },
+  {
+    "id": "archive-2022-01-07-mountains-of-power",
+    "start": "2022-01-07",
+    "end": "2022-01-13",
+    "name": "Mountains of Power",
+    "category": "event",
+    "detail": "Historical event archive. Published date range; exact clock times and original artwork not yet recorded.",
+    "source": "https://serebii.net/pokemongo/events.shtml"
   }
 ]
