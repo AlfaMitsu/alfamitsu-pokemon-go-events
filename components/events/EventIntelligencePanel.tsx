@@ -1,5 +1,6 @@
 'use client';
 import {useEffect,useMemo,useState} from 'react';
+import GlobalEventPanel from './GlobalEventPanel';
 import {personalizedEvents,upcomingReminderCandidates} from '@/lib/smart-event-v10.mjs';
 import {EVENT_INTELLIGENCE_PREFS,eventState,countdownDays,filterIntelligence,overlappingEvents,weeklyDigest} from '@/lib/event-intelligence.mjs';
 type Event={id:string;name:string;start:string;end:string;startTime?:string;endTime?:string;zone?:string;category?:'raid'|'max-battle-rotation'|'event';detail?:string;featuredPokemon?:string[]};
@@ -18,6 +19,7 @@ export default function EventIntelligencePanel({events,savedIds,onOpen,onSave,ti
  async function enableAlerts(){if(!notificationSupported){setNotice('This browser does not support notifications. Use the calendar reminders in My Events.');return}try{const result=await Notification.requestPermission();setNotice(result==='granted'?'Notifications allowed. Background push is not configured; use My Events calendar exports for reliable reminders.':'Notification permission was not granted. Calendar reminders remain available.')}catch{setNotice('Notification permission could not be requested. Try calendar export instead.')}}
  return <section className="space-y-5">
  <header className="space-y-2"><h1 className="text-3xl font-black">Smart Event Tracker</h1><p className="text-sm text-sky-200">Discover upcoming events, compare overlapping schedules, and create a personal weekly briefing. Dates without verified hours are never presented as exact countdowns.</p></header>
+ <GlobalEventPanel events={events} timeZone={timeZone} onOpen={onOpen}/>
  {!today&&<p role="status" className="text-sm text-sky-300">Preparing your local event schedule…</p>}
  <div className="grid gap-3 sm:grid-cols-3">{[['Upcoming',filtered.filter(e=>eventState(e,today)==='Upcoming').length],['Ongoing',filtered.filter(e=>eventState(e,today)==='Ongoing').length],['This week',digest.length]].map(([name,count])=><div key={name} className="rounded-xl border border-sky-700 bg-[#0b2750] p-4"><div className="text-xs text-sky-200">{name}</div><div className="text-2xl font-bold">{count}</div></div>)}</div>
  <div className="grid gap-3 rounded-xl border border-sky-700 bg-[#081e40] p-4 sm:grid-cols-3">
