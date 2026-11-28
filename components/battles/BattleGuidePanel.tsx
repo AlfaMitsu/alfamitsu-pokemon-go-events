@@ -1,5 +1,6 @@
 'use client';
 import {useEffect,useMemo,useRef,useState} from 'react';
+import BattleEstimatePanel from './BattleEstimatePanel';
 import {BookOpen,CalendarDays,ChevronDown,ExternalLink,RefreshCw,Shield,ShieldPlus,Swords,Zap,AlertTriangle,Plus,Trash2} from 'lucide-react';
 import {GO_TYPES,GO_WEATHER_TYPES,goTypeMatchups,matchupForMove,maxMoveCost,coverageCandidates} from '@/lib/go-battle-guides.mjs';
 type Mode='raid'|'max';
@@ -135,6 +136,7 @@ export default function BattleGuidePanel({initialMode='raid',initialBoss='',onOp
    <button role="tab" aria-selected={mode==='raid'} type="button" onClick={()=>selectMode('raid')} className={`min-h-[48px] rounded-lg px-3 text-sm font-bold ${mode==='raid'?'bg-blue-700 text-white':'text-sky-200 hover:bg-sky-800'}`}>⚔️ Raid guide</button>
    <button role="tab" aria-selected={mode==='max'} type="button" onClick={()=>selectMode('max')} className={`min-h-[48px] rounded-lg px-3 text-sm font-bold ${mode==='max'?'bg-blue-700 text-white':'text-sky-200 hover:bg-sky-800'}`}>⚡ Max Battle guide</button>
   </div>
+  <BattleEstimatePanel mode={mode}/>
   <section className="space-y-4 rounded-2xl border border-sky-700 bg-[#092146] p-4">
    <h3 className="flex items-center gap-2 text-lg font-bold"><Swords size={20}/> Battle boss profile</h3>
    <div className="grid gap-3 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
